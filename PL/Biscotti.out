@@ -1,0 +1,94 @@
+Problem:    Biscotti
+Rows:       25
+Columns:    12
+Non-zeros:  52
+Status:     OPTIMAL
+Objective:  z = 26.55172414 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 max_prod_daily[Svegliallegra]
+                    B             60                         165 
+     2 max_prod_daily[Frollino]
+                    B             20                         250 
+     3 max_prod_daily[Alba]
+                    B            100                         500 
+     4 max_prod_daily[ProntiVia]
+                    B            100                         250 
+     5 min_ingr_buy[Farina]
+                    NL           450           450                       < eps
+     6 min_ingr_buy[Uova]
+                    NL           200           200                       < eps
+     7 min_ingr_buy[Zucchero]
+                    NL           320           320                       < eps
+     8 min_ingr_buy[Burro]
+                    NL           140           140                       < eps
+     9 min_ingr_buy[Latte]
+                    NL           320           320                       < eps
+    10 min_ingr_buy[Additivi]
+                    NL           100           100                       < eps
+    11 min_ingr_buy[Nocciole]
+                    NL            50            50                       < eps
+    12 min_ingr_buy[Acqua]
+                    B              0            -0               
+    13 min_prod[Svegliallegra]
+                    B            300            50               
+    14 min_prod[Frollino]
+                    NL           100           100                        -0.7 
+    15 min_prod[Alba]
+                    NL           500           500                   -0.206897 
+    16 min_prod[ProntiVia]
+                    B            500           300               
+    17 max_prod[Svegliallegra]
+                    NU           300                         300           0.5 
+    18 max_prod[Frollino]
+                    B            100                         500 
+    19 max_prod[Alba]
+                    B            500                        1000 
+    20 max_prod[ProntiVia]
+                    NU           500                         500           0.1 
+    21 max_budget[Svegliallegra]
+                    B           1755                       21600 
+    22 max_budget[Frollino]
+                    B           1755                       21600 
+    23 max_budget[Alba]
+                    B           1755                       21600 
+    24 max_budget[ProntiVia]
+                    B           1755                       21600 
+    25 z            B        26.5517                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[Svegliallegra]
+                    B             60             0               
+     2 x[Frollino]  B             20             0               
+     3 x[Alba]      B        68.9655             0               
+     4 x[ProntiVia] B            100             0               
+     5 y[Farina]    B            450             0               
+     6 y[Uova]      B            200             0               
+     7 y[Zucchero]  B            320             0               
+     8 y[Burro]     B            140             0               
+     9 y[Latte]     B            320             0               
+    10 y[Additivi]  B            100             0               
+    11 y[Nocciole]  B             50             0               
+    12 y[Acqua]     NL             0             0                       < eps
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 5.68e-014 on row 15
+        max.rel.err = 5.68e-017 on row 15
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+000 on column 0
+        max.rel.err = 0.00e+000 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
