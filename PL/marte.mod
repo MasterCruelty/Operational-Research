@@ -5,6 +5,7 @@
 #Ogni banco di memoria ha capacità finita ed è gestito in first-in first-out.
 #Se la quantità di dati eccede il banco di memoria, i dati vecchi vengono sovrascritti.
 #Obiettivo: minimizzare la probabilità di sovrascrittura dei dati.
+#Bisogna mantenere il più basso possibile in ogni banco di memoria il rapporto tra spazio occupato e capacità.
 
 
 #DATI
