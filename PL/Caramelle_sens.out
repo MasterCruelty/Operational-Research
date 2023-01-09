@@ -15,6 +15,13 @@ Objective:  z = 862.5537041 (MAXimum)
 #Per esempio sul Saccarosio abbiamo consumato tutto(5 kg), lo slack è 0 e l'upper bound coincide.
 #Il prezzo ombra se non consumiamo tutto è zero, altrimenti ha un valore. Quel valore ci indica il prezzo a cui compreremmo altre risorse di quel tipo.
 
+#Se ci offrono dei coloranti e conservanti alla metà del prezzo, ci conviene acquistarne altri?
+#Per i conservanti no, visto che ne avanzano già.
+#I coloranti invece ci converebbe, poiché la funzione obiettivo aumenterebbe di 9.9. Per sapere fin quando conviene, facciamo l'analisi parametrica.
+#Con il solutore siamo costretti a farlo a mano, ovvero spostare la nostra capacità di ingredienti più in là del limite e vedere cosa succede.
+#quindi da 18.4 a 18.93 ==>  adesso la variabile è in base e abbiamo lo slack di 0.00030. Questo vuol dire che non conviene comprarne di più rispetto al limite del range.
+#Risposta definitiva: Conviene comprarne altri a prezzo scontato ma non oltre il limite del cambio di base.
+
 
    No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
                                           Marginal   Upper bound          range         range   break point variable
