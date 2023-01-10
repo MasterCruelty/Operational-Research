@@ -1,0 +1,96 @@
+Problem:    Localizzazione_depositi
+Rows:       16
+Columns:    55 (5 integer, 5 binary)
+Non-zeros:  160
+Status:     INTEGER OPTIMAL
+Objective:  z = 7157 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 domanda_U[1]               35            35             = 
+     2 domanda_U[2]               28            28             = 
+     3 domanda_U[3]               49            49             = 
+     4 domanda_U[4]               37            37             = 
+     5 domanda_U[5]               40            40             = 
+     6 domanda_U[6]               26            26             = 
+     7 domanda_U[7]               31            31             = 
+     8 domanda_U[8]               48            48             = 
+     9 domanda_U[9]               28            28             = 
+    10 domanda_U[10]
+                                  36            36             = 
+    11 cap[1]                    -99                          -0 
+    12 cap[2]                   -100                          -0 
+    13 cap[3]                    -45                          -0 
+    14 cap[4]                    -56                          -0 
+    15 cap[5]                      0                          -0 
+    16 z                        7157                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 erogato[1]   *              1             0             1 
+     2 erogato[2]   *              1             0             1 
+     3 erogato[3]   *              1             0             1 
+     4 erogato[4]   *              1             0             1 
+     5 erogato[5]   *              1             0             1 
+     6 x[1,1]                      0             0               
+     7 x[2,1]                      0             0               
+     8 x[3,1]                      0             0               
+     9 x[4,1]                     35             0               
+    10 x[5,1]                      0             0               
+    11 x[1,2]                     28             0               
+    12 x[2,2]                      0             0               
+    13 x[3,2]                      0             0               
+    14 x[4,2]                      0             0               
+    15 x[5,2]                      0             0               
+    16 x[1,3]                      0             0               
+    17 x[2,3]                      0             0               
+    18 x[3,3]                      0             0               
+    19 x[4,3]                      0             0               
+    20 x[5,3]                     49             0               
+    21 x[1,4]                      0             0               
+    22 x[2,4]                      0             0               
+    23 x[3,4]                     37             0               
+    24 x[4,4]                      0             0               
+    25 x[5,4]                      0             0               
+    26 x[1,5]                      0             0               
+    27 x[2,5]                      0             0               
+    28 x[3,5]                      0             0               
+    29 x[4,5]                      1             0               
+    30 x[5,5]                     39             0               
+    31 x[1,6]                      0             0               
+    32 x[2,6]                     26             0               
+    33 x[3,6]                      0             0               
+    34 x[4,6]                      0             0               
+    35 x[5,6]                      0             0               
+    36 x[1,7]                      0             0               
+    37 x[2,7]                      0             0               
+    38 x[3,7]                      0             0               
+    39 x[4,7]                      0             0               
+    40 x[5,7]                     31             0               
+    41 x[1,8]                     48             0               
+    42 x[2,8]                      0             0               
+    43 x[3,8]                      0             0               
+    44 x[4,8]                      0             0               
+    45 x[5,8]                      0             0               
+    46 x[1,9]                      0             0               
+    47 x[2,9]                      0             0               
+    48 x[3,9]                     28             0               
+    49 x[4,9]                      0             0               
+    50 x[5,9]                      0             0               
+    51 x[1,10]                     0             0               
+    52 x[2,10]                     0             0               
+    53 x[3,10]                     0             0               
+    54 x[4,10]                     0             0               
+    55 x[5,10]                    36             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 7.11e-015 on row 5
+        max.rel.err = 1.73e-016 on row 5
+        High quality
+
+End of output
