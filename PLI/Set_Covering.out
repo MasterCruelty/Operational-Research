@@ -1,0 +1,45 @@
+Problem:    Set_Covering
+Rows:       6
+Columns:    10 (10 integer, 10 binary)
+Non-zeros:  30
+Status:     INTEGER OPTIMAL
+Objective:  z = 853 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 utente_coperto[1]
+                                   3             1               
+     2 utente_coperto[2]
+                                   1             1               
+     3 utente_coperto[3]
+                                   1             1               
+     4 utente_coperto[4]
+                                   1             1               
+     5 utente_coperto[5]
+                                   1             1               
+     6 z                         853                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 erogato[1]   *              1             0             1 
+     2 erogato[2]   *              0             0             1 
+     3 erogato[3]   *              0             0             1 
+     4 erogato[4]   *              0             0             1 
+     5 erogato[5]   *              1             0             1 
+     6 erogato[6]   *              0             0             1 
+     7 erogato[7]   *              1             0             1 
+     8 erogato[8]   *              0             0             1 
+     9 erogato[9]   *              0             0             1 
+    10 erogato[10]  *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
