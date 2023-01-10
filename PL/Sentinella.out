@@ -1,0 +1,41 @@
+Problem:    Sentinella
+Rows:       5
+Columns:    4
+Non-zeros:  16
+Status:     OPTIMAL
+Objective:  0 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 normal       NS             1             1             =         < eps
+     2 balancer[N]  NS             0            -0             =         < eps
+     3 balancer[E]  NS             0            -0             =         < eps
+     4 balancer[S]  B              0            -0             = 
+     5 balancer[O]  NS             0            -0             =         < eps
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 p[N]         B       0.251323             0               
+     2 p[E]         B       0.224868             0               
+     3 p[S]         B       0.248677             0               
+     4 p[O]         B       0.275132             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+000 on column 0
+        max.rel.err = 0.00e+000 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
