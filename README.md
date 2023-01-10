@@ -18,3 +18,5 @@ In PNL folder you can find Nonlinear-Programming exercises.
 
 Gusek code editor for PL and PLI. Mathprog language and glpsol solver.<br>
 AMPL Ide for PNL.
+
+Disclaimer: All the texts are in Italian only.
