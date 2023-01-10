@@ -23,7 +23,7 @@ var s{M} >= 0; #quantità di gelato invenduto a fine mese [Ton]
 
 #VINCOLI
 
-#vincolo sulla conservazione del flusso
+#vincolo sulla conservazione del flusso [Ton]
 subject to flow_conservation{i in M:i>1}:
 	s[i-1] + x[i] = domanda[i] + s[i];
 subject to first_period:
@@ -31,6 +31,7 @@ subject to first_period:
 
 
 #OBIETTIVO
+#minimizzare i costi [€]
 minimize z: sum {m in M} (prezzo[m]*x[m] + c_unitario[m]*s[m]);
 
 data;
