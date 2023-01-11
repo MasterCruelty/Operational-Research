@@ -1,0 +1,97 @@
+Problem:    Editoria
+Rows:       35
+Columns:    38 (36 integer, 36 binary)
+Non-zeros:  224
+Status:     INTEGER OPTIMAL
+Objective:  z2 = 0 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 assign[1]                   1                           1 
+     2 assign[2]                   1                           1 
+     3 assign[3]                   1                           1 
+     4 assign[4]                   1                           1 
+     5 assign[5]                   0                           1 
+     6 assign[6]                   1                           1 
+     7 assign[7]                   1                           1 
+     8 assign[8]                   1                           1 
+     9 assign[9]                   1                           1 
+    10 assign[10]                  1                           1 
+    11 assign[11]                  1                           1 
+    12 assign[12]                  1                           1 
+    13 capacity[1]                43                          44 
+    14 capacity[2]                43                          44 
+    15 capacity[3]                43                          44 
+    16 urgenza[1]                  2                           2 
+    17 urgenza[2]                  1                           4 
+    18 urgenza[3]                  2                           2 
+    19 urgenza[4]                  1                           4 
+    20 urgenza[5]                  0                           1 
+    21 urgenza[6]                  1                           4 
+    22 urgenza[7]                  1                           4 
+    23 urgenza[8]                  2                           3 
+    24 urgenza[9]                  3                           3 
+    25 urgenza[10]                 2                           4 
+    26 urgenza[11]                 3                           4 
+    27 urgenza[12]                 3                           4 
+    28 z2                          0                             
+    29 maxmin[1]                   0                          -0 
+    30 maxmin[2]                   0                          -0 
+    31 maxmin[3]                   0                          -0 
+    32 minmax[1]                   0            -0               
+    33 minmax[2]                   0            -0               
+    34 minmax[3]                   0            -0               
+    35 non_peggioro               11            11               
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[1,1]       *              0             0             1 
+     2 x[1,2]       *              1             0             1 
+     3 x[1,3]       *              0             0             1 
+     4 x[2,1]       *              1             0             1 
+     5 x[2,2]       *              0             0             1 
+     6 x[2,3]       *              0             0             1 
+     7 x[3,1]       *              0             0             1 
+     8 x[3,2]       *              1             0             1 
+     9 x[3,3]       *              0             0             1 
+    10 x[4,1]       *              1             0             1 
+    11 x[4,2]       *              0             0             1 
+    12 x[4,3]       *              0             0             1 
+    13 x[5,1]       *              0             0             1 
+    14 x[5,2]       *              0             0             1 
+    15 x[5,3]       *              0             0             1 
+    16 x[6,1]       *              1             0             1 
+    17 x[6,2]       *              0             0             1 
+    18 x[6,3]       *              0             0             1 
+    19 x[7,1]       *              1             0             1 
+    20 x[7,2]       *              0             0             1 
+    21 x[7,3]       *              0             0             1 
+    22 x[8,1]       *              0             0             1 
+    23 x[8,2]       *              1             0             1 
+    24 x[8,3]       *              0             0             1 
+    25 x[9,1]       *              0             0             1 
+    26 x[9,2]       *              0             0             1 
+    27 x[9,3]       *              1             0             1 
+    28 x[10,1]      *              0             0             1 
+    29 x[10,2]      *              1             0             1 
+    30 x[10,3]      *              0             0             1 
+    31 x[11,1]      *              0             0             1 
+    32 x[11,2]      *              0             0             1 
+    33 x[11,3]      *              1             0             1 
+    34 x[12,1]      *              0             0             1 
+    35 x[12,2]      *              0             0             1 
+    36 x[12,3]      *              1             0             1 
+    37 upper                      43                             
+    38 lower                      43                             
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
