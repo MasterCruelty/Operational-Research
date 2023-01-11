@@ -1,0 +1,329 @@
+Problem:    Immagini
+Rows:       137
+Columns:    40 (40 integer, 40 binary)
+Non-zeros:  343
+Status:     INTEGER OPTIMAL
+Objective:  z = 4924 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 tempoMax                  301                         400 
+     2 compat[1,2]                 1                           1 
+     3 compat[2,1]                 1                           1 
+     4 compat[6,7]                 1                           1 
+     5 compat[7,6]                 1                           1 
+     6 compat[13,14]
+                                   1                           1 
+     7 compat[13,15]
+                                   1                           1 
+     8 compat[14,13]
+                                   1                           1 
+     9 compat[14,15]
+                                   0                           1 
+    10 compat[14,16]
+                                   1                           1 
+    11 compat[15,13]
+                                   1                           1 
+    12 compat[15,14]
+                                   0                           1 
+    13 compat[15,16]
+                                   1                           1 
+    14 compat[15,17]
+                                   0                           1 
+    15 compat[15,18]
+                                   0                           1 
+    16 compat[15,19]
+                                   0                           1 
+    17 compat[15,20]
+                                   0                           1 
+    18 compat[16,14]
+                                   1                           1 
+    19 compat[16,15]
+                                   1                           1 
+    20 compat[16,17]
+                                   1                           1 
+    21 compat[16,18]
+                                   1                           1 
+    22 compat[16,19]
+                                   1                           1 
+    23 compat[16,20]
+                                   1                           1 
+    24 compat[16,21]
+                                   1                           1 
+    25 compat[17,15]
+                                   0                           1 
+    26 compat[17,16]
+                                   1                           1 
+    27 compat[17,18]
+                                   0                           1 
+    28 compat[17,19]
+                                   0                           1 
+    29 compat[17,20]
+                                   0                           1 
+    30 compat[18,15]
+                                   0                           1 
+    31 compat[18,16]
+                                   1                           1 
+    32 compat[18,17]
+                                   0                           1 
+    33 compat[18,19]
+                                   0                           1 
+    34 compat[18,20]
+                                   0                           1 
+    35 compat[19,15]
+                                   0                           1 
+    36 compat[19,16]
+                                   1                           1 
+    37 compat[19,17]
+                                   0                           1 
+    38 compat[19,18]
+                                   0                           1 
+    39 compat[19,20]
+                                   0                           1 
+    40 compat[19,21]
+                                   0                           1 
+    41 compat[19,22]
+                                   1                           1 
+    42 compat[20,15]
+                                   0                           1 
+    43 compat[20,16]
+                                   1                           1 
+    44 compat[20,17]
+                                   0                           1 
+    45 compat[20,18]
+                                   0                           1 
+    46 compat[20,19]
+                                   0                           1 
+    47 compat[20,21]
+                                   0                           1 
+    48 compat[21,16]
+                                   1                           1 
+    49 compat[21,19]
+                                   0                           1 
+    50 compat[21,20]
+                                   0                           1 
+    51 compat[21,22]
+                                   1                           1 
+    52 compat[21,23]
+                                   1                           1 
+    53 compat[22,19]
+                                   1                           1 
+    54 compat[22,21]
+                                   1                           1 
+    55 compat[23,21]
+                                   1                           1 
+    56 compat[24,25]
+                                   1                           1 
+    57 compat[24,26]
+                                   1                           1 
+    58 compat[24,27]
+                                   1                           1 
+    59 compat[24,28]
+                                   1                           1 
+    60 compat[24,29]
+                                   1                           1 
+    61 compat[24,30]
+                                   1                           1 
+    62 compat[24,31]
+                                   1                           1 
+    63 compat[24,32]
+                                   1                           1 
+    64 compat[24,33]
+                                   1                           1 
+    65 compat[24,34]
+                                   1                           1 
+    66 compat[25,24]
+                                   1                           1 
+    67 compat[25,26]
+                                   0                           1 
+    68 compat[26,24]
+                                   1                           1 
+    69 compat[26,25]
+                                   0                           1 
+    70 compat[26,27]
+                                   0                           1 
+    71 compat[26,28]
+                                   0                           1 
+    72 compat[26,29]
+                                   0                           1 
+    73 compat[26,30]
+                                   0                           1 
+    74 compat[27,24]
+                                   1                           1 
+    75 compat[27,26]
+                                   0                           1 
+    76 compat[27,28]
+                                   0                           1 
+    77 compat[28,24]
+                                   1                           1 
+    78 compat[28,26]
+                                   0                           1 
+    79 compat[28,27]
+                                   0                           1 
+    80 compat[29,24]
+                                   1                           1 
+    81 compat[29,26]
+                                   0                           1 
+    82 compat[29,30]
+                                   0                           1 
+    83 compat[29,31]
+                                   0                           1 
+    84 compat[29,32]
+                                   0                           1 
+    85 compat[29,33]
+                                   0                           1 
+    86 compat[30,24]
+                                   1                           1 
+    87 compat[30,26]
+                                   0                           1 
+    88 compat[30,29]
+                                   0                           1 
+    89 compat[30,31]
+                                   0                           1 
+    90 compat[30,32]
+                                   0                           1 
+    91 compat[30,33]
+                                   0                           1 
+    92 compat[30,34]
+                                   0                           1 
+    93 compat[31,24]
+                                   1                           1 
+    94 compat[31,29]
+                                   0                           1 
+    95 compat[31,30]
+                                   0                           1 
+    96 compat[31,32]
+                                   0                           1 
+    97 compat[31,33]
+                                   0                           1 
+    98 compat[32,24]
+                                   1                           1 
+    99 compat[32,29]
+                                   0                           1 
+   100 compat[32,30]
+                                   0                           1 
+   101 compat[32,31]
+                                   0                           1 
+   102 compat[32,33]
+                                   0                           1 
+   103 compat[32,34]
+                                   0                           1 
+   104 compat[33,24]
+                                   1                           1 
+   105 compat[33,29]
+                                   0                           1 
+   106 compat[33,30]
+                                   0                           1 
+   107 compat[33,31]
+                                   0                           1 
+   108 compat[33,32]
+                                   0                           1 
+   109 compat[33,34]
+                                   0                           1 
+   110 compat[33,35]
+                                   1                           1 
+   111 compat[34,24]
+                                   1                           1 
+   112 compat[34,30]
+                                   0                           1 
+   113 compat[34,32]
+                                   0                           1 
+   114 compat[34,33]
+                                   0                           1 
+   115 compat[34,35]
+                                   1                           1 
+   116 compat[35,33]
+                                   1                           1 
+   117 compat[35,34]
+                                   1                           1 
+   118 compat[36,37]
+                                   1                           1 
+   119 compat[36,38]
+                                   0                           1 
+   120 compat[36,39]
+                                   0                           1 
+   121 compat[37,36]
+                                   1                           1 
+   122 compat[37,38]
+                                   1                           1 
+   123 compat[37,39]
+                                   1                           1 
+   124 compat[38,36]
+                                   0                           1 
+   125 compat[38,37]
+                                   1                           1 
+   126 compat[38,39]
+                                   0                           1 
+   127 compat[39,36]
+                                   0                           1 
+   128 compat[39,37]
+                                   1                           1 
+   129 compat[39,38]
+                                   0                           1 
+   130 emergenza[2]                1             1             = 
+   131 emergenza[3]                1             1             = 
+   132 emergenza[6]                1             1             = 
+   133 emergenza[13]
+                                   1             1             = 
+   134 emergenza[16]
+                                   1             1             = 
+   135 emergenza[24]
+                                   1             1             = 
+   136 emergenza[37]
+                                   1             1             = 
+   137 z                        4924                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[1]         *              0             0             1 
+     2 x[2]         *              1             0             1 
+     3 x[3]         *              1             0             1 
+     4 x[4]         *              1             0             1 
+     5 x[5]         *              1             0             1 
+     6 x[6]         *              1             0             1 
+     7 x[7]         *              0             0             1 
+     8 x[8]         *              1             0             1 
+     9 x[9]         *              1             0             1 
+    10 x[10]        *              1             0             1 
+    11 x[11]        *              1             0             1 
+    12 x[12]        *              1             0             1 
+    13 x[13]        *              1             0             1 
+    14 x[14]        *              0             0             1 
+    15 x[15]        *              0             0             1 
+    16 x[16]        *              1             0             1 
+    17 x[17]        *              0             0             1 
+    18 x[18]        *              0             0             1 
+    19 x[19]        *              0             0             1 
+    20 x[20]        *              0             0             1 
+    21 x[21]        *              0             0             1 
+    22 x[22]        *              1             0             1 
+    23 x[23]        *              1             0             1 
+    24 x[24]        *              1             0             1 
+    25 x[25]        *              0             0             1 
+    26 x[26]        *              0             0             1 
+    27 x[27]        *              0             0             1 
+    28 x[28]        *              0             0             1 
+    29 x[29]        *              0             0             1 
+    30 x[30]        *              0             0             1 
+    31 x[31]        *              0             0             1 
+    32 x[32]        *              0             0             1 
+    33 x[33]        *              0             0             1 
+    34 x[34]        *              0             0             1 
+    35 x[35]        *              1             0             1 
+    36 x[36]        *              0             0             1 
+    37 x[37]        *              1             0             1 
+    38 x[38]        *              0             0             1 
+    39 x[39]        *              0             0             1 
+    40 x[40]        *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
