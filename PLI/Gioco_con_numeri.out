@@ -1,0 +1,90 @@
+Problem:    Gioco_con_numeri
+Rows:       29
+Columns:    28 (27 integer, 27 binary)
+Non-zeros:  90
+Status:     INTEGER OPTIMAL
+Objective:  z = 999 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 def_somma                   0            -0             = 
+     2 limite                    999                        1000 
+     3 num_potenze[1]
+                                   1             1             = 
+     4 num_potenze[2]
+                                   1             1             = 
+     5 num_potenze[3]
+                                   1             1             = 
+     6 num_potenze[4]
+                                   1             1             = 
+     7 num_potenze[5]
+                                   1             1             = 
+     8 num_potenze[6]
+                                   1             1             = 
+     9 num_potenze[7]
+                                   1             1             = 
+    10 num_potenze[8]
+                                   1             1             = 
+    11 num_potenze[9]
+                                   1             1             = 
+    12 formato[1,1]               -1                          -0 
+    13 formato[1,2]                0                          -0 
+    14 formato[2,1]               -1                          -0 
+    15 formato[2,2]                0                          -0 
+    16 formato[3,1]                0                          -0 
+    17 formato[3,2]                0                          -0 
+    18 formato[4,1]                0                          -0 
+    19 formato[4,2]                0                          -0 
+    20 formato[5,1]                0                          -0 
+    21 formato[5,2]                0                          -0 
+    22 formato[6,1]                0                          -0 
+    23 formato[6,2]                0                          -0 
+    24 formato[7,1]                0                          -0 
+    25 formato[7,2]                0                          -0 
+    26 formato[8,1]                0                          -0 
+    27 formato[8,2]                0                          -0 
+    28 Unity                       1             1             = 
+    29 z                         999                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[1,0]       *              1             0             1 
+     2 x[1,1]       *              0             0             1 
+     3 x[1,2]       *              0             0             1 
+     4 x[2,0]       *              1             0             1 
+     5 x[2,1]       *              0             0             1 
+     6 x[2,2]       *              0             0             1 
+     7 x[3,0]       *              1             0             1 
+     8 x[3,1]       *              0             0             1 
+     9 x[3,2]       *              0             0             1 
+    10 x[4,0]       *              0             0             1 
+    11 x[4,1]       *              0             0             1 
+    12 x[4,2]       *              1             0             1 
+    13 x[5,0]       *              0             0             1 
+    14 x[5,1]       *              1             0             1 
+    15 x[5,2]       *              0             0             1 
+    16 x[6,0]       *              1             0             1 
+    17 x[6,1]       *              0             0             1 
+    18 x[6,2]       *              0             0             1 
+    19 x[7,0]       *              0             0             1 
+    20 x[7,1]       *              0             0             1 
+    21 x[7,2]       *              1             0             1 
+    22 x[8,0]       *              0             0             1 
+    23 x[8,1]       *              1             0             1 
+    24 x[8,2]       *              0             0             1 
+    25 x[9,0]       *              1             0             1 
+    26 x[9,1]       *              0             0             1 
+    27 x[9,2]       *              0             0             1 
+    28 somma                     999                             
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
