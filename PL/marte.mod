@@ -20,22 +20,31 @@ param time{I};		 #Tempo disponibile [Secondi]
 param bit_rate{I};	 #Bit-rate [Kbit / sec ]
 
 #VARIABILI
-var x{B} >= 0; #Uso del banco
-
+var x{B,I} >= 0; #dati trasmessi a Terra
+var delta >= 0;#minmax
+var y{B,I};		#quantità di dati in ogni banco di memoria B dopo ogni intervallo temporale I
 #VINCOLI
+
+#def y
+subject to def_y{b in B,i in I}:
+	y[b,i] = occupato[b] / capacity[b] * x[b,i];
 
 #Vincolo sulla capacità di memoria di ogni banco
 #tengo conto anche dello svuotamento della memoria
-subject to size_memory{i in B}:
-	sum{j in I} (prod_dati[j,i] * x[i] - bit_rate[j] * time[j]) <= capacity[i] - occupato[i];
+subject to size_memory{b in B}:
+	sum{i in I} (prod_dati[i,b] * x[b,i] - bit_rate[i] * time[i]) <= capacity[b] - occupato[b];
 
-#Vincolo sulla gestione fifo
-subject to fifo:
-	sum{i in B} x[i] = 1;
+#vincolo controllo di flusso
+subject to Flow{b in B,i in I:i>1 and i<7} :
+	x[b,i] = x[b,i-1] + + prod_dati[b,i] - y[b,i-1];
+subject to Flow_first{b in B,i in I}:
+	x[b,1] = occupato[b] + prod_dati[b,1];
 
 #OBIETTIVO
 #minimizzare la probabilità di sovrascrittura per eccedenza di memoria
-minimize z: sum{i in B} occupato[i] / capacity[i] * x[i];
+minimize z: delta; 
+subject to MinMax{b in B,i in I}:
+	delta >= y[b,i];
 ######
 data;
 

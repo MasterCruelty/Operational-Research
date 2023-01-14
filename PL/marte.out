@@ -1,35 +1,383 @@
 Problem:    marte
-Rows:       8
-Columns:    6
-Non-zeros:  18
+Rows:       199
+Columns:    109
+Non-zeros:  415
 Status:     OPTIMAL
-Objective:  z = 0.1666666667 (MINimum)
+Objective:  z = 18.3125 (MINimum)
 
    No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 size_memory[1]
-                    B              0                      721449 
-     2 size_memory[2]
-                    B              0                      721470 
-     3 size_memory[3]
-                    B              0                      721500 
-     4 size_memory[4]
-                    B             45                      721450 
-     5 size_memory[5]
-                    B              0                      721459 
-     6 size_memory[6]
-                    B              0                      721482 
-     7 fifo         NS             1             1             =      0.166667 
-     8 z            B       0.166667                             
+     1 def_y[1,1]   NS             0            -0             =         < eps
+     2 def_y[1,2]   NS             0            -0             =         < eps
+     3 def_y[1,3]   NS             0            -0             =         < eps
+     4 def_y[1,4]   NS             0            -0             =         < eps
+     5 def_y[1,5]   NS             0            -0             =         < eps
+     6 def_y[1,6]   NS             0            -0             =         < eps
+     7 def_y[1,7]   NS             0            -0             =         < eps
+     8 def_y[1,8]   NS             0            -0             =         < eps
+     9 def_y[1,9]   NS             0            -0             =         < eps
+    10 def_y[2,1]   NS             0            -0             =         < eps
+    11 def_y[2,2]   NS             0            -0             =         < eps
+    12 def_y[2,3]   NS             0            -0             =         < eps
+    13 def_y[2,4]   NS             0            -0             =         < eps
+    14 def_y[2,5]   NS             0            -0             =         < eps
+    15 def_y[2,6]   NS             0            -0             =         < eps
+    16 def_y[2,7]   NS             0            -0             =         < eps
+    17 def_y[2,8]   NS             0            -0             =         < eps
+    18 def_y[2,9]   NS             0            -0             =         < eps
+    19 def_y[3,1]   NS             0            -0             =       -0.1875 
+    20 def_y[3,2]   NS             0            -0             =         -0.25 
+    21 def_y[3,3]   NS             0            -0             =             1 
+    22 def_y[3,4]   NS             0            -0             =         < eps
+    23 def_y[3,5]   NS             0            -0             =         < eps
+    24 def_y[3,6]   NS             0            -0             =         < eps
+    25 def_y[3,7]   NS             0            -0             =         < eps
+    26 def_y[3,8]   NS             0            -0             =         < eps
+    27 def_y[3,9]   NS             0            -0             =         < eps
+    28 def_y[4,1]   NS             0            -0             =         < eps
+    29 def_y[4,2]   NS             0            -0             =         < eps
+    30 def_y[4,3]   NS             0            -0             =         < eps
+    31 def_y[4,4]   NS             0            -0             =         < eps
+    32 def_y[4,5]   NS             0            -0             =         < eps
+    33 def_y[4,6]   NS             0            -0             =         < eps
+    34 def_y[4,7]   NS             0            -0             =         < eps
+    35 def_y[4,8]   NS             0            -0             =         < eps
+    36 def_y[4,9]   NS             0            -0             =         < eps
+    37 def_y[5,1]   NS             0            -0             =         < eps
+    38 def_y[5,2]   NS             0            -0             =         < eps
+    39 def_y[5,3]   NS             0            -0             =         < eps
+    40 def_y[5,4]   NS             0            -0             =         < eps
+    41 def_y[5,5]   NS             0            -0             =         < eps
+    42 def_y[5,6]   NS             0            -0             =         < eps
+    43 def_y[5,7]   NS             0            -0             =         < eps
+    44 def_y[5,8]   NS             0            -0             =         < eps
+    45 def_y[5,9]   NS             0            -0             =         < eps
+    46 def_y[6,1]   NS             0            -0             =         < eps
+    47 def_y[6,2]   NS             0            -0             =         < eps
+    48 def_y[6,3]   NS             0            -0             =         < eps
+    49 def_y[6,4]   NS             0            -0             =         < eps
+    50 def_y[6,5]   NS             0            -0             =         < eps
+    51 def_y[6,6]   NS             0            -0             =         < eps
+    52 def_y[6,7]   NS             0            -0             =         < eps
+    53 def_y[6,8]   NS             0            -0             =         < eps
+    54 def_y[6,9]   NS             0            -0             =         < eps
+    55 size_memory[1]
+                    B        1233.63                      721449 
+    56 size_memory[2]
+                    B        4148.22                      721470 
+    57 size_memory[3]
+                    B        12307.8                      721500 
+    58 size_memory[4]
+                    B         1775.8                      721450 
+    59 size_memory[5]
+                    B        4048.73                      721459 
+    60 size_memory[6]
+                    B        5890.85                      721482 
+    61 Flow[1,2]    NS            11            11             =         < eps
+    62 Flow[1,3]    NS            31            31             =         < eps
+    63 Flow[1,4]    NS             3             3             =         < eps
+    64 Flow[1,5]    NS            18            18             =         < eps
+    65 Flow[1,6]    NS            27            27             =         < eps
+    66 Flow[2,2]    NS             8             8             =         < eps
+    67 Flow[2,3]    NS            34            34             =         < eps
+    68 Flow[2,4]    NS             4             4             =         < eps
+    69 Flow[2,5]    NS            19            19             =         < eps
+    70 Flow[2,6]    NS            23            23             =         < eps
+    71 Flow[3,2]    NS            23            23             =        0.1875 
+    72 Flow[3,3]    NS            38            38             =          0.25 
+    73 Flow[3,4]    NS             5             5             =         < eps
+    74 Flow[3,5]    NS            21            21             =         < eps
+    75 Flow[3,6]    NS            19            19             =         < eps
+    76 Flow[4,2]    NS            31            31             =         < eps
+    77 Flow[4,3]    NS            35            35             =         < eps
+    78 Flow[4,4]    NS             6             6             =         < eps
+    79 Flow[4,5]    NS            15            15             =         < eps
+    80 Flow[4,6]    NS            18            18             =         < eps
+    81 Flow[5,2]    NS            14            14             =         < eps
+    82 Flow[5,3]    NS            37            37             =         < eps
+    83 Flow[5,4]    NS             7             7             =         < eps
+    84 Flow[5,5]    NS            14            14             =         < eps
+    85 Flow[5,6]    NS            23            23             =         < eps
+    86 Flow[6,2]    NS             8             8             =         < eps
+    87 Flow[6,3]    NS            35            35             =         < eps
+    88 Flow[6,4]    NS             6             6             =         < eps
+    89 Flow[6,5]    NS            14            14             =         < eps
+    90 Flow[6,6]    NS            24            24             =         < eps
+    91 Flow_first[1,1]
+                    NS            12            12             =         < eps
+    92 Flow_first[1,2]
+                    B             12            12             = 
+    93 Flow_first[1,3]
+                    B             12            12             = 
+    94 Flow_first[1,4]
+                    B             12            12             = 
+    95 Flow_first[1,5]
+                    B             12            12             = 
+    96 Flow_first[1,6]
+                    B             12            12             = 
+    97 Flow_first[1,7]
+                    B             12            12             = 
+    98 Flow_first[1,8]
+                    B             12            12             = 
+    99 Flow_first[1,9]
+                    B             12            12             = 
+   100 Flow_first[2,1]
+                    NS            21            21             =         < eps
+   101 Flow_first[2,2]
+                    B             21            21             = 
+   102 Flow_first[2,3]
+                    B             21            21             = 
+   103 Flow_first[2,4]
+                    B             21            21             = 
+   104 Flow_first[2,5]
+                    B             21            21             = 
+   105 Flow_first[2,6]
+                    B             21            21             = 
+   106 Flow_first[2,7]
+                    B             21            21             = 
+   107 Flow_first[2,8]
+                    B             21            21             = 
+   108 Flow_first[2,9]
+                    B             21            21             = 
+   109 Flow_first[3,1]
+                    NS            32            32             =      0.140625 
+   110 Flow_first[3,2]
+                    B             32            32             = 
+   111 Flow_first[3,3]
+                    B             32            32             = 
+   112 Flow_first[3,4]
+                    B             32            32             = 
+   113 Flow_first[3,5]
+                    B             32            32             = 
+   114 Flow_first[3,6]
+                    B             32            32             = 
+   115 Flow_first[3,7]
+                    B             32            32             = 
+   116 Flow_first[3,8]
+                    B             32            32             = 
+   117 Flow_first[3,9]
+                    B             32            32             = 
+   118 Flow_first[4,1]
+                    NS             8             8             =         < eps
+   119 Flow_first[4,2]
+                    B              8             8             = 
+   120 Flow_first[4,3]
+                    B              8             8             = 
+   121 Flow_first[4,4]
+                    B              8             8             = 
+   122 Flow_first[4,5]
+                    B              8             8             = 
+   123 Flow_first[4,6]
+                    B              8             8             = 
+   124 Flow_first[4,7]
+                    B              8             8             = 
+   125 Flow_first[4,8]
+                    B              8             8             = 
+   126 Flow_first[4,9]
+                    B              8             8             = 
+   127 Flow_first[5,1]
+                    NS            19            19             =         < eps
+   128 Flow_first[5,2]
+                    B             19            19             = 
+   129 Flow_first[5,3]
+                    B             19            19             = 
+   130 Flow_first[5,4]
+                    B             19            19             = 
+   131 Flow_first[5,5]
+                    B             19            19             = 
+   132 Flow_first[5,6]
+                    B             19            19             = 
+   133 Flow_first[5,7]
+                    B             19            19             = 
+   134 Flow_first[5,8]
+                    B             19            19             = 
+   135 Flow_first[5,9]
+                    B             19            19             = 
+   136 Flow_first[6,1]
+                    NS            31            31             =         < eps
+   137 Flow_first[6,2]
+                    B             31            31             = 
+   138 Flow_first[6,3]
+                    B             31            31             = 
+   139 Flow_first[6,4]
+                    B             31            31             = 
+   140 Flow_first[6,5]
+                    B             31            31             = 
+   141 Flow_first[6,6]
+                    B             31            31             = 
+   142 Flow_first[6,7]
+                    B             31            31             = 
+   143 Flow_first[6,8]
+                    B             31            31             = 
+   144 Flow_first[6,9]
+                    B             31            31             = 
+   145 z            B        18.3125                             
+   146 MinMax[1,1]  B        15.3125            -0               
+   147 MinMax[1,2]  B        13.3125            -0               
+   148 MinMax[1,3]  B         6.8125            -0               
+   149 MinMax[1,4]  B         8.9375            -0               
+   150 MinMax[1,5]  B        6.78125            -0               
+   151 MinMax[1,6]  B        2.91406            -0               
+   152 MinMax[1,7]  B        18.3125            -0               
+   153 MinMax[1,8]  B        18.3125            -0               
+   154 MinMax[1,9]  B        18.3125            -0               
+   155 MinMax[2,1]  B        13.0625            -0               
+   156 MinMax[2,2]  B         12.375            -0               
+   157 MinMax[2,3]  B        5.35938            -0               
+   158 MinMax[2,4]  B        7.59766            -0               
+   159 MinMax[2,5]  B        5.52637            -0               
+   160 MinMax[2,6]  B         2.9729            -0               
+   161 MinMax[2,7]  B        18.3125            -0               
+   162 MinMax[2,8]  B        18.3125            -0               
+   163 MinMax[2,9]  B        18.3125            -0               
+   164 MinMax[3,1]  B        10.3125            -0               
+   165 MinMax[3,2]  B         6.5625            -0               
+   166 MinMax[3,3]  NL             0            -0                           1 
+   167 MinMax[3,4]  B        3.32813            -0               
+   168 MinMax[3,5]  B        1.82422            -0               
+   169 MinMax[3,6]  B        1.19629            -0               
+   170 MinMax[3,7]  B        18.3125            -0               
+   171 MinMax[3,8]  B        18.3125            -0               
+   172 MinMax[3,9]  B        18.3125            -0               
+   173 MinMax[4,1]  B        16.9792            -0               
+   174 MinMax[4,2]  B        12.0347            -0               
+   175 MinMax[4,3]  B        7.24769            -0               
+   176 MinMax[4,4]  B        8.09182            -0               
+   177 MinMax[4,5]  B        7.29527            -0               
+   178 MinMax[4,6]  B        6.13147            -0               
+   179 MinMax[4,7]  B        18.3125            -0               
+   180 MinMax[4,8]  B        18.3125            -0               
+   181 MinMax[4,9]  B        18.3125            -0               
+   182 MinMax[5,1]  B        12.2325            -0               
+   183 MinMax[5,2]  B         9.6981            -0               
+   184 MinMax[5,3]  B       0.614708            -0               
+   185 MinMax[5,4]  B          4.038            -0               
+   186 MinMax[5,5]  B        4.12584            -0               
+   187 MinMax[5,6]  B        1.30557            -0               
+   188 MinMax[5,7]  B        18.3125            -0               
+   189 MinMax[5,8]  B        18.3125            -0               
+   190 MinMax[5,9]  B        18.3125            -0               
+   191 MinMax[6,1]  B            9.4            -0               
+   192 MinMax[6,2]  B        9.66234            -0               
+   193 MinMax[6,3]  B        2.08676            -0               
+   194 MinMax[6,4]  B        5.02666            -0               
+   195 MinMax[6,5]  B        4.82134            -0               
+   196 MinMax[6,6]  B        1.80005            -0               
+   197 MinMax[6,7]  B        18.3125            -0               
+   198 MinMax[6,8]  B        18.3125            -0               
+   199 MinMax[6,9]  B        18.3125            -0               
 
    No. Column name  St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 x[1]         NL             0             0                   0.0833333 
-     2 x[2]         NL             0             0                   0.0833333 
-     3 x[3]         NL             0             0                   0.0833333 
-     4 x[4]         B              1             0               
-     5 x[5]         NL             0             0                    0.153333 
-     6 x[6]         NL             0             0                    0.120833 
+     1 x[1,1]       B             12             0               
+     2 x[1,2]       B             20             0               
+     3 x[1,3]       B             46             0               
+     4 x[1,4]       B           37.5             0               
+     5 x[1,5]       B         46.125             0               
+     6 x[1,6]       B        61.5938             0               
+     7 x[1,7]       NL             0             0                       < eps
+     8 x[1,8]       NL             0             0                       < eps
+     9 x[1,9]       NL             0             0                       < eps
+    10 x[2,1]       B             21             0               
+    11 x[2,2]       B          23.75             0               
+    12 x[2,3]       B        51.8125             0               
+    13 x[2,4]       B        42.8594             0               
+    14 x[2,5]       B        51.1445             0               
+    15 x[2,6]       B        61.3584             0               
+    16 x[2,7]       NL             0             0                       < eps
+    17 x[2,8]       NL             0             0                       < eps
+    18 x[2,9]       NL             0             0                       < eps
+    19 x[3,1]       B             32             0               
+    20 x[3,2]       B             47             0               
+    21 x[3,3]       B          73.25             0               
+    22 x[3,4]       B        59.9375             0               
+    23 x[3,5]       B        65.9531             0               
+    24 x[3,6]       B        68.4648             0               
+    25 x[3,7]       NL             0             0                       < eps
+    26 x[3,8]       NL             0             0                       < eps
+    27 x[3,9]       NL             0             0                       < eps
+    28 x[4,1]       B              8             0               
+    29 x[4,2]       B        37.6667             0               
+    30 x[4,3]       B        66.3889             0               
+    31 x[4,4]       B        61.3241             0               
+    32 x[4,5]       B        66.1034             0               
+    33 x[4,6]       B        73.0862             0               
+    34 x[4,7]       NL             0             0                       < eps
+    35 x[4,8]       NL             0             0                       < eps
+    36 x[4,9]       NL             0             0                       < eps
+    37 x[5,1]       B             19             0               
+    38 x[5,2]       B          26.92             0               
+    39 x[5,3]       B        55.3056             0               
+    40 x[5,4]       B        44.6078             0               
+    41 x[5,5]       B        44.3333             0               
+    42 x[5,6]       B        53.1467             0               
+    43 x[5,7]       NL             0             0                       < eps
+    44 x[5,8]       NL             0             0                       < eps
+    45 x[5,9]       NL             0             0                       < eps
+    46 x[6,1]       B             31             0               
+    47 x[6,2]       B        30.0875             0               
+    48 x[6,3]       B        56.4373             0               
+    49 x[6,4]       B        46.2116             0               
+    50 x[6,5]       B        46.9258             0               
+    51 x[6,6]       B        57.4346             0               
+    52 x[6,7]       NL             0             0                       < eps
+    53 x[6,8]       NL             0             0                       < eps
+    54 x[6,9]       NL             0             0                       < eps
+    55 delta        B        18.3125             0               
+    56 y[1,1]       B              3                             
+    57 y[1,2]       B              5                             
+    58 y[1,3]       B           11.5                             
+    59 y[1,4]       B          9.375                             
+    60 y[1,5]       B        11.5313                             
+    61 y[1,6]       B        15.3984                             
+    62 y[1,7]       B              0                             
+    63 y[1,8]       B              0                             
+    64 y[1,9]       B              0                             
+    65 y[2,1]       B           5.25                             
+    66 y[2,2]       B         5.9375                             
+    67 y[2,3]       B        12.9531                             
+    68 y[2,4]       B        10.7148                             
+    69 y[2,5]       B        12.7861                             
+    70 y[2,6]       B        15.3396                             
+    71 y[2,7]       B              0                             
+    72 y[2,8]       B              0                             
+    73 y[2,9]       B              0                             
+    74 y[3,1]       B              8                             
+    75 y[3,2]       B          11.75                             
+    76 y[3,3]       B        18.3125                             
+    77 y[3,4]       B        14.9844                             
+    78 y[3,5]       B        16.4883                             
+    79 y[3,6]       B        17.1162                             
+    80 y[3,7]       B              0                             
+    81 y[3,8]       B              0                             
+    82 y[3,9]       B              0                             
+    83 y[4,1]       B        1.33333                             
+    84 y[4,2]       B        6.27778                             
+    85 y[4,3]       B        11.0648                             
+    86 y[4,4]       B        10.2207                             
+    87 y[4,5]       B        11.0172                             
+    88 y[4,6]       B         12.181                             
+    89 y[4,7]       B              0                             
+    90 y[4,8]       B              0                             
+    91 y[4,9]       B              0                             
+    92 y[5,1]       B           6.08                             
+    93 y[5,2]       B         8.6144                             
+    94 y[5,3]       B        17.6978                             
+    95 y[5,4]       B        14.2745                             
+    96 y[5,5]       B        14.1867                             
+    97 y[5,6]       B        17.0069                             
+    98 y[5,7]       B              0                             
+    99 y[5,8]       B              0                             
+   100 y[5,9]       B              0                             
+   101 y[6,1]       B         8.9125                             
+   102 y[6,2]       B        8.65016                             
+   103 y[6,3]       B        16.2257                             
+   104 y[6,4]       B        13.2858                             
+   105 y[6,5]       B        13.4912                             
+   106 y[6,6]       B        16.5125                             
+   107 y[6,7]       B              0                             
+   108 y[6,8]       B              0                             
+   109 y[6,9]       B              0                             
 
 Karush-Kuhn-Tucker optimality conditions:
 
