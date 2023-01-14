@@ -44,77 +44,34 @@ display per visualizzare le cose
 
 -------------------------------------------
 
-problema zaino PLI
-DATI
-N oggetti
-a_i volume oggetto da 1 a N
-c_i valore oggetto da 1 a N
-b capacità
-VARIABILI
-x_i binaria da 1 a N (selezione oggetto)
-VINCOLI
-somma di a_i*x_i <= b
-OBIETTIVO
-max z = somma di c_i * x_i
+POST-OTTIMALE
+1. Dal valore ottimo delle variabili si pu vedere quali di esse sono nulle e
+quali no. Ad esempio se le variabili rappresentano quantit da produrre
+in un problema di mix ottimale, l’esercizio pu richiedere di specificare
+quali sono i prodotti convenienti da produrre (variabili positive) e quali
+no (variabili nulle).
 
-problema assegnamento lineare
-DATI
-|P| = n personale
-|M| = m mansione
-c_ij con i in P e j in M (costo)
-VARIABILI
-x_ij binario assegnamento
-VINCOLI
-somma su x_ij =1 per ogni i in P
-somma su x_ij = 1 per ogni j in M
-OBIETTIVO
-somma di somma di c_ij * x_ij
+2.Dal valore ottimo delle variabili di slack/surplus si pu vedere quali
+sono i vincoli attivi. Una tipica domanda potrebbe chiedere di indicare
+quali risorse sono scarse (vincoli attivi, variabili di slack nulle) e quali
+no (vincoli non attivi, variabili di slack positive).
 
-problema set covering
-DATI
-U utenti
-L luoghi
-a_ij copertura per ogni i in U
-c_j costo per ogni j in L
-VARIABILI
-x_j binaria per ogni j in L selezione
-VINCOLI
-somma di j in L a_ij *x_j >= 1 per ogni i in U
-OBIETTIVO
-min z = somma di j in L di c_j * x_j
+3.Il costo ridotto di una variabile indica la variazione della funzione obiettivo
+che corrisponde ad un incremento unitario nel valore della variabile.
+Il prezzo-ombra di un vincolo la variazione della funzione obiettivo che
+corrisponde ad un decremento unitario del termine noto (assumendo
+un problema di massimizzazione con vincoli di ·). Questi valori (che
+sono nulli in corrispondenza di variabili in base e di vincoli non attivi)
+consentono di rispondere a domande del tipo: “Sarebbe conveniente acquistare
+quantit`a ulteriori di risorsa X?”, semplicemente confrontando
+il loro valore con il dato fornito nell’esercizio.
 
-problema localizzazione di depositi
-DATI
-D depositi
-U utenti
-c_ij costi unitari per ogni i in D e per ogni j in U
-q_i capacità deposito per ogni i in D
-d_j domanda utente per ogni j in U
-k_i costo fisso per ogni i in D
-VARIABILI
-y_i binaria selezione per ogni i in D
-x_ij >=0 quantità trasportata per ogni i in D e per ogni j in U
-VINCOLI
-somma di i in D di x_ij = d_j per ogni j in U
-somma di j in U di k_ij <= q_i*y_i per ogni i in D
-OBIETTIVO
-min z= somma di i in D somma di j in U c_ij * x_ij + somma di i in D k_i*y_i
-
-problema antitrust
-DATI
-F filiali
-P prodotti
-a_ij fatturato per ogni i in F e per ogni j in P
-VARIABILI
-k_i binaria (assegnamento a f1 se = 0, assegno a f2 se =1)
-delta >= 0
-y'_j,y''_j >=0 fatturato per ogni j in P
-VINCOLI
-y'_j = somma di j in F a_ij(1-x_i) per ogni j in P
-y''_j = somma di j in F a_ij(x_i)per ogni j in P
-OBIETTIVO
-min z =  max j in P {|y'_j - Y''_j|} (non posso scriverlo nel solutore)
-min z = delta
-delta >= y'_J - y''_j per ogni j in P
-delta >= y''_J - y'_j per ogni j in P
-
+4.L’analisi di sensitivit consente di studiare quanto sia stabile la base
+ottima al variare di un coefficiente nella funzione-obiettivo o di un termine
+noto. `E necessario ricordarsi che gli intervalli indicati sono quelli
+entro i quali la base ottima non cambia. La soluzione invece pu`o cambiare,
+se l’analisi riguarda il termine noto di un vincolo; il valore della
+funzione obiettivo pu`o cambiare anche se l’analisi riguarda un coefficiente
+della funzione obiettivo. Per conoscere quale sia l’andamento
+della funzione obiettivo al di fuori degli intervalli specificati, necessario
+ricorrere all’analisi parametrica.
