@@ -1,0 +1,120 @@
+Controllare se la soluzione è unica.
+guardo i coefficienti di costo ridotto delle colonne fuori base, si controlla se sono tutti diversi da zero e se è così l'ottimo è unico.
+Se trovo uno o più zeri nelle colonne fuori base dei coefficienti di costo ridotto la soluzione non è unica, possono quindi esserci due soluzioni diverse ma equivalenti di valore.
+
+--------------------------------------
+discussione caramelle:
+ottimalità soluzione => non è unica quando c'è un costo ridotto uguale a zero in corrispondenza di una colonna fuori base. Non succede quindi è unica.
+
+Tutti i tipi di caramella sono convenienti da produrre? Tutti tranne la delizia.
+Quale dovrebbe essere il prezzo per essere conveniente? Dovrebbe aumentare del valore negativo sul costo ridotto (-3.13)
+
+per quelli convenienti, per quali oscillazione di cambio restano convenienti? La proporzione rimane invariata, la soluzione ottima non cambia.
+rispetto all'oscillazione del prezzo invece si deve confrontare il prezzo con la massima oscillazione che può avere. Per esempio se da può arrivare a 4, può oscillare del 20% per rimanere conveniente. In base a questo calcolo si può trovare quella più robusta.
+
+è possibile ridurre i costi di approvigionamento ingredienti? Quelli usati completamente no, mentre gli altri si può ridurre non acquistando le quantità eccedenti. si moltiplica quantità per prezzo e si sa quanti soldi si spreca.
+
+
+rewatch: se la variabile di slack è in base, vuol dire che non stiamo consumando del tutto quella risorsa. Se è fuori base la stiamo usando tutta. NU var fuori base e primo membro = all'upper bound. Ad esempio saccarosio avevamo 5 e ne consumiamo 5
+Se consumiamo meno, ad esempio il fruttosio che avevamo 9 e ne consumiamo 8.8, sulla colonna successiva abbiamo lo slack(9-8.8) e sotto niente.
+Se la variabile invece è fuori base, sulla colonna slack non abbiamo niente, mentre invece abbiamo un valore su marginal(il costo ridotto, il prezzo ombra). Nel saccarosio il prezzo ombra è significativo(4.7).
+Activity range ci dice qual è l'intervallo in cui può variare il primo membro di quel vincolo senza che cambi la base(adesso il vincolo è 9).
+Ad esempio nel fruttosio può variare da 7.8 a 9.88.
+In base a come facciamo variare il vincolo del 9, il valore della funzione obiettivo può cambiare(da 832 a 998).
+il coefficiente della funzione obiettivo ci dice l'inclinazione del segmento.
+
+La seconda parte ha una riga per ogni variabile.
+Se è in base abbiamo anche la produzione(activity), altrimenti non abbiamo niente(ad esempio la delizia).
+coefficiente obiettivo, primo valore è il dato che abbiamo messo noi, il secondo invece è il costo marginale(che è 0 per ogni variabile che risulta in base). Ha dei valori non zero per var fuori base.
+Essendo la nostra funzione obiettivo di massimizzazione, abbiamo un meno sul costo marginale della var fuori base, quindi dobbiamo cambiare segno alla funzione obiettivo per metterla in forma standard(se non avessimo cambiato di segno la funzione obiettivo, il test di ottimalità invece di essere "tutti i costi ridotti devono essere >= 0" sarebbe stato "<= 0", quindi quel valore negativo soddisfa il test e fa riferimento alla funzione obiettivo vera, quella che stiamo massimizzando.
+Per esempio se da 0, la produzione aumenterebbe, la funzione obiettivo diminuirebbe di 3,1 per ogni unità.
+Activity range, il range in cui può variare il valore della variabile(la produzione).
+Il range del coefficiente della funzione obiettivo ci dice l'intervallo in cui può variare il coefficiente (seconda colonna)
+Valore funzione obiettivo break point: variazione del valore della funzione obiettivo in funzione del variare delle colonne citate prima.
+per le risorse convenienti, se diminuisco il coefficiente, z diminuisce, altrimenti aumenta.
+Mentre per la delizia che già con zero non andava, se la diminuisco aumenta z e se la diminuisco aumenta.
+---------------------------------------
+
+comandi ampl:
+option solver cplex;
+model modello.mod;
+solve;
+
+display per visualizzare le cose
+
+-------------------------------------------
+
+problema zaino PLI
+DATI
+N oggetti
+a_i volume oggetto da 1 a N
+c_i valore oggetto da 1 a N
+b capacità
+VARIABILI
+x_i binaria da 1 a N (selezione oggetto)
+VINCOLI
+somma di a_i*x_i <= b
+OBIETTIVO
+max z = somma di c_i * x_i
+
+problema assegnamento lineare
+DATI
+|P| = n personale
+|M| = m mansione
+c_ij con i in P e j in M (costo)
+VARIABILI
+x_ij binario assegnamento
+VINCOLI
+somma su x_ij =1 per ogni i in P
+somma su x_ij = 1 per ogni j in M
+OBIETTIVO
+somma di somma di c_ij * x_ij
+
+problema set covering
+DATI
+U utenti
+L luoghi
+a_ij copertura per ogni i in U
+c_j costo per ogni j in L
+VARIABILI
+x_j binaria per ogni j in L selezione
+VINCOLI
+somma di j in L a_ij *x_j >= 1 per ogni i in U
+OBIETTIVO
+min z = somma di j in L di c_j * x_j
+
+problema localizzazione di depositi
+DATI
+D depositi
+U utenti
+c_ij costi unitari per ogni i in D e per ogni j in U
+q_i capacità deposito per ogni i in D
+d_j domanda utente per ogni j in U
+k_i costo fisso per ogni i in D
+VARIABILI
+y_i binaria selezione per ogni i in D
+x_ij >=0 quantità trasportata per ogni i in D e per ogni j in U
+VINCOLI
+somma di i in D di x_ij = d_j per ogni j in U
+somma di j in U di k_ij <= q_i*y_i per ogni i in D
+OBIETTIVO
+min z= somma di i in D somma di j in U c_ij * x_ij + somma di i in D k_i*y_i
+
+problema antitrust
+DATI
+F filiali
+P prodotti
+a_ij fatturato per ogni i in F e per ogni j in P
+VARIABILI
+k_i binaria (assegnamento a f1 se = 0, assegno a f2 se =1)
+delta >= 0
+y'_j,y''_j >=0 fatturato per ogni j in P
+VINCOLI
+y'_j = somma di j in F a_ij(1-x_i) per ogni j in P
+y''_j = somma di j in F a_ij(x_i)per ogni j in P
+OBIETTIVO
+min z =  max j in P {|y'_j - Y''_j|} (non posso scriverlo nel solutore)
+min z = delta
+delta >= y'_J - y''_j per ogni j in P
+delta >= y''_J - y'_j per ogni j in P
+
