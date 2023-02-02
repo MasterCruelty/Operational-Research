@@ -20,7 +20,7 @@ set R := 1..nR; #Insieme delle righe
 param nC;		#numero colonne
 set C:= 1..nC;	#Insieme delle colonne
 param griglia{R,C};	#griglia con suddivisione quota delle celle [m]
-param M := sum{r in R, c in C} griglia[r,c] / (nR*nC); #Quota media del terreno
+param M := sum{r in R, c in C} griglia[r,c] / (base*altezza); #Quota media del terreno
 param d{r1 in R,c1 in C,r2 in R,c2 in C} := sqrt((r1-r2)^2 +(c1-c2)^2); #distanza tra ogni coppia di celle
 
 
