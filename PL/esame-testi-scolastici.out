@@ -1,0 +1,83 @@
+Problem:    esame
+Rows:       20
+Columns:    12
+Non-zeros:  48
+Status:     OPTIMAL
+Objective:  z = 10670 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 max_offerta[1]
+                    B           1200                        1200 
+     2 max_offerta[2]
+                    NU          1400                        1400          -0.1 
+     3 max_offerta[3]
+                    NU           800                         800          -0.7 
+     4 min_domanda[1]
+                    NL          1000          1000                         6.5 
+     5 min_domanda[2]
+                    NL          1200          1200                         2.6 
+     6 min_domanda[3]
+                    NL           700           700                         1.7 
+     7 min_domanda[4]
+                    NL           500           500                         1.6 
+     8 capacity[1,1]
+                    B              0                         500 
+     9 capacity[1,2]
+                    B            400                        1000 
+    10 capacity[1,3]
+                    B            700                        1000 
+    11 capacity[1,4]
+                    B            100                        1000 
+    12 capacity[2,1]
+                    B            200                         500 
+    13 capacity[2,2]
+                    NU           800                         800          -0.3 
+    14 capacity[2,3]
+                    B              0                         800 
+    15 capacity[2,4]
+                    B            400                         800 
+    16 capacity[3,1]
+                    B            800                         800 
+    17 capacity[3,2]
+                    B              0                         600 
+    18 capacity[3,3]
+                    B              0                         600 
+    19 capacity[3,4]
+                    B              0                         600 
+    20 z            B          10670                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1,1]       NL             0             0                           1 
+     2 x[1,2]       B            400             0               
+     3 x[1,3]       B            700             0               
+     4 x[1,4]       B            100             0               
+     5 x[2,1]       B            200             0               
+     6 x[2,2]       B            800             0               
+     7 x[2,3]       NL             0             0                         0.4 
+     8 x[2,4]       B            400             0               
+     9 x[3,1]       B            800             0               
+    10 x[3,2]       NL             0             0                         0.5 
+    11 x[3,3]       NL             0             0                         0.8 
+    12 x[3,4]       NL             0             0                         0.5 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 2.22e-016 on column 7
+        max.rel.err = 5.29e-017 on column 8
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
