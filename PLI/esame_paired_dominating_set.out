@@ -1,0 +1,115 @@
+Problem:    esame_paired_dominating_set
+Rows:       31
+Columns:    30 (30 integer, 30 binary)
+Non-zeros:  103
+Status:     INTEGER OPTIMAL
+Objective:  z = 15 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 copertura1[1]
+                                   1             1               
+     2 copertura1[2]
+                                   1             1               
+     3 copertura1[3]
+                                   2             1               
+     4 copertura1[4]
+                                   1             1               
+     5 copertura1[5]
+                                   2             1               
+     6 copertura1[6]
+                                   1             1               
+     7 copertura1[7]
+                                   1             1               
+     8 copertura1[8]
+                                   1             1               
+     9 copertura1[9]
+                                   1             1               
+    10 copertura1[10]
+                                   1             1               
+    11 copertura1[11]
+                                   2             1               
+    12 copertura1[12]
+                                   1             1               
+    13 copertura1[13]
+                                   1             1               
+    14 copertura1[14]
+                                   1             1               
+    15 copertura1[15]
+                                   3             1               
+    16 copertura1[16]
+                                   1             1               
+    17 copertura1[17]
+                                   1             1               
+    18 copertura1[18]
+                                   1             1               
+    19 copertura1[19]
+                                   1             1               
+    20 copertura1[20]
+                                   3             1               
+    21 copertura1[21]
+                                   1             1               
+    22 copertura1[22]
+                                   1             1               
+    23 copertura1[23]
+                                   1             1               
+    24 copertura1[24]
+                                   2             1               
+    25 copertura1[25]
+                                   1             1               
+    26 copertura1[26]
+                                   1             1               
+    27 copertura1[27]
+                                   1             1               
+    28 copertura1[28]
+                                   1             1               
+    29 copertura1[29]
+                                   1             1               
+    30 copertura1[30]
+                                   1             1               
+    31 z                          15                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[2]         *              0             0             1 
+     2 x[3]         *              0             0             1 
+     3 x[4]         *              0             0             1 
+     4 x[1]         *              1             0             1 
+     5 x[30]        *              1             0             1 
+     6 x[13]        *              1             0             1 
+     7 x[16]        *              1             0             1 
+     8 x[5]         *              0             0             1 
+     9 x[6]         *              1             0             1 
+    10 x[24]        *              0             0             1 
+    11 x[8]         *              0             0             1 
+    12 x[7]         *              0             0             1 
+    13 x[9]         *              0             0             1 
+    14 x[10]        *              1             0             1 
+    15 x[12]        *              0             0             1 
+    16 x[27]        *              0             0             1 
+    17 x[11]        *              0             0             1 
+    18 x[23]        *              1             0             1 
+    19 x[29]        *              1             0             1 
+    20 x[18]        *              0             0             1 
+    21 x[19]        *              0             0             1 
+    22 x[14]        *              0             0             1 
+    23 x[15]        *              1             0             1 
+    24 x[17]        *              1             0             1 
+    25 x[28]        *              1             0             1 
+    26 x[20]        *              0             0             1 
+    27 x[21]        *              1             0             1 
+    28 x[22]        *              1             0             1 
+    29 x[25]        *              1             0             1 
+    30 x[26]        *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
