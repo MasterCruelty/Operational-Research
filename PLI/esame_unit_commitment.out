@@ -1,0 +1,291 @@
+Problem:    esame_unit_commitment
+Rows:       92
+Columns:    84 (21 integer, 21 binary)
+Non-zeros:  246
+Status:     INTEGER OPTIMAL
+Objective:  z = 3100 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 produzione_minima[1,1]
+                                  80            -0               
+     2 produzione_minima[1,2]
+                                  80            -0               
+     3 produzione_minima[1,3]
+                                  80            -0               
+     4 produzione_minima[1,4]
+                                  80            -0               
+     5 produzione_minima[1,5]
+                                  80            -0               
+     6 produzione_minima[1,6]
+                                  80            -0               
+     7 produzione_minima[1,7]
+                                  80            -0               
+     8 produzione_minima[2,1]
+                                  55            -0               
+     9 produzione_minima[2,2]
+                                  15            -0               
+    10 produzione_minima[2,3]
+                                   0            -0               
+    11 produzione_minima[2,4]
+                                  80            -0               
+    12 produzione_minima[2,5]
+                                  60            -0               
+    13 produzione_minima[2,6]
+                                  80            -0               
+    14 produzione_minima[2,7]
+                                   0            -0               
+    15 produzione_minima[3,1]
+                                   0            -0               
+    16 produzione_minima[3,2]
+                                   0            -0               
+    17 produzione_minima[3,3]
+                                   0            -0               
+    18 produzione_minima[3,4]
+                                   0            -0               
+    19 produzione_minima[3,5]
+                                   0            -0               
+    20 produzione_minima[3,6]
+                                   0            -0               
+    21 produzione_minima[3,7]
+                                   0            -0               
+    22 produzione_massima[1,1]
+                                   0                          -0 
+    23 produzione_massima[1,2]
+                                   0                          -0 
+    24 produzione_massima[1,3]
+                                   0                          -0 
+    25 produzione_massima[1,4]
+                                   0                          -0 
+    26 produzione_massima[1,5]
+                                   0                          -0 
+    27 produzione_massima[1,6]
+                                   0                          -0 
+    28 produzione_massima[1,7]
+                                   0                          -0 
+    29 produzione_massima[2,1]
+                                 -25                          -0 
+    30 produzione_massima[2,2]
+                                 -65                          -0 
+    31 produzione_massima[2,3]
+                                   0                          -0 
+    32 produzione_massima[2,4]
+                                   0                          -0 
+    33 produzione_massima[2,5]
+                                 -20                          -0 
+    34 produzione_massima[2,6]
+                                   0                          -0 
+    35 produzione_massima[2,7]
+                                   0                          -0 
+    36 produzione_massima[3,1]
+                                   0                          -0 
+    37 produzione_massima[3,2]
+                                   0                          -0 
+    38 produzione_massima[3,3]
+                                   0                          -0 
+    39 produzione_massima[3,4]
+                                   0                          -0 
+    40 produzione_massima[3,5]
+                                   0                          -0 
+    41 produzione_massima[3,6]
+                                   0                          -0 
+    42 produzione_massima[3,7]
+                                   0                          -0 
+    43 capacity[1,1]
+                                 600                         600 
+    44 capacity[1,2]
+                                 600                         600 
+    45 capacity[1,3]
+                                   0                         600 
+    46 capacity[1,4]
+                                 200                         600 
+    47 capacity[1,5]
+                                   0                         600 
+    48 capacity[1,6]
+                                   0                         600 
+    49 capacity[1,7]
+                                   0                         600 
+    50 capacity[2,1]
+                                2000                        2000 
+    51 capacity[2,2]
+                                1600                        2000 
+    52 capacity[2,3]
+                                1800                        2000 
+    53 capacity[2,4]
+                                2000                        2000 
+    54 capacity[2,5]
+                                1300                        2000 
+    55 capacity[2,6]
+                                1100                        2000 
+    56 capacity[2,7]
+                                   0                        2000 
+    57 capacity[3,1]
+                                 300                         300 
+    58 capacity[3,2]
+                                 300                         300 
+    59 capacity[3,3]
+                                 200                         300 
+    60 capacity[3,4]
+                                 300                         300 
+    61 capacity[3,5]
+                                 300                         300 
+    62 capacity[3,6]
+                                   0                         300 
+    63 capacity[3,7]
+                                   0                         300 
+    64 flow_conservation[1,2]
+                                -200          -200             = 
+    65 flow_conservation[1,3]
+                                -200          -200             = 
+    66 flow_conservation[1,4]
+                                -200          -200             = 
+    67 flow_conservation[1,5]
+                                -200          -200             = 
+    68 flow_conservation[1,6]
+                                -200          -200             = 
+    69 flow_conservation[1,7]
+                                -200          -200             = 
+    70 flow_conservation[2,2]
+                                -400          -400             = 
+    71 flow_conservation[2,3]
+                                -400          -400             = 
+    72 flow_conservation[2,4]
+                                -400          -400             = 
+    73 flow_conservation[2,5]
+                                -400          -400             = 
+    74 flow_conservation[2,6]
+                                -400          -400             = 
+    75 flow_conservation[2,7]
+                                -400          -400             = 
+    76 flow_conservation[3,2]
+                                -100          -100             = 
+    77 flow_conservation[3,3]
+                                -100          -100             = 
+    78 flow_conservation[3,4]
+                                -100          -100             = 
+    79 flow_conservation[3,5]
+                                -100          -100             = 
+    80 flow_conservation[3,6]
+                                -100          -100             = 
+    81 flow_conservation[3,7]
+                                -100          -100             = 
+    82 primo_giorno[1]
+                                -200          -200             = 
+    83 primo_giorno[2]
+                                -400          -400             = 
+    84 primo_giorno[3]
+                                -100          -100             = 
+    85 sodd_domanda[1]
+                                 200           200             = 
+    86 sodd_domanda[2]
+                                 180           180             = 
+    87 sodd_domanda[3]
+                                 150           150             = 
+    88 sodd_domanda[4]
+                                 200           200             = 
+    89 sodd_domanda[5]
+                                 250           250             = 
+    90 sodd_domanda[6]
+                                 250           250             = 
+    91 sodd_domanda[7]
+                                 180           180             = 
+    92 z                        3100                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[1,1]                     90             0               
+     2 x[1,2]                     90             0               
+     3 x[1,3]                     90             0               
+     4 x[1,4]                     90             0               
+     5 x[1,5]                     90             0               
+     6 x[1,6]                     90             0               
+     7 x[1,7]                     90             0               
+     8 x[2,1]                     75             0               
+     9 x[2,2]                     35             0               
+    10 x[2,3]                      0             0               
+    11 x[2,4]                    100             0               
+    12 x[2,5]                     80             0               
+    13 x[2,6]                    100             0               
+    14 x[2,7]                      0             0               
+    15 x[3,1]                      0             0               
+    16 x[3,2]                      0             0               
+    17 x[3,3]                      0             0               
+    18 x[3,4]                      0             0               
+    19 x[3,5]                      0             0               
+    20 x[3,6]                      0             0               
+    21 x[3,7]                      0             0               
+    22 y[1,1]       *              1             0             1 
+    23 y[1,2]       *              1             0             1 
+    24 y[1,3]       *              1             0             1 
+    25 y[1,4]       *              1             0             1 
+    26 y[1,5]       *              1             0             1 
+    27 y[1,6]       *              1             0             1 
+    28 y[1,7]       *              1             0             1 
+    29 y[2,1]       *              1             0             1 
+    30 y[2,2]       *              1             0             1 
+    31 y[2,3]       *              0             0             1 
+    32 y[2,4]       *              1             0             1 
+    33 y[2,5]       *              1             0             1 
+    34 y[2,6]       *              1             0             1 
+    35 y[2,7]       *              0             0             1 
+    36 y[3,1]       *              0             0             1 
+    37 y[3,2]       *              0             0             1 
+    38 y[3,3]       *              0             0             1 
+    39 y[3,4]       *              0             0             1 
+    40 y[3,5]       *              0             0             1 
+    41 y[3,6]       *              0             0             1 
+    42 y[3,7]       *              0             0             1 
+    43 w[1,1]                    600             0               
+    44 w[1,2]                    600             0               
+    45 w[1,3]                      0             0               
+    46 w[1,4]                    200             0               
+    47 w[1,5]                      0             0               
+    48 w[1,6]                      0             0               
+    49 w[1,7]                      0             0               
+    50 w[2,1]                   2000             0               
+    51 w[2,2]                   1600             0               
+    52 w[2,3]                   1800             0               
+    53 w[2,4]                   2000             0               
+    54 w[2,5]                   1300             0               
+    55 w[2,6]                   1100             0               
+    56 w[2,7]                      0             0               
+    57 w[3,1]                    300             0               
+    58 w[3,2]                    300             0               
+    59 w[3,3]                    200             0               
+    60 w[3,4]                    300             0               
+    61 w[3,5]                    300             0               
+    62 w[3,6]                      0             0               
+    63 w[3,7]                      0             0               
+    64 u[1,2]                    200             0               
+    65 u[1,3]                    800             0               
+    66 u[1,4]                      0             0               
+    67 u[1,5]                    400             0               
+    68 u[1,6]                    200             0               
+    69 u[1,7]                    200             0               
+    70 u[2,2]                    800             0               
+    71 u[2,3]                    200             0               
+    72 u[2,4]                    200             0               
+    73 u[2,5]                   1100             0               
+    74 u[2,6]                    600             0               
+    75 u[2,7]                   1500             0               
+    76 u[3,2]                    100             0               
+    77 u[3,3]                    200             0               
+    78 u[3,4]                      0             0               
+    79 u[3,5]                    100             0               
+    80 u[3,6]                    400             0               
+    81 u[3,7]                    100             0               
+    82 u[1,1]                    200             0               
+    83 u[2,1]                    400             0               
+    84 u[3,1]                    100             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 1.14e-013 on row 70
+        max.rel.err = 2.84e-016 on row 70
+        High quality
+
+End of output
