@@ -6,12 +6,16 @@
 #Obiettivo: massimizzare la vincita nel caso peggiore.
 
 
-#Commento:
-#Siccome si vuole massimizzare la vincita nel caso peggiore, 
-#Definisco m come vincita minima, così da rendere lineare la funzione obiettivo.
-#Definisco un vincolo a parte dove dico che y deve essere minore di ogni vincita,
-#ovvero il prodotto tra la puntata e la quota.
-
+/*Commento:
+  *Siccome si vuole massimizzare la vincita nel caso peggiore, 
+  *Definisco m come vincita minima, così da rendere lineare la funzione obiettivo.
+  *Definisco un vincolo a parte dove dico che m deve essere minore di ogni vincita,
+  *ovvero il prodotto tra la puntata e la quota.
+  **********************
+  *Si tratta quindi di un problema di massimizzazione con risorse limitate, 
+  *ma in questo caso il modo in cui le risorse vengono ripartite è variabile e la funzione obiettivo è di tipo max-min,
+  *cioè si vuole massimizzare non la somma di alcuni termini ma il minimo di essi.
+*/
 #DATI
 param budget;			#budget disponibile [€]
 set Cavalli;			#Insieme dei cavalli
