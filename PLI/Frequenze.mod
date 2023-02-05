@@ -7,6 +7,11 @@
 #Due frequenze interferiscono quando la loro differenza(in valore assoluto) è inferiore ad un valore limite K.
 #Obiettivo: massimizzare numero frequenze ma evitando interferenze.
 
+/*
+  *Commento sul testo:
+  *Si tratta di un problema di assegnamento.
+*/
+
 #DATI
 param nF;			#numero delle frequenze
 set F:=1..nF;		#Insieme delle frequenze
