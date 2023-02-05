@@ -7,6 +7,16 @@
 #I ricavi ottenuti dalla produzione di ogni tipo di benzina sono noti.
 #Obiettivo: massimizzare i guadagni
 
+/*
+  *Commento sul testo:
+  *Ho 4 sostanze(ingredienti) per produrre tre tipi di benzine(miscele).
+  *Ogni miscela deve contenere una percentuale delle sostanze entro certi limiti.
+  *Le risorse limitate disponibili sono date in barili al giorno.
+  *Costo delle sostanze noto e ricavi dati dalla produzione delle miscele noti.
+  *Si tratta quindi di un problema che da luogo a un modello di miscelazione in cui 
+  *si vogliono massimizzare i guadagni della produzione delle miscele dati dai ricavi meno i costi.
+*/
+
 #DATI
 param nS;			#Numero delle sostanze
 set S:=1..nS;		#Insieme delle sostanze
