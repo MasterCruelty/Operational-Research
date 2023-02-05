@@ -1,24 +1,28 @@
 #Esercizio Esame Unit commitment
 /*
-In una regione sono presenti impianti termoelettrici ed idroelettrici per la produzione di energia.
-Quando un impianto termoelettrico `e acceso, `e vincolato ad operare tra un dato un livello minimo 
-ed un dato livello massimo di potenza (in generale questi limiti sono diversi per ogni impianto); 
-se invece `e spento, ovviamente la sua produzione `e nulla. 
-Si ipotizzi che ogni impianto termoelettrico possa cambiare stato solo al passaggio da un giorno al successivo 
-e non durante il giorno. Mantenere un impianto termoelettrico acceso ha un costo fisso, che
-si paga per ogni giorno durante il quale l’impianto `e acceso. Ogni impianto termoelettrico ha un costo unitario noto per la produzione di energia.
-Ogni impianto idroelettrico `e caratterizzato da una capacit`a del bacino, un volume di acqua inizialmente disponibile ed una portata di acqua in ingresso
-(dovuta agli affluenti che lo alimentano), che si assume costante nel tempo.
-`E noto un coefficiente che si usa per trasformare una quantit`a di acqua in un’equivalente quantit`a di energia prodotta con quell’acqua. 
-Tale coefficiente si assume uguale per tutti gli impianti idroelettrici.
-`E nota la domanda complessiva di energia (frutto di una previsione) per alcuni giorni. 
-Si vuole calcolare il piano di produzione di energia di minimo costo, che soddisfi la domanda.
-Formulare il problema, classificarlo e risolverlo.
-
-u.e.: unità di misura energia
-u.v.: unità di misura del volume di acqua
-u.d.: unità di misura del denaro
-g: giorno
+  *In una regione sono presenti impianti termoelettrici ed idroelettrici per la produzione di energia.
+  *Quando un impianto termoelettrico `e acceso, `e vincolato ad operare tra un dato un livello minimo 
+  *ed un dato livello massimo di potenza (in generale questi limiti sono diversi per ogni impianto); 
+  *se invece `e spento, ovviamente la sua produzione `e nulla. 
+  *Si ipotizzi che ogni impianto termoelettrico possa cambiare stato solo al passaggio da un giorno al successivo 
+  *e non durante il giorno. Mantenere un impianto termoelettrico acceso ha un costo fisso, che
+  *si paga per ogni giorno durante il quale l’impianto `e acceso. Ogni impianto termoelettrico ha un costo unitario noto per la produzione di energia.
+  *Ogni impianto idroelettrico `e caratterizzato da una capacit`a del bacino, un volume di acqua inizialmente disponibile ed una portata di acqua in ingresso
+  *(dovuta agli affluenti che lo alimentano), che si assume costante nel tempo.
+  *`E noto un coefficiente che si usa per trasformare una quantit`a di acqua in un’equivalente quantit`a di energia prodotta con quell’acqua. 
+  *Tale coefficiente si assume uguale per tutti gli impianti idroelettrici.
+  *`E nota la domanda complessiva di energia (frutto di una previsione) per alcuni giorni. 
+  *Si vuole calcolare il piano di produzione di energia di minimo costo, che soddisfi la domanda.
+  *Formulare il problema, classificarlo e risolverlo.
+  ****************************
+  *u.e.: unità di misura energia
+  *u.v.: unità di misura del volume di acqua
+  *u.d.: unità di misura del denaro
+  *g: giorno
+  ***************************
+  *Commento sul testo:
+  *Si tratta di un problema che da luogo a un modello di ottimizzazione con costi fissi di avviamento.
+  *Obiettivo classico minimizzare i costi fissi e costi per ogni unità
 */
 
 
