@@ -8,6 +8,15 @@
 #Il volume totale di acqua disponibile è noto
 #Obiettivo: ottimizzare la quantità di cereali coltivati nei due terreni.
 
+/*
+  *Commento sul testo:
+  *Ho delle risorse limitate(gli acri dei terreni)
+  *Ho 6 tipi di prodotti da coltivare(i cereali)
+  *È noto il profitto generato dai cereali
+  *Ogni cereale consuma terreno e acqua(limitata anch'essa) per essere prodotto.
+  *Si tratta quindi di un problema che da luogo a un modello di pianificazione della produzione.
+*/
+
 #DATI
 param nC;			#Numero dei tipi di cereali
 set C := 1..nC;		#Insieme dei cereali
