@@ -11,6 +11,13 @@
 #Il numero di pagine dedicate agli annunci dunque deve essere bilanciato tra tutti i fascicoli.
 #Gli articoli sono divisi per urgenza, vanno pubblicati in funzione di essa.
 
+/*
+  *Commento sul testo:
+  *Bisogna assegnare un certo numero di articoli a 3 fascicoli.
+  *Ci sono vincoli sull'urgenza degli articoli e sul numero di pagine disponibili per ogni fascicoli.
+  *Si tratta di un problema che da luogo a un modello di assegnamento.
+*/
+
 #DATI
 param nA;
 set A:=1..nA;		#insieme articoli
