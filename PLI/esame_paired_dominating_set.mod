@@ -1,11 +1,17 @@
 #Esercizio esame paired dominating set
 /*
-Dato il grafo stradale di una città, dove le strade sono rettilinee, il problema consiste nel posizionare alcune sentinelle
-per sorvegliare gli incroci. Ogni sentinella sorveglia l’incrocio in cui è posta e tutti quelli adiacenti. Tutti gli incroci della
-città devono essere sorvegliati usando il minimo numero di sentinelle. Le sentinelle però devono anche controllarsi a due
-a due. Formulare il problema e classificarlo.
-Dati.
-La città ha 30 incroci, collegati dalle vie elencate in tabella. Alcuni incroci possono avere una sola via incidente.
+  *Dato il grafo stradale di una città, dove le strade sono rettilinee, il problema consiste nel posizionare alcune sentinelle
+  *per sorvegliare gli incroci. Ogni sentinella sorveglia l’incrocio in cui è posta e tutti quelli adiacenti. Tutti gli incroci della
+  *città devono essere sorvegliati usando il minimo numero di sentinelle. Le sentinelle però devono anche controllarsi a due
+  *a due. Formulare il problema e classificarlo.
+  *Dati.
+  *La città ha 30 incroci, collegati dalle vie elencate in tabella. Alcuni incroci possono avere una sola via incidente.
+  *
+  **********************************************
+  *Commento sul testo:
+  *Si tratta di una variante del modello di set covering.
+  *Si vogliono coprire tutti gli incroci con il minimo numerodi sentinelle.
+  *Vincolo di avere ogni sentinella in un incrocio e averne un'altra nell'incrocio adiacente.
 */
 
 #DATI
