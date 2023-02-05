@@ -9,6 +9,15 @@
 
 # trimestre = 12 sett di 5 giorni lavorativi => 1 sett = 5gg & 12 sett = 60gg
 
+/*
+  *Commento sul testo:
+  *Siccome si tratta di avere delle materie prime(ingredienti) e dei prodotti(biscotti),
+  *posso indicare con a_ij la quantità di ingrediente i per fare il prodotto j.
+  *la risorsa disponibile per fare i prodotti è costituita dal budget trimestrale.
+  *I prezzi di vendita indicano il profitto lordo.
+  *Questo problema è quindi un modello di pianificazione della produzione.
+*/
+
 #DATI
 set B;  							#biscotti
 set I; 								#ingredienti
