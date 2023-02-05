@@ -4,10 +4,14 @@
 #di ogni mansione ad ogni persona.
 #decidere come attribuire una mansione ad ogni persona per minimizzare il costo complessivo.
 
-#Commento:
-#Per funzionare la cardinalità delle persone è uguale a quella delle mansioni
-#unico vincolo è che una sola persona prende una sola mansione
-#Si risolve con una coppia di vincoli simmetrici e variabile binaria.
+/*
+  *Commento sul testo:
+  *Ho n persone da assegnare a n mansioni.
+  *Il costo di attribuzione è noto.
+  *Si tratta quindi di un problema che da luogo a un modello di assegnamento in cui,
+  *Bisogna minimizzare i costi per assegnare le persone alle mansioni.
+  *Si risolve con una coppia di vincoli simmetrici e variabile binaria.(simmetrici => una persona a una sola mansione)
+*/
 
 #DATI
 param nP;
