@@ -1,14 +1,22 @@
 #esame 115 testi scolastici
 /*
-testi scolastici.
-Una casa editrice ha stampato alcune copie del suo “Manuale di Ricerca Operativa” utilizzato in alcune scuole italiane
-e le ha lasciate date quantità nei suoi magazzini (Tabella 1).
-Sono note le quantità richieste da alcuni distributori in alcune altre città (Tabella 2).
-Per effettuare le consegne, la casa editrice utilizza un corriere chiamato “Tutto Trasporti A” che rende disponibile sui
-propri furgoncini uno spazio diverso per ciascuna coppia di città poiché la capacità rimanente del furgoncino è già stata
-assegnata ad altri servizi. Le quantità di libri che è possibile spedire tra ciascuna coppia di città sono indicate nella Tabella 3.
-Il costo unitario di spedizione è indicato nella Tabella 4 (prezzi espressi in Euro per ogni libro).
-Si vuole soddisfare il massimo numero di ordini, minimizzando i costi di spedizione
+  *testi scolastici.
+  *Una casa editrice ha stampato alcune copie del suo “Manuale di Ricerca Operativa” utilizzato in alcune scuole italiane
+  *e ne ha lasciate date quantità nei suoi magazzini (Tabella 1).
+  *Sono note le quantità richieste da alcuni distributori in alcune altre città (Tabella 2).
+  *Per effettuare le consegne, la casa editrice utilizza un corriere chiamato “Tutto Trasporti A” che rende disponibile sui
+  *propri furgoncini uno spazio diverso per ciascuna coppia di città poiché la capacità rimanente del furgoncino è già stata
+  *assegnata ad altri servizi. Le quantità di libri che è possibile spedire tra ciascuna coppia di città sono indicate nella Tabella 3.
+  *Il costo unitario di spedizione è indicato nella Tabella 4 (prezzi espressi in Euro per ogni libro).
+  *Si vuole soddisfare il massimo numero di ordini, minimizzando i costi di spedizione
+  *
+  **************************************************
+  *Commento sul testo:
+  *Vi sono n magazzini(le sorgenti) e m distributori(le destinazioni).
+  *È nota la domanda dei distributori in termini di quantità di copie di libri.
+  *C'è una capacità limitata sul furgone in funzione della tratta di trasporto.
+  *È noto un costo per il trasporto.
+  *Si tratta quindi di un problema che da luogo a un modello di trasporto in cui si vogliono minimizzare i costi di trasporto complessivi.
 */
 
 #DATI
