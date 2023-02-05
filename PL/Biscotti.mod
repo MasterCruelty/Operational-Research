@@ -68,42 +68,42 @@ data;
 set B := Svegliallegra Frollino Alba ProntiVia;
 set I := Farina Uova Zucchero Burro Latte Additivi Nocciole Acqua;
 
-param perc_ingr:          Svegliallegra   		Frollino        Alba      		ProntiVia :=
-Farina          								.20           			.25           	.30           		.20
-Uova            								.15     			       	.0        		    .10   		        .20
-Zucchero       								.20           			.15           	.25           		.10
-Burro            								.0            				.0           		.10           		.10
-Latte           								.10           			.20           	.20           		.15
-Additivi        								.15           			.20            	.0           			.15
-Nocciole        								.10            			.0    	        	.0           			 .0
-Acqua           								.10           			.20            	.5           			.10
+param perc_ingr:          Svegliallegra   		Frollino        	Alba      		ProntiVia :=
+Farina          			.20           			.25           	.30           		.20
+Uova            			.15    			       	.0     		    .10   		        .20
+Zucchero       				.20           			.15           	.25           		.10
+Burro            			.0         				.0         		.10           		.10
+Latte           			.10           			.20           	.20           		.15
+Additivi        			.15           			.20            	.0         			.15
+Nocciole        			.10            			.0 	        	.0       			 .0
+Acqua           			.10           			.20            	.5         			.10
 ;
 
 
 param prod_gg :=
-Svegliallegra    	165
+Svegliallegra    		165
 Frollino 			    250
 Alba      				500
-ProntiVia      	 	250
+ProntiVia      	 		250
 ;
 
 
 param prezzi :=
-Svegliallegra     1.75
+Svegliallegra     		1.75
 Frollino 			    1.00
 Alba			        1.25
-ProntiVia	        1.50
+ProntiVia	        	1.50
 ;
 
 
 param costi :=
 Farina    		0.5
 Uova      		2
-Zucchero  	0.5
+Zucchero 	 	0.5
 Burro     		1
 Latte     		1.5
 Additivi  		1
-Nocciole  	5
+Nocciole  		5
 Acqua			0
 ;
 
@@ -111,27 +111,27 @@ Acqua			0
 param min_buy :=
 Farina    			450
 Uova      			200
-Zucchero  		320
+Zucchero  			320
 Burro     			140
 Latte     			320
 Additivi  			100
-Nocciole   		50
-Acqua 			0
+Nocciole   			50
+Acqua 				0
 ;
 
 
 param lower_prod :=
-Svegliallegra 			  50
+Svegliallegra 					50
 Frollino 						100
 Alba 							500
-ProntiVia 					300
+ProntiVia 						300
 ;
 
 param upper_prod :=
-Svegliallegra 			 300
-Frollino 						 500
+Svegliallegra 					300
+Frollino 						500
 Alba 							1000
-ProntiVia 					 500
+ProntiVia 						500
 ;
 
 param budget := 21600;
