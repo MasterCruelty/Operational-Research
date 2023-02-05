@@ -7,6 +7,15 @@
 #Obiettivo: minimizzare la probabilità di sovrascrittura dei dati.
 #Bisogna mantenere il più basso possibile in ogni banco di memoria il rapporto tra spazio occupato e capacità.
 
+/*
+  *Commento sul testo:
+  *Ci sono intervalli in cui si può operare con dati noti.
+  *Capacità finita dei banchi di memoria in gestione FIFO.
+  *Non si vogliono sovrascrivere i dati tra un intervallo e l'altro.
+  *Si tratta quindi di un problema che da luogo a un modello di gestione del flusso multiperiodo in cui
+  *si vogliono minimizzare i dati che verrebbero sovrascritti.
+*/
+
 
 #DATI
 param nB;				 #Numero banchi di memoria
