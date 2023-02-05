@@ -7,6 +7,16 @@
 #Limiti sulle quantità massima di ogni prodotto noti ed espressi in Tonnellate.
 #Obiettivo: massimizzare i profitti
 
+/*
+  *Commento sul testo:
+  *Ho diversi prodotti(le patate)
+  *Ho due fornitori da cui posso acquistarle a costo differente.
+  *Profitto noto.
+  *Si tratta quindi di un problema che da luogo a un modello di pianificazione della produzione in cui
+  *Le variabili in questo caso sono l'acquisto delle materie prime invece della produzione di prodotti.
+  *L'obiettivo è sempre massimizzare i profitti.
+*/
+
 #DATI
 set Patate;
 param nF;
