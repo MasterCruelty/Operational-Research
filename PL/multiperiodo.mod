@@ -9,6 +9,12 @@
 
 #I mesi sono stati trascritti come gli interi da 1 a 4
 
+/*
+  *Commento sul testo:
+  *Ho 4 mesi su cui devo pianificare n quantità di gelato da produrre. Prezzi di vendita e costi di stoccaggio noti.
+  *Si tratta quindi di un problema che da luogo a un modello di gestione del flusso.
+*/
+
 #DATI
 set M:=1..4;
 param domanda{M}; #gelato da rendere disponibile nei 4 mesi da mettere sul mercato[Ton]
