@@ -9,6 +9,15 @@
   * Il livellamento va compiuto spostando terra dai quadratini con eccesso a quelli con difetto.
   * Il costo per il livellamento è proporzionale alle quantità di terra spostate e alle distanze.
   * (costo unitario noto per spostare un metro cubo a un metro di distanza)
+  *
+  ******************************************************
+  *Commento sul testo:
+  *Ci sono n quadratini di terreno da livellare.
+  *Bisogna spostare dei quadratini a una certa distanza per averli tutti alla stessa altezza.
+  *è noto il costo di trasporto di un metro cubo di terra a un metro cubo di distanza.
+  *Ed è presente una griglia con le quote di ogni cella in metri.
+  *Si tratta quindi di un problema che da luogo a un modello di trasporto. 
+  *Le sorgenti sono le quote iniziali e le destinazioni sono lo spostamento dei quadratini verso la quota media di altezza. Si minimizzano i costi
 */
 
 #DATI
@@ -36,11 +45,11 @@ minimize z: sum{r1 in R, c1 in C, r2 in R, c2 in C} cu *x[r1,c1,r2,c2] * d[r1,c1
 
 data;
 
-param base := 20;
+param base :=    20;
 param altezza := 10;
-param cu := 0.50;
-param nC := 20;
-param nR :=10;
+param cu :=      0.50;
+param nC :=      20;
+param nR :=      10;
 param griglia: 	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20 :=
 1				-5	-4	-3	-2	-1	0	-1	-1	-1	0	1	1	1	2	3	4	3	3	4	5
 2				-5	-4	-3	-2	-1	0	0	0	0	1	2	1	0	1	2	3	2	2	3	4
