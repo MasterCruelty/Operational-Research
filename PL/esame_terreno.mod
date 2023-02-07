@@ -37,11 +37,13 @@ param d{r1 in R,c1 in C,r2 in R,c2 in C} := sqrt((r1-r2)^2 +(c1-c2)^2); #distanz
 var x{R,C,R,C} >= 0;		#quantità di terra spostate da ogni cella ad ogni altra. [mc]
 
 #VINCOLI
+#vincolo che impone che la differenza tra terreno ricevuto e terreno sottratto bilanci l’eccesso o disavanzo in ogni cella, in modo che il totale sia pari a M per tutte.
 subject to balancer{r2 in R,c2 in C}:
 	sum{r1 in R,c1 in C} x[r1,c1,r2,c2] + griglia[r2,c2] - sum{r1 in R,c1 in C} x[r2,c2,r1,c1] = M;
 
 #OBIETTIVO
-minimize z: sum{r1 in R, c1 in C, r2 in R, c2 in C} cu *x[r1,c1,r2,c2] * d[r1,c1,r2,c2];
+#minimizzare le distanze complessive, ciascunna pesata per la corrispondente quantità di terra trasportata.
+minimize z: sum{r1 in R, c1 in C, r2 in R, c2 in C} (cu *x[r1,c1,r2,c2]) * d[r1,c1,r2,c2];
 
 data;
 
