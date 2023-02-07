@@ -1,0 +1,713 @@
+Problem:    impianti_idroelettrici
+Rows:       284
+Columns:    140
+Non-zeros:  480
+Status:     OPTIMAL
+Objective:  z = 1472777.778 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 acquisto[1]  NU            30                          30         -2000 
+     2 acquisto[2]  NU            30                          30         -2000 
+     3 acquisto[3]  NU            30                          30         -2000 
+     4 acquisto[4]  NU            30                          30         -2000 
+     5 acquisto[5]  NU            30                          30         -2000 
+     6 acquisto[6]  NU            30                          30         -1500 
+     7 acquisto[7]  NU            30                          30         -1500 
+     8 acquisto[8]  NU            30                          30         -1500 
+     9 acquisto[9]  NU            30                          30         -1500 
+    10 acquisto[10] NU            30                          30         -1500 
+    11 acquisto[11] NU            30                          30         -1000 
+    12 acquisto[12] NU            30                          30         -1000 
+    13 acquisto[13] NU            30                          30         -1000 
+    14 acquisto[14] NU            30                          30         -1000 
+    15 acquisto[15] NU            30                          30         -1000 
+    16 acquisto[16] B            -16                          30 
+    17 acquisto[17] B            -10                          30 
+    18 acquisto[18] B             -8                          30 
+    19 acquisto[19] B             -4                          30 
+    20 acquisto[20] B        17.5556                          30 
+    21 fabbisogno[1]
+                    NS            90            90             =          5000 
+    22 fabbisogno[2]
+                    NS            84            84             =          5000 
+    23 fabbisogno[3]
+                    NS            82            82             =          5000 
+    24 fabbisogno[4]
+                    NS            74            74             =          5000 
+    25 fabbisogno[5]
+                    NS            66            66             =          5000 
+    26 fabbisogno[6]
+                    NS            62            62             =          5000 
+    27 fabbisogno[7]
+                    NS            52            52             =          5000 
+    28 fabbisogno[8]
+                    NS            40            40             =          5000 
+    29 fabbisogno[9]
+                    NS            40            40             =          5000 
+    30 fabbisogno[10]
+                    NS            40            40             =          5000 
+    31 fabbisogno[11]
+                    NS            70            70             =          5000 
+    32 fabbisogno[12]
+                    NS            90            90             =          5000 
+    33 fabbisogno[13]
+                    NS            70            70             =          5000 
+    34 fabbisogno[14]
+                    NS            66            66             =          5000 
+    35 fabbisogno[15]
+                    NS            68            68             =          5000 
+    36 fabbisogno[16]
+                    NS            68            68             =          5000 
+    37 fabbisogno[17]
+                    NS            74            74             =          5000 
+    38 fabbisogno[18]
+                    NS            76            76             =          5000 
+    39 fabbisogno[19]
+                    NS            80            80             =          5000 
+    40 fabbisogno[20]
+                    NS            82            82             =          5000 
+    41 produzione[1,1]
+                    NU            24                          24         < eps
+    42 produzione[1,2]
+                    NU            24                          24         < eps
+    43 produzione[1,3]
+                    NU            24                          24         < eps
+    44 produzione[1,4]
+                    NU            24                          24         < eps
+    45 produzione[1,5]
+                    NU            24                          24         < eps
+    46 produzione[1,6]
+                    NU            24                          24         < eps
+    47 produzione[1,7]
+                    NU            24                          24         < eps
+    48 produzione[1,8]
+                    NU            24                          24         < eps
+    49 produzione[1,9]
+                    B        9.38889                          24 
+    50 produzione[1,10]
+                    B            -50                          24 
+    51 produzione[1,11]
+                    B            -20                          24 
+    52 produzione[1,12]
+                    B              0                          24 
+    53 produzione[1,13]
+                    B            -20                          24 
+    54 produzione[1,14]
+                    B            -24                          24 
+    55 produzione[1,15]
+                    B           20.5                          24 
+    56 produzione[1,16]
+                    NU            24                          24         < eps
+    57 produzione[1,17]
+                    NU            24                          24         < eps
+    58 produzione[1,18]
+                    NU            24                          24         < eps
+    59 produzione[1,19]
+                    NU            24                          24         < eps
+    60 produzione[1,20]
+                    B        4.44444                          24 
+    61 produzione[2,1]
+                    NU            30                          30         < eps
+    62 produzione[2,2]
+                    NU            30                          30         < eps
+    63 produzione[2,3]
+                    NU            30                          30         < eps
+    64 produzione[2,4]
+                    NU            30                          30         < eps
+    65 produzione[2,5]
+                    B            -18                          30 
+    66 produzione[2,6]
+                    NU            30                          30         < eps
+    67 produzione[2,7]
+                    B            -32                          30 
+    68 produzione[2,8]
+                    B       -28.6111                          30 
+    69 produzione[2,9]
+                    NU            30                          30         < eps
+    70 produzione[2,10]
+                    NU            30                          30         < eps
+    71 produzione[2,11]
+                    NU            30                          30         < eps
+    72 produzione[2,12]
+                    NU            30                          30         < eps
+    73 produzione[2,13]
+                    NU            30                          30         < eps
+    74 produzione[2,14]
+                    NU            30                          30         < eps
+    75 produzione[2,15]
+                    B          -12.5                          30 
+    76 produzione[2,16]
+                    NU            30                          30         < eps
+    77 produzione[2,17]
+                    NU            30                          30         < eps
+    78 produzione[2,18]
+                    NU            30                          30         < eps
+    79 produzione[2,19]
+                    NU            30                          30         < eps
+    80 produzione[2,20]
+                    NU            30                          30         < eps
+    81 produzione[3,1]
+                    B              6                          30 
+    82 produzione[3,2]
+                    B              0                          30 
+    83 produzione[3,3]
+                    B             -2                          30 
+    84 produzione[3,4]
+                    B            -10                          30 
+    85 produzione[3,5]
+                    NU            30                          30         < eps
+    86 produzione[3,6]
+                    B            -22                          30 
+    87 produzione[3,7]
+                    NU            30                          30         < eps
+    88 produzione[3,8]
+                    B        14.6111                          30 
+    89 produzione[3,9]
+                    B       -29.3889                          30 
+    90 produzione[3,10]
+                    NU            30                          30         < eps
+    91 produzione[3,11]
+                    NU            30                          30         < eps
+    92 produzione[3,12]
+                    NU            30                          30         < eps
+    93 produzione[3,13]
+                    NU            30                          30         < eps
+    94 produzione[3,14]
+                    NU            30                          30         < eps
+    95 produzione[3,15]
+                    NU            30                          30         < eps
+    96 produzione[3,16]
+                    NU            30                          30         < eps
+    97 produzione[3,17]
+                    NU            30                          30         < eps
+    98 produzione[3,18]
+                    NU            30                          30         < eps
+    99 produzione[3,19]
+                    NU            30                          30         < eps
+   100 produzione[3,20]
+                    NU            30                          30         < eps
+   101 iniziale[1]  NL       -525000       -525000                     1.38889 
+   102 iniziale[2]  NL       -655000       -655000                     1.38889 
+   103 iniziale[3]  NL       -940000       -940000                     1.38889 
+   104 finale[1]    NL        250000        250000                     1.38889 
+   105 finale[2]    NL        300000        300000                     1.38889 
+   106 finale[3]    NL        450000        450000                     1.38889 
+   107 flow_conservation[1,2]
+                    NL        -25000        -25000                     1.38889 
+   108 flow_conservation[1,3]
+                    NL        -25000        -25000                     1.38889 
+   109 flow_conservation[1,4]
+                    NL        -25000        -25000                     1.38889 
+   110 flow_conservation[1,5]
+                    NL        -25000        -25000                     1.38889 
+   111 flow_conservation[1,6]
+                    NL        -25000        -25000                     1.38889 
+   112 flow_conservation[1,7]
+                    NL        -25000        -25000                     1.38889 
+   113 flow_conservation[1,8]
+                    NL        -25000        -25000                     1.38889 
+   114 flow_conservation[1,9]
+                    NL        -25000        -25000                     1.38889 
+   115 flow_conservation[1,10]
+                    NL        -25000        -25000                     1.38889 
+   116 flow_conservation[1,11]
+                    NL        -25000        -25000                     1.38889 
+   117 flow_conservation[1,12]
+                    NL        -25000        -25000                     1.38889 
+   118 flow_conservation[1,13]
+                    NL        -25000        -25000                     1.38889 
+   119 flow_conservation[1,14]
+                    NL        -25000        -25000                     1.38889 
+   120 flow_conservation[1,15]
+                    NL        -25000        -25000                     1.38889 
+   121 flow_conservation[1,16]
+                    NL        -25000        -25000                     1.38889 
+   122 flow_conservation[1,17]
+                    NL        -25000        -25000                     1.38889 
+   123 flow_conservation[1,18]
+                    NL        -25000        -25000                     1.38889 
+   124 flow_conservation[1,19]
+                    NL        -25000        -25000                     1.38889 
+   125 flow_conservation[1,20]
+                    NL        -25000        -25000                     1.38889 
+   126 flow_conservation[2,2]
+                    NL        -55000        -55000                     1.38889 
+   127 flow_conservation[2,3]
+                    NL        -55000        -55000                     1.38889 
+   128 flow_conservation[2,4]
+                    NL        -55000        -55000                     1.38889 
+   129 flow_conservation[2,5]
+                    NL        -55000        -55000                     1.38889 
+   130 flow_conservation[2,6]
+                    NL        -55000        -55000                     1.38889 
+   131 flow_conservation[2,7]
+                    NL        -55000        -55000                     1.38889 
+   132 flow_conservation[2,8]
+                    NL        -55000        -55000                     1.38889 
+   133 flow_conservation[2,9]
+                    NL        -55000        -55000                     1.38889 
+   134 flow_conservation[2,10]
+                    NL        -55000        -55000                     1.38889 
+   135 flow_conservation[2,11]
+                    NL        -55000        -55000                     1.38889 
+   136 flow_conservation[2,12]
+                    NL        -55000        -55000                     1.38889 
+   137 flow_conservation[2,13]
+                    NL        -55000        -55000                     1.38889 
+   138 flow_conservation[2,14]
+                    NL        -55000        -55000                     1.38889 
+   139 flow_conservation[2,15]
+                    NL        -55000        -55000                     1.38889 
+   140 flow_conservation[2,16]
+                    NL        -55000        -55000                     1.38889 
+   141 flow_conservation[2,17]
+                    NL        -55000        -55000                     1.38889 
+   142 flow_conservation[2,18]
+                    NL        -55000        -55000                     1.38889 
+   143 flow_conservation[2,19]
+                    NL        -55000        -55000                     1.38889 
+   144 flow_conservation[2,20]
+                    NL        -55000        -55000                     1.38889 
+   145 flow_conservation[3,2]
+                    NL        -40000        -40000                     1.38889 
+   146 flow_conservation[3,3]
+                    NL        -40000        -40000                     1.38889 
+   147 flow_conservation[3,4]
+                    NL        -40000        -40000                     1.38889 
+   148 flow_conservation[3,5]
+                    NL        -40000        -40000                     1.38889 
+   149 flow_conservation[3,6]
+                    NL        -40000        -40000                     1.38889 
+   150 flow_conservation[3,7]
+                    NL        -40000        -40000                     1.38889 
+   151 flow_conservation[3,8]
+                    NL        -40000        -40000                     1.38889 
+   152 flow_conservation[3,9]
+                    NL        -40000        -40000                     1.38889 
+   153 flow_conservation[3,10]
+                    NL        -40000        -40000                     1.38889 
+   154 flow_conservation[3,11]
+                    NL        -40000        -40000                     1.38889 
+   155 flow_conservation[3,12]
+                    NL        -40000        -40000                     1.38889 
+   156 flow_conservation[3,13]
+                    NL        -40000        -40000                     1.38889 
+   157 flow_conservation[3,14]
+                    NL        -40000        -40000                     1.38889 
+   158 flow_conservation[3,15]
+                    NL        -40000        -40000                     1.38889 
+   159 flow_conservation[3,16]
+                    NL        -40000        -40000                     1.38889 
+   160 flow_conservation[3,17]
+                    NL        -40000        -40000                     1.38889 
+   161 flow_conservation[3,18]
+                    NL        -40000        -40000                     1.38889 
+   162 flow_conservation[3,19]
+                    NL        -40000        -40000                     1.38889 
+   163 flow_conservation[3,20]
+                    NL        -40000        -40000                     1.38889 
+   164 max_acqua[1,1]
+                    B         438600                      1e+006 
+   165 max_acqua[1,2]
+                    B         377200                      1e+006 
+   166 max_acqua[1,3]
+                    B         315800                      1e+006 
+   167 max_acqua[1,4]
+                    B         254400                      1e+006 
+   168 max_acqua[1,5]
+                    B         193000                      1e+006 
+   169 max_acqua[1,6]
+                    B         131600                      1e+006 
+   170 max_acqua[1,7]
+                    B          70200                      1e+006 
+   171 max_acqua[1,8]
+                    B           8800                      1e+006 
+   172 max_acqua[1,9]
+                    B              0                      1e+006 
+   173 max_acqua[1,10]
+                    B         205000                      1e+006 
+   174 max_acqua[1,11]
+                    B         302000                      1e+006 
+   175 max_acqua[1,12]
+                    B         327000                      1e+006 
+   176 max_acqua[1,13]
+                    B         424000                      1e+006 
+   177 max_acqua[1,14]
+                    B         535400                      1e+006 
+   178 max_acqua[1,15]
+                    B         486600                      1e+006 
+   179 max_acqua[1,16]
+                    B         425200                      1e+006 
+   180 max_acqua[1,17]
+                    B         363800                      1e+006 
+   181 max_acqua[1,18]
+                    B         302400                      1e+006 
+   182 max_acqua[1,19]
+                    B         241000                      1e+006 
+   183 max_acqua[1,20]
+                    B         250000                      1e+006 
+   184 max_acqua[2,1]
+                    B         547000                    1.2e+006 
+   185 max_acqua[2,2]
+                    B         494000                    1.2e+006 
+   186 max_acqua[2,3]
+                    B         441000                    1.2e+006 
+   187 max_acqua[2,4]
+                    B         388000                    1.2e+006 
+   188 max_acqua[2,5]
+                    B         507800                    1.2e+006 
+   189 max_acqua[2,6]
+                    B         454800                    1.2e+006 
+   190 max_acqua[2,7]
+                    B         625000                    1.2e+006 
+   191 max_acqua[2,8]
+                    B         783000                    1.2e+006 
+   192 max_acqua[2,9]
+                    B         730000                    1.2e+006 
+   193 max_acqua[2,10]
+                    B         677000                    1.2e+006 
+   194 max_acqua[2,11]
+                    B         624000                    1.2e+006 
+   195 max_acqua[2,12]
+                    B         571000                    1.2e+006 
+   196 max_acqua[2,13]
+                    B         518000                    1.2e+006 
+   197 max_acqua[2,14]
+                    B         465000                    1.2e+006 
+   198 max_acqua[2,15]
+                    B         565000                    1.2e+006 
+   199 max_acqua[2,16]
+                    B         512000                    1.2e+006 
+   200 max_acqua[2,17]
+                    B         459000                    1.2e+006 
+   201 max_acqua[2,18]
+                    B         406000                    1.2e+006 
+   202 max_acqua[2,19]
+                    B         353000                    1.2e+006 
+   203 max_acqua[2,20]
+                    B         300000                    1.2e+006 
+   204 max_acqua[3,1]
+                    B         918400                    1.8e+006 
+   205 max_acqua[3,2]
+                    B         958400                    1.8e+006 
+   206 max_acqua[3,3]
+                    B    1.0056e+006                    1.8e+006 
+   207 max_acqua[3,4]
+                    B    1.0816e+006                    1.8e+006 
+   208 max_acqua[3,5]
+                    B    1.0136e+006                    1.8e+006 
+   209 max_acqua[3,6]
+                    B    1.1328e+006                    1.8e+006 
+   210 max_acqua[3,7]
+                    B    1.0648e+006                    1.8e+006 
+   211 max_acqua[3,8]
+                    B    1.0522e+006                    1.8e+006 
+   212 max_acqua[3,9]
+                    B     1.198e+006                    1.8e+006 
+   213 max_acqua[3,10]
+                    B      1.13e+006                    1.8e+006 
+   214 max_acqua[3,11]
+                    B     1.062e+006                    1.8e+006 
+   215 max_acqua[3,12]
+                    B         994000                    1.8e+006 
+   216 max_acqua[3,13]
+                    B         926000                    1.8e+006 
+   217 max_acqua[3,14]
+                    B         858000                    1.8e+006 
+   218 max_acqua[3,15]
+                    B         790000                    1.8e+006 
+   219 max_acqua[3,16]
+                    B         722000                    1.8e+006 
+   220 max_acqua[3,17]
+                    B         654000                    1.8e+006 
+   221 max_acqua[3,18]
+                    B         586000                    1.8e+006 
+   222 max_acqua[3,19]
+                    B         518000                    1.8e+006 
+   223 max_acqua[3,20]
+                    B         450000                    1.8e+006 
+   224 min_acqua[1,1]
+                    B         438600            -0               
+   225 min_acqua[1,2]
+                    B         377200            -0               
+   226 min_acqua[1,3]
+                    B         315800            -0               
+   227 min_acqua[1,4]
+                    B         254400            -0               
+   228 min_acqua[1,5]
+                    B         193000            -0               
+   229 min_acqua[1,6]
+                    B         131600            -0               
+   230 min_acqua[1,7]
+                    B          70200            -0               
+   231 min_acqua[1,8]
+                    B           8800            -0               
+   232 min_acqua[1,9]
+                    NL             0            -0                       < eps
+   233 min_acqua[1,10]
+                    B         205000            -0               
+   234 min_acqua[1,11]
+                    B         302000            -0               
+   235 min_acqua[1,12]
+                    B         327000            -0               
+   236 min_acqua[1,13]
+                    B         424000            -0               
+   237 min_acqua[1,14]
+                    B         535400            -0               
+   238 min_acqua[1,15]
+                    B         486600            -0               
+   239 min_acqua[1,16]
+                    B         425200            -0               
+   240 min_acqua[1,17]
+                    B         363800            -0               
+   241 min_acqua[1,18]
+                    B         302400            -0               
+   242 min_acqua[1,19]
+                    B         241000            -0               
+   243 min_acqua[1,20]
+                    B         250000            -0               
+   244 min_acqua[2,1]
+                    B         547000            -0               
+   245 min_acqua[2,2]
+                    B         494000            -0               
+   246 min_acqua[2,3]
+                    B         441000            -0               
+   247 min_acqua[2,4]
+                    B         388000            -0               
+   248 min_acqua[2,5]
+                    B         507800            -0               
+   249 min_acqua[2,6]
+                    B         454800            -0               
+   250 min_acqua[2,7]
+                    B         625000            -0               
+   251 min_acqua[2,8]
+                    B         783000            -0               
+   252 min_acqua[2,9]
+                    B         730000            -0               
+   253 min_acqua[2,10]
+                    B         677000            -0               
+   254 min_acqua[2,11]
+                    B         624000            -0               
+   255 min_acqua[2,12]
+                    B         571000            -0               
+   256 min_acqua[2,13]
+                    B         518000            -0               
+   257 min_acqua[2,14]
+                    B         465000            -0               
+   258 min_acqua[2,15]
+                    B         565000            -0               
+   259 min_acqua[2,16]
+                    B         512000            -0               
+   260 min_acqua[2,17]
+                    B         459000            -0               
+   261 min_acqua[2,18]
+                    B         406000            -0               
+   262 min_acqua[2,19]
+                    B         353000            -0               
+   263 min_acqua[2,20]
+                    B         300000            -0               
+   264 min_acqua[3,1]
+                    B         918400            -0               
+   265 min_acqua[3,2]
+                    B         958400            -0               
+   266 min_acqua[3,3]
+                    B    1.0056e+006            -0               
+   267 min_acqua[3,4]
+                    B    1.0816e+006            -0               
+   268 min_acqua[3,5]
+                    B    1.0136e+006            -0               
+   269 min_acqua[3,6]
+                    B    1.1328e+006            -0               
+   270 min_acqua[3,7]
+                    B    1.0648e+006            -0               
+   271 min_acqua[3,8]
+                    B    1.0522e+006            -0               
+   272 min_acqua[3,9]
+                    B     1.198e+006            -0               
+   273 min_acqua[3,10]
+                    B      1.13e+006            -0               
+   274 min_acqua[3,11]
+                    B     1.062e+006            -0               
+   275 min_acqua[3,12]
+                    B         994000            -0               
+   276 min_acqua[3,13]
+                    B         926000            -0               
+   277 min_acqua[3,14]
+                    B         858000            -0               
+   278 min_acqua[3,15]
+                    B         790000            -0               
+   279 min_acqua[3,16]
+                    B         722000            -0               
+   280 min_acqua[3,17]
+                    B         654000            -0               
+   281 min_acqua[3,18]
+                    B         586000            -0               
+   282 min_acqua[3,19]
+                    B         518000            -0               
+   283 min_acqua[3,20]
+                    B         450000            -0               
+   284 z            B   1.47278e+006                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 y[1]         B             30                             
+     2 y[2]         B             30                             
+     3 y[3]         B             30                             
+     4 y[4]         B             30                             
+     5 y[5]         B             30                             
+     6 y[6]         B             30                             
+     7 y[7]         B             30                             
+     8 y[8]         B             30                             
+     9 y[9]         B             30                             
+    10 y[10]        B             30                             
+    11 y[11]        B             30                             
+    12 y[12]        B             30                             
+    13 y[13]        B             30                             
+    14 y[14]        B             30                             
+    15 y[15]        B             30                             
+    16 y[16]        B            -16                             
+    17 y[17]        B            -10                             
+    18 y[18]        B             -8                             
+    19 y[19]        B             -4                             
+    20 y[20]        B        17.5556                             
+    21 volume[1,1]  B         438600                             
+    22 volume[2,1]  B         547000                             
+    23 volume[3,1]  B         918400                             
+    24 volume[1,20] B         250000                             
+    25 volume[2,20] B         300000                             
+    26 volume[3,20] B         450000                             
+    27 volume[1,2]  B         377200                             
+    28 volume[1,3]  B         315800                             
+    29 volume[1,4]  B         254400                             
+    30 volume[1,5]  B         193000                             
+    31 volume[1,6]  B         131600                             
+    32 volume[1,7]  B          70200                             
+    33 volume[1,8]  B           8800                             
+    34 volume[1,9]  B              0                             
+    35 volume[1,10] B         205000                             
+    36 volume[1,11] B         302000                             
+    37 volume[1,12] B         327000                             
+    38 volume[1,13] B         424000                             
+    39 volume[1,14] B         535400                             
+    40 volume[1,15] B         486600                             
+    41 volume[1,16] B         425200                             
+    42 volume[1,17] B         363800                             
+    43 volume[1,18] B         302400                             
+    44 volume[1,19] B         241000                             
+    45 volume[2,2]  B         494000                             
+    46 volume[2,3]  B         441000                             
+    47 volume[2,4]  B         388000                             
+    48 volume[2,5]  B         507800                             
+    49 volume[2,6]  B         454800                             
+    50 volume[2,7]  B         625000                             
+    51 volume[2,8]  B         783000                             
+    52 volume[2,9]  B         730000                             
+    53 volume[2,10] B         677000                             
+    54 volume[2,11] B         624000                             
+    55 volume[2,12] B         571000                             
+    56 volume[2,13] B         518000                             
+    57 volume[2,14] B         465000                             
+    58 volume[2,15] B         565000                             
+    59 volume[2,16] B         512000                             
+    60 volume[2,17] B         459000                             
+    61 volume[2,18] B         406000                             
+    62 volume[2,19] B         353000                             
+    63 volume[3,2]  B         958400                             
+    64 volume[3,3]  B    1.0056e+006                             
+    65 volume[3,4]  B    1.0816e+006                             
+    66 volume[3,5]  B    1.0136e+006                             
+    67 volume[3,6]  B    1.1328e+006                             
+    68 volume[3,7]  B    1.0648e+006                             
+    69 volume[3,8]  B    1.0522e+006                             
+    70 volume[3,9]  B     1.198e+006                             
+    71 volume[3,10] B      1.13e+006                             
+    72 volume[3,11] B     1.062e+006                             
+    73 volume[3,12] B         994000                             
+    74 volume[3,13] B         926000                             
+    75 volume[3,14] B         858000                             
+    76 volume[3,15] B         790000                             
+    77 volume[3,16] B         722000                             
+    78 volume[3,17] B         654000                             
+    79 volume[3,18] B         586000                             
+    80 volume[3,19] B         518000                             
+    81 x[1,1]       B          86400                             
+    82 x[2,1]       B         108000                             
+    83 x[3,1]       B          21600                             
+    84 x[1,2]       B          86400                             
+    85 x[2,2]       B         108000                             
+    86 x[3,2]       B              0                             
+    87 x[1,3]       B          86400                             
+    88 x[2,3]       B         108000                             
+    89 x[3,3]       B          -7200                             
+    90 x[1,4]       B          86400                             
+    91 x[2,4]       B         108000                             
+    92 x[3,4]       B         -36000                             
+    93 x[1,5]       B          86400                             
+    94 x[2,5]       B         -64800                             
+    95 x[3,5]       B         108000                             
+    96 x[1,6]       B          86400                             
+    97 x[2,6]       B         108000                             
+    98 x[3,6]       B         -79200                             
+    99 x[1,7]       B          86400                             
+   100 x[2,7]       B        -115200                             
+   101 x[3,7]       B         108000                             
+   102 x[1,8]       B          86400                             
+   103 x[2,8]       B        -103000                             
+   104 x[3,8]       B          52600                             
+   105 x[1,9]       B          33800                             
+   106 x[2,9]       B         108000                             
+   107 x[3,9]       B        -105800                             
+   108 x[1,10]      B        -180000                             
+   109 x[2,10]      B         108000                             
+   110 x[3,10]      B         108000                             
+   111 x[1,11]      B         -72000                             
+   112 x[2,11]      B         108000                             
+   113 x[3,11]      B         108000                             
+   114 x[1,12]      B              0                             
+   115 x[2,12]      B         108000                             
+   116 x[3,12]      B         108000                             
+   117 x[1,13]      B         -72000                             
+   118 x[2,13]      B         108000                             
+   119 x[3,13]      B         108000                             
+   120 x[1,14]      B         -86400                             
+   121 x[2,14]      B         108000                             
+   122 x[3,14]      B         108000                             
+   123 x[1,15]      B          73800                             
+   124 x[2,15]      B         -45000                             
+   125 x[3,15]      B         108000                             
+   126 x[1,16]      B          86400                             
+   127 x[2,16]      B         108000                             
+   128 x[3,16]      B         108000                             
+   129 x[1,17]      B          86400                             
+   130 x[2,17]      B         108000                             
+   131 x[3,17]      B         108000                             
+   132 x[1,18]      B          86400                             
+   133 x[2,18]      B         108000                             
+   134 x[3,18]      B         108000                             
+   135 x[1,19]      B          86400                             
+   136 x[2,19]      B         108000                             
+   137 x[3,19]      B         108000                             
+   138 x[1,20]      B          16000                             
+   139 x[2,20]      B         108000                             
+   140 x[3,20]      B         108000                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 3.55e-015 on row 8
+        max.rel.err = 5.82e-017 on row 8
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+000 on column 0
+        max.rel.err = 0.00e+000 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
