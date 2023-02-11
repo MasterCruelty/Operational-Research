@@ -17,15 +17,16 @@ param t{Nodi,Nodi};		#matrice di traffico[MB/sec]
 #Ogni arco i va da nodo i a nodo i +1(modulo n)
 
 #VARIABILI
-var x{Nodi,Nodi} binary;		#0= Orario	1= Antiorario
+var x{Nodi,Nodi} binary;		#1= Orario	0= Antiorario
 var q;							#capacità da installare [MB/sec]
 
 #VINCOLI
+#vincolo minmax: q deve essere maggiore del traffico su tutti gli archi
 subject to minmax{i in Nodi:i<N}:
 	q>= sum{j in Nodi, k in Nodi: (j<=i and k >= i+1) or (k>=i+1 and j>k) or (j<=i and k<j)} t[j,k]*x[j,k] +
 	    sum{j in Nodi, k in Nodi: (j<=i and k >= i+1) or (k>=i+1 and j>k) or (j<=i and k<j)} t[k,j]*(1-x[k,j]);
 
-
+#vincolo minmax extra per il caso in cui c'è l'arco dall'ultimo al primo nodo
 subject to minmaxspeciale:
 	q >= sum{j in Nodi, k in Nodi:(k<j)} t[j,k] * x[j,k] +
 		 sum{j in Nodi, k in Nodi:(k<j)} t[k,j] * (1-x[k,j]);
