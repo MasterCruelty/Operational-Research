@@ -1,0 +1,44 @@
+Problem:    distributore_benzina
+Rows:       6
+Columns:    5
+Non-zeros:  18
+Status:     OPTIMAL
+Objective:  0 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 media_veicoli
+                    NS             0            -0             =         < eps
+     2 normal       NS             1             1             =         < eps
+     3 stato0       NS             0            -0             =         < eps
+     4 stato1       NS             0            -0             =         < eps
+     5 stato2       NS             0            -0             =         < eps
+     6 stato3       B              0            -0             = 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 p[0]         B      0.0198462             0               
+     2 p[1]         B       0.099231             0               
+     3 p[2]         B       0.332424             0               
+     4 p[3]         B       0.548499             0               
+     5 veicoli_medi B        2.40958             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 2.78e-017 on row 5
+        max.rel.err = 2.05e-017 on row 5
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+000 on column 0
+        max.rel.err = 0.00e+000 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
