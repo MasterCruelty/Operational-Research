@@ -1,10 +1,11 @@
 #Esercizio Zaino con penalità
 
-#Problema dello zaino variante con la penalità
-#La funzione da massimizzare è il valore degli oggetti a cui si sottrae la massima penalità tra quelle associate agli oggetti scelti.
-
-#Per catturare la massima penalità introduco una variabile dedicata e la costringo ad essere maggiore di tutte
-#le penalità degli oggetti scelti, quindi moltiplicando per la var binaria di selezione
+/*
+ *Problema dello zaino variante con la penalità
+ *La funzione da massimizzare è il valore degli oggetti a cui si sottrae la massima penalità tra quelle associate agli oggetti scelti.
+ *Per catturare la massima penalità introduco una variabile dedicata e la costringo ad essere maggiore di tutte.
+ *le penalità degli oggetti scelti, quindi moltiplicando per la var binaria di selezione.
+*/
 
 #DATI
 param nO;               #Numero degli oggetti
@@ -17,14 +18,13 @@ param pena{O};          #Penalità associata ad ogni oggetto
 #VARIABILI
 var x{O} binary;        #Selezione dell'oggetto
 var delta_pena;         #Massimo della penalità tra gli oggetti scelti
-#VINCOLI
 
+#VINCOLI
 #Vincolo sulla capacità dello zaino
 subject to limite_zaino:
      sum{i in O} vol[i] * x[i] <= capacity;
 
 #OBIETTIVO
-
 #massimizzare il valore degli oggetti meno la penalità massima tra tutti gli oggetti
 maximize z: sum{i in O} (val[i] * x[i]) - delta_pena;
 #vincolo sul massimo della pena
