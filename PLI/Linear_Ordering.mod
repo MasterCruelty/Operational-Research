@@ -1,13 +1,13 @@
 #Esercizio Linear Ordering
 
 
-#Il problema del linear ordering consiste nel determinare una sequenza dei nodi di un dato grafo orientato
-#completo e pesato in modo da minimizzare la somma dei pesi degli archi(i,j) tali che i precede j
-#nell'ordinamento dei nodi. 
-#Scrivere la formulazione del problema, classificarlo e risolverlo con i dati noti.
-#Discutere l'ottimalità e unicità della soluzione ottenuta.
-#Suggerimento: un grafo completo orientato non contiene cicli sse non contiene cicli di ordine 3.
-
+/*
+  *Il problema del linear ordering consiste nel determinare una sequenza dei nodi di un dato grafo orientato completo e pesato
+  *in modo da minimizzare la somma dei pesi degli archi(i,j) tali che i precede j nell'ordinamento dei nodi. 
+  *Scrivere la formulazione del problema, classificarlo e risolverlo con i dati noti.
+  *Discutere l'ottimalità e unicità della soluzione ottenuta.
+  *Suggerimento: un grafo completo orientato non contiene cicli sse non contiene cicli di ordine 3.
+*/
 #DATI
 param N;
 set Nodi:=1..N;
