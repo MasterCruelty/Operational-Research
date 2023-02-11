@@ -1,15 +1,13 @@
 #Esercizio Ring Loading
 /*
-  *Bisogna dimensionare una rete locale, composta da un certo numero di calcolatori collegati
-  *in anello da opportuni cavi. Ogni calcolatore può spedire messaggi ad ogni altro calcolatore in senso
-  *orario o in senso antiorario lungo l'anello. Ogni calcolatore instrada nello stesso senso (orario o
-  *antiorario) tutti i messaggi da lui emessi e aventi la stessa destinazione. E' nota, in base a
-  *rilevamenti eseguiti in precedenza, la dimensione massima del traffico (quantità di dati per unità di
-  *tempo) che si prevede ogni calcolatore trasmetterà ad ogni altro. Si vuole decidere come instradare
-  *il traffico dei dati trasmessi da ciascun calcolatore in modo da minimizzare i costi di installazione
-  *della rete. Tali costi dipendono dal numero di archi che compongono l'anello e dal costo di ciascun
-  *arco, che è proporzionale alla capacità dell'arco. La capacità di ogni arco deve essere sufficiente a
-  *smaltire il traffico previsto su di esso. Tutti gli archi della rete devono avere la stessa capacità.
+  *Bisogna dimensionare una rete locale, composta da un certo numero di calcolatori collegati in anello da opportuni cavi.
+  *Ogni calcolatore può spedire messaggi ad ogni altro calcolatore in senso orario o in senso antiorario lungo l'anello.
+  *Ogni calcolatore instrada nello stesso senso (orario o antiorario) tutti i messaggi da lui emessi e aventi la stessa destinazione.
+  * E' nota, in base a rilevamenti eseguiti in precedenza, la dimensione massima del traffico 
+  *(quantità di dati per unità di tempo) che si prevede ogni calcolatore trasmetterà ad ogni altro. 
+  *Si vuole decidere come instradare il traffico dei dati trasmessi da ciascun calcolatore in modo da minimizzare i costi di installazione della rete. 
+  *Tali costi dipendono dal numero di archi che compongono l'anello e dal costo di ciascun arco, che è proporzionale alla capacità dell'arco. 
+  *La capacità di ogni arco deve essere sufficiente a smaltire il traffico previsto su di esso. Tutti gli archi della rete devono avere la stessa capacità.
 */
 
 #DATI
