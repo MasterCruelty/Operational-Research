@@ -1,3 +1,10 @@
+Se ho un grafo molto sparso in cui molte delle celle sarebbero zeri, è meglio compattarlo mettendo solo gli edges.
+Come ad esempio nell'esercizio sentinella.
+Quando invece ho un grafo denso e completo come nell'esercizio Linear Ordering, è necessario definire la matrice 
+con tutti i pesi.
+
+**************************************************
+
 Controllare se la soluzione è unica.
 guardo i coefficienti di costo ridotto delle colonne fuori base, si controlla se sono tutti diversi da zero e se è così l'ottimo è unico.
 Se trovo uno o più zeri nelle colonne fuori base dei coefficienti di costo ridotto la soluzione non è unica, possono quindi esserci due soluzioni diverse ma equivalenti di valore.
