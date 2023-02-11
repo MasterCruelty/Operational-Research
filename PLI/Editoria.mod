@@ -1,17 +1,17 @@
 #Esercizio Editoria
 
-#Il nuovo editore di una rivista scientifica deve pianificare il contenuto del prossimo volume della rivista.
-#Si ha a disposizione un certo numero di articoli di diversa lunghezza già pronti per essere pubblicati.
-#Gli articoli vanno inseriti in un dato numero di fascicoli.
-#Ogni fascicolo ha sempre lo stesso numero di pagine.
-#Le pagine non occupate da articoli vengono riempite con annunci pubblicitari.
-#Il numero di articoli è elevato e non ci entrano tutti nel prossimo volume.
-#Quelli che avanzano andranno nel prossimo.
-#Si vuole minimizzare il numero di articoli da rimandare.
-#Il numero di pagine dedicate agli annunci dunque deve essere bilanciato tra tutti i fascicoli.
-#Gli articoli sono divisi per urgenza, vanno pubblicati in funzione di essa.
-
 /*
+  *Il nuovo editore di una rivista scientifica deve pianificare il contenuto del prossimo volume della rivista.
+  *Si ha a disposizione un certo numero di articoli di diversa lunghezza già pronti per essere pubblicati.
+  *Gli articoli vanno inseriti in un dato numero di fascicoli.
+  *Ogni fascicolo ha sempre lo stesso numero di pagine.
+  *Le pagine non occupate da articoli vengono riempite con annunci pubblicitari.
+  *Il numero di articoli è elevato e non ci entrano tutti nel prossimo volume.
+  *Quelli che avanzano andranno nel prossimo.
+  *Si vuole minimizzare il numero di articoli da rimandare.
+  *Il numero di pagine dedicate agli annunci dunque deve essere bilanciato tra tutti i fascicoli.
+  *Gli articoli sono divisi per urgenza, vanno pubblicati in funzione di essa.
+  ***********************************
   *Commento sul testo:
   *Bisogna assegnare un certo numero di articoli a 3 fascicoli.
   *Ci sono vincoli sull'urgenza degli articoli e sul numero di pagine disponibili per ogni fascicoli.
