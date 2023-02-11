@@ -1,29 +1,30 @@
 #Esercizio Immagini da Satellite
 
-#Un satellite può eseguire osservazioni di porzioni della superficie terrestre immagazzinando le immagini sotto forma di files.
-#I files sono in una memoria di bordo e vengono ritrasmessi a terra successivamente.
-#Le immagini vengono acquisite a pagamento per conto di utenti che avanzano le proprie richieste in anticipo.
-#In seguito, avviene una fase di pianificazione delle attività del satellite, durante la quale, alcune delle richieste sono messe in piano
-#e altre invece no. Non è detto sia possibile soddisfare tutte le richieste perché alcune possono sovrapporsi.
-#Per ogni richiesta sono noti gli istanti di inizio e di fine per l'acquisizione dell'immagine.
-#Il tempo disponibile per l'acquisizione delle immagini è limitato, non si può acquisire più immagini di quante se ne possono trasmettere
-#a terra. Il tempo necessario per ogni immagine è noto.
-#Obiettivo: ogni immagine ha un valore economico, quindi massimizzare il ricavo complessivo che si ottiene dalle immagini acquisite.
-
-#Domande extra:
-#1.Se il tempo disponibile per la trasmissione a terra venisse allungato, sarebbe conveniente farlo? In che misura e con quale 
-#miglioramento rspetto a prima?
-#2.Supponendo alcune richieste non in conflitto tra loro debbano essere soddisfatte per forza per motivi di emergenza,
-#di quanto peggiorerebbe il valore ottimo del ricavo?
-
-#È una variante del problema dello zaino. Il vincolo aggiuntivo è la compatibilità tra immagini per gli istanti di acquisizione
-
-#Risposte domande extra:
-#1.Aumentando il tempo ovviamente potremmo acquisire più immagini, ma servirebbe un'analisi
-#parametrica accurata da svolgere a mano in quanto il solutore da solo non riesce a farlo.
-#Dovremmo spostare appena al di là della soluzione ottima e verificare di quanto si guadagna.
-#2. Il valore ottimo senza le immagini forzate è di 5878. Introducendole scendiamo a 4924.
-
+/*
+  *Un satellite può eseguire osservazioni di porzioni della superficie terrestre immagazzinando le immagini sotto forma di files.
+  *I files sono in una memoria di bordo e vengono ritrasmessi a terra successivamente.
+  *Le immagini vengono acquisite a pagamento per conto di utenti che avanzano le proprie richieste in anticipo.
+  *In seguito, avviene una fase di pianificazione delle attività del satellite, durante la quale, alcune delle richieste sono messe in piano e altre invece no.
+  *Non è detto sia possibile soddisfare tutte le richieste perché alcune possono sovrapporsi.
+  *Per ogni richiesta sono noti gli istanti di inizio e di fine per l'acquisizione dell'immagine.
+  *Il tempo disponibile per l'acquisizione delle immagini è limitato, non si può acquisire più immagini di quante se ne possono trasmettere a terra.
+  *Il tempo necessario per ogni immagine è noto.
+  *Obiettivo: ogni immagine ha un valore economico, quindi massimizzare il ricavo complessivo che si ottiene dalle immagini acquisite.
+  **********************************************
+  *Domande extra:
+  *1.Se il tempo disponibile per la trasmissione a terra venisse allungato, sarebbe conveniente farlo? In che misura e con quale  miglioramento rspetto a prima?
+  *2.Supponendo alcune richieste non in conflitto tra loro debbano essere soddisfatte per forza per motivi di emergenza,
+  *di quanto peggiorerebbe il valore ottimo del ricavo?
+  **********************************************
+  *Commento sul testo:
+  *È una variante del problema dello zaino. Il vincolo aggiuntivo è la compatibilità tra immagini per gli istanti di acquisizione.
+  **********************************************
+  *Risposte domande extra:
+  *1.Aumentando il tempo ovviamente potremmo acquisire più immagini, ma servirebbe un'analisi
+  *parametrica accurata da svolgere a mano in quanto il solutore da solo non riesce a farlo.
+  *Dovremmo spostare appena al di là della soluzione ottima e verificare di quanto si guadagna.
+  *2. Il valore ottimo senza le immagini forzate è di 5878. Introducendole scendiamo a 4924.
+*/
 
 #DATI
 
