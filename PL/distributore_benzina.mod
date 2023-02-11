@@ -29,8 +29,8 @@
 
 #DATI
 
-set S := 0..3;
-param r := .2;
+set S := 0..3;          #insieme degli stati del sistema a catena di markov
+param r := .2;          #tempo di rifornimento pari a 5 minuti ==> 1/5 = 0.2
 
 #VARIABILI
 var p{S} >= 0;          #probabilità per ogni stato del sistema
