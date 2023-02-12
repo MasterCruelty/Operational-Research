@@ -1,13 +1,13 @@
 #Esercizio Frequenze
 
-#Bisogna assegnare le opportune frequenze ad una nuova emittente della protezione civile così da trasmettere in una data banda.
-#Le frequenze disponibili devono essere il più numerose possibile.
-#Alcune frequenze sono incompatibili con altre per fenomeni di interferenza elettromagnetica.
-#L'emittente non deve ricevere coppie di frequenze incompatibili tra loro.
-#Due frequenze interferiscono quando la loro differenza(in valore assoluto) è inferiore ad un valore limite K.
-#Obiettivo: massimizzare numero frequenze ma evitando interferenze.
-
 /*
+  *Bisogna assegnare le opportune frequenze ad una nuova emittente della protezione civile così da trasmettere in una data banda.
+  *Le frequenze disponibili devono essere il più numerose possibile.
+  *Alcune frequenze sono incompatibili con altre per fenomeni di interferenza elettromagnetica.
+  *L'emittente non deve ricevere coppie di frequenze incompatibili tra loro.
+  *Due frequenze interferiscono quando la loro differenza(in valore assoluto) è inferiore ad un valore limite K.
+  *Obiettivo: massimizzare numero frequenze ma evitando interferenze.
+  ***************************************
   *Commento sul testo:
   *Si tratta di un problema di assegnamento.
 */
@@ -25,9 +25,9 @@ var x{F} binary;		#Scelta della frequenza
 #VINCOLI
 
 #vincolo di assegnamento/incompatibilità
-subject to assign{i in F,j in F:i<j and freq[j]-freq[i] < bound}:
+subject to assign{i in F,j in F: (i<j) and (freq[j]-freq[i]) < bound}:
 	x[i] + x[j] <=1;
-#	freq[i] * x[i] - freq[j] * x[j] <= bound; non funzionante sempre
+
 
 #OBIETTIVO
 
