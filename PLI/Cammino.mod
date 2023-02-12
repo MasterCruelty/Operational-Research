@@ -17,17 +17,17 @@ var y {P} >=0, <=1;     # Penalità
 
 # VINCOLI
 # Cammino da s a t
-subject to Outdegree_s:
+subject to origine_s:
   sum {j in N: (s,j) in A} x[s,j] = 1;
-subject to Indegree_t:
+subject to destinazione_t:
   sum {i in N: (i,t) in A} x[i,t] = 1;
 subject to FlowConservation {i in N: (i <> s) and (i <> t)}:
   sum {j in N: (j,i) in A} x[j,i] = sum {j in N: (i,j) in A} x[i,j];
 
 # Elementarità: no cicli
-subject to Elementarity_in {i in N}:
+subject to nocicli_in {i in N}:
   sum {j in N: (j,i) in A} x[j,i] <= 1;
-subject to Elementarity_out {i in N}:
+subject to nocicli_out {i in N}:
   sum {j in N: (i,j) in A} x[i,j] <= 1;
 
 # Incompatibilità
@@ -36,7 +36,7 @@ subject to Incompatibility {(i,j,k,l) in E}:
 
 # Penalty
 subject to Penalty {(i,j,k,l) in P}:
-  y[i,j,k,l] >= 1 - (x[i,j] + x[k,l]);
+  y[i,j,k,l] = 1 - (x[i,j] + x[k,l]);
 
 # OBIETTIVO
 minimize z: sum {(i,j) in A} c[i,j]*x[i,j] + p * sum {(i,j,k,l) in P} y[i,j,k,l];
