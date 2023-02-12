@@ -18,8 +18,8 @@ param scadenza{O};				#Scadenza per ogni ordine
 
 #VARIABILI
 var y{O,O} binary;			#Matrice di assegnamento y(i,j)=1 sse ordine i in posizione j
-var s{O} >= 0;					#tempo di inizio di ogni ordine
-var t{O} >=0;				#ritardo per ogni ordine
+var s{O} >= 0;					#tempo di inizio in ogni posizione
+var t{O} >=0;				#ritardo in ogni posizione
 var ritardo_massimo >= 0;		#ritardo massimo complessivo
 #VINCOLI
 
