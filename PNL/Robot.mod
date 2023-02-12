@@ -1,10 +1,17 @@
 #Esercizio Robot
 
-#C'è una nuova linea di produzione robotizzata e vi sono N robot
-#Ogni robot può ruotare a 360° attorno ad un asse verticale.
-#Le aree di lavoro di ogni robot non devono sovrapporsi.
-#Il coordinamento tra i robot impone che ognuno sia collegato con tutti gli altri con cavi in fibra ottica.
-#I cavi sono costori, quindi va minimizzata la lunghezza totale di fibre ottiche impiegate.
+/*
+ *C'è una nuova linea di produzione robotizzata e vi sono N robot
+ *Ogni robot può ruotare a 360° attorno ad un asse verticale.
+ *Le aree di lavoro di ogni robot non devono sovrapporsi.
+ *Il coordinamento tra i robot impone che ognuno sia collegato con tutti gli altri con cavi in fibra ottica.
+ *I cavi sono costosi, quindi va minimizzata la lunghezza totale di fibre ottiche impiegate.
+ ****************************
+ *Commento sul testo:
+ *A modello finito, se si sposta il cerchio, puoi mettere il cerchio in diversi punti.
+ *tutti i punti sono ottimi buoni, quindi sicuramente il problema non è convesso.
+ *L'ottimo trovato dal solutore quindi è sicuramente un ottimo locale.
+*/
 
 #DATI
 param nR;			#numero di robot
