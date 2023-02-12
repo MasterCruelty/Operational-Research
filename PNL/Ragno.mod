@@ -1,13 +1,13 @@
 #Esercizio Ragno
 
-#Un ragno esperto di ottimizzazione deve costruire la struttura portante della ragnatela.
-#Ha a disposizione tre appigli A,B,C in posizione fissa e nota.
-#La struttura portante sarà un triangolo quindi e ognuno dei vertici dovrà essere collegato.
-#Il triangolo portante deve avere area non inferiore ad una certa soglia minima, 
-#altrimenti la ragnatela costruita non è abbastanza utile per catturare insetti.
-#Il ragno è vecchio quindi deve minimizzare la quanittà di filo per costruire.
-#E unire i tre lati del triangolo con un appiglio.
-
+/*
+ *Un ragno esperto di ottimizzazione deve costruire la struttura portante della ragnatela.
+ *Ha a disposizione tre appigli A,B,C in posizione fissa e nota.
+ *La struttura portante sarà quindi un triangolo e ognuno dei vertici dovrà essere collegato.
+ *Il triangolo portante deve avere area non inferiore ad una certa soglia minima, 
+ *altrimenti la ragnatela costruita non è abbastanza utile per catturare insetti.
+ *Minimizzare la quanittà di filo per costruire e unire i tre lati del triangolo con un appiglio.
+*/
 #DATI
 set N:= 0..2;
 param xa{N};		#x appiglio cm
