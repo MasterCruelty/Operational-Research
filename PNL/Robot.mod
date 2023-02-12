@@ -24,11 +24,12 @@ var y{R};
 
 
 #VINCOLI
-
+#vincolo sulla non sovrapposizione delle aree di lavoro dei robot
 subject to noOverLap{i in R, j in R:i<j}:
 	(x[i]-x[j])^2 + (y[i]-y[j])^2 >= (r[i] + r[j])^2;
 
 #OBIETTIVO
+#Minimizzare la lunghezza dei cavi in fibra ottica usati per collegare i robot.
 minimize z: sum{i in R,j in R:i<j} sqrt((x[i]-x[j])^2 + (y[i]-y[j])^2);
 #################
 data;
