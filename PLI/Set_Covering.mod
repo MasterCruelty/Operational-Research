@@ -11,12 +11,12 @@
 #È una variante del problema dello zaino.
 
 #DATI
-param nU;
-set U := 1..nU;
-param nL;
-set L := 1..nL;
-param utenti{U,L};
-param costi{L};
+param nU;			#numero di utenti
+set U := 1..nU;		#insieme degli utenti
+param nL;			#numero dei luoghi
+set L := 1..nL;		#inseieme dei luoghi
+param utenti{U,L};	#tabella degli utenti coperti da quali luoghi
+param costi{L};		#costo del servizio per ogni luogo
 
 #VARIABILI
 var erogato{L} binary; #selezione del luogo dove erogare il servizio.
