@@ -42,8 +42,8 @@ subject to capacity{f in F}:
 	sum{a in A} p[a] * x[a,f] <= nP;
 
 #vincolo sull'urgenza
-subject to urgenza{a in A}:
-	sum{f in F}  f*x[a,f] <=4-u[a];
+subject to urgenza{a in A: u[a] >=1}:
+	sum{f in F:f+u[a] <=4}  x[a,f]=1;
 
 #OBIETTIVO
 
@@ -54,7 +54,7 @@ subject to urgenza{a in A}:
 minimize z2: upper - lower;
 subject to maxmin{f in F}: lower <= sum{a in A} p[a] *x[a,f];
 subject to minmax{f in F}: upper >=sum{a in A} p[a] *x[a,f];
-subject to non_peggioro: sum{a in A, f in F} x[a,f] >= 11;#valore ottimo di z1
+subject to non_peggioro: sum{a in A, f in F} x[a,f] >= 10;#valore ottimo di z1
 
 
 #########
