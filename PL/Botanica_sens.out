@@ -1,0 +1,163 @@
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    Botanica
+Objective:  z = 93237.5 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 satisfy[Acqua_dolce]
+                    NL        .             .             .         -4902.50000          -Inf   98140.00000 x[Acqua_dolce]
+                                          -1.00000          +Inf           +Inf       1.00000          -Inf
+
+     2 satisfy[Sali_minerali]
+                    NL        .             .             .        -67250.00000          -Inf  362237.50000 x[Sali_minerali]
+                                          -4.00000          +Inf           +Inf       4.00000          -Inf
+
+     3 satisfy[Calore]
+                    NL        .             .             .       -130000.00000          -Inf  223237.50000 x[Calore]
+                                          -1.00000          +Inf           +Inf       1.00000          -Inf
+
+     4 satisfy[Luce]
+                    NL        .             .             .       -559250.00000          -Inf  932112.50000 x[Luce]
+                                          -1.50000          +Inf           +Inf       1.50000          -Inf
+
+     5 satisfy[Vitamine]
+                    NL        .             .             .        -24162.50000          -Inf  180222.50000 x[Vitamine]
+                                          -3.60000          +Inf           +Inf       3.60000          -Inf
+
+     6 max_coltivazione[Azalea]
+                    BS       5.00000      95.00000          -Inf        5.00000          -Inf          -Inf
+                                            .          100.00000      185.00000    1377.00000  100122.50000 min_coltivazione[Azalea]
+
+     7 max_coltivazione[Begonia]
+                    NU     100.00000        .               -Inf        5.00000   -2756.00000 -168582.50000 min_coltivazione[Begonia]
+                                        2756.00000     100.00000      280.00000          +Inf  589317.50000 budget_area
+
+     8 max_coltivazione[Carota]
+                    NU     100.00000        .               -Inf        5.00000   -1587.60000  -57584.50000 min_coltivazione[Carota]
+                                        1587.60000     100.00000      280.00000          +Inf  379005.50000 budget_area
+
+     9 max_coltivazione[Datteri]
+                    BS       5.00000      95.00000          -Inf        5.00000          -Inf          -Inf
+                                            .          100.00000      185.00000   91600.00000  551237.50000 min_coltivazione[Datteri]
+
+    10 max_coltivazione[Erba_cipollina]
+                    BS       5.00000      95.00000          -Inf        5.00000          -Inf          -Inf
+                                            .          100.00000      185.00000     876.50000   97620.00000 min_coltivazione[Erba_cipollina]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    Botanica
+Objective:  z = 93237.5 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 max_coltivazione[Fragolina_di_bosco]
+                    BS       5.00000      95.00000          -Inf        5.00000          -Inf          -Inf
+                                            .          100.00000      185.00000    1131.00000   98892.50000 min_coltivazione[Fragolina_di_bosco]
+
+    12 max_coltivazione[Giaggiolo]
+                    NU     100.00000        .               -Inf        5.00000   -1338.00000  -33872.50000 min_coltivazione[Giaggiolo]
+                                        1338.00000     100.00000      280.00000          +Inf  334077.50000 budget_area
+
+    13 min_coltivazione[Azalea]
+                    NL       5.00000        .            5.00000         .               -Inf  100122.50000 y[Azalea]
+                                       -1377.00000          +Inf      100.00000    1377.00000  -37577.50000 max_coltivazione[Azalea]
+
+    14 min_coltivazione[Begonia]
+                    BS     100.00000     -95.00000       5.00000         .        -2756.00000 -182362.50000 max_coltivazione[Begonia]
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+    15 min_coltivazione[Carota]
+                    BS     100.00000     -95.00000       5.00000         .        -1587.60000  -65522.50000 max_coltivazione[Carota]
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+    16 min_coltivazione[Datteri]
+                    NL       5.00000        .            5.00000         .               -Inf  551237.50000 y[Datteri]
+                                      -91600.00000          +Inf      100.00000   91600.00000 -8.60876e+006 max_coltivazione[Datteri]
+
+    17 min_coltivazione[Erba_cipollina]
+                    NL       5.00000        .            5.00000         .               -Inf   97620.00000 y[Erba_cipollina]
+                                        -876.50000          +Inf      100.00000     876.50000    9970.00000 max_coltivazione[Erba_cipollina]
+
+    18 min_coltivazione[Fragolina_di_bosco]
+                    NL       5.00000        .            5.00000         .               -Inf   98892.50000 y[Fragolina_di_bosco]
+                                       -1131.00000          +Inf      100.00000    1131.00000  -14207.50000 max_coltivazione[Fragolina_di_bosco]
+
+    19 min_coltivazione[Giaggiolo]
+                    BS     100.00000     -95.00000       5.00000         .        -1338.00000  -40562.50000 max_coltivazione[Giaggiolo]
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+    20 budget_area  BS     320.00000     180.00000          -Inf      225.00000   -1338.00000 -334922.50000 max_coltivazione[Giaggiolo]
+                                            .          500.00000      415.00000     876.50000  373717.50000 min_coltivazione[Erba_cipollina]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    Botanica
+Objective:  z = 93237.5 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 z            BS   93237.50000  -93237.50000          -Inf  -8.60876e+006      -1.00000        .      min_coltivazione[Datteri]
+                                            .               +Inf    93237.50000          +Inf          +Inf
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    Botanica
+Objective:  z = 93237.5 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x[Acqua_dolce]
+                    BS    4902.50000      -1.00000        .          1862.50000     -87.12500 -328990.31250 max_coltivazione[Begonia]
+                                            .               +Inf           +Inf        .        98140.00000 satisfy[Acqua_dolce]
+
+     2 x[Sali_minerali]
+                    BS   67250.00000      -4.00000        .         55850.00000     -26.96667 -1.45127e+006 max_coltivazione[Begonia]
+                                            .               +Inf   124250.00000      -1.70500  247576.25000 min_coltivazione[Azalea]
+
+     3 x[Calore]    BS  130000.00000      -1.00000        .         82500.00000      -3.67600 -254642.50000 max_coltivazione[Giaggiolo]
+                                            .               +Inf           +Inf        .       223237.50000 satisfy[Calore]
+
+     4 x[Luce]      BS  559250.00000      -1.50000        .        274250.00000      -1.94600 -156188.00000 max_coltivazione[Giaggiolo]
+                                            .               +Inf   844250.00000      -1.04100  349933.25000 min_coltivazione[Azalea]
+
+     5 x[Vitamine]  BS   24162.50000      -3.60000        .          7062.50000     -11.03333  -86370.41667 max_coltivazione[Giaggiolo]
+                                            .               +Inf           +Inf        .       180222.50000 satisfy[Vitamine]
+
+     6 y[Azalea]    BS       5.00000    6000.00000        .             5.00000          -Inf          -Inf
+                                            .               +Inf      100.00000    7377.00000  100122.50000 min_coltivazione[Azalea]
+
+     7 y[Begonia]   BS     100.00000    4000.00000        .             5.00000    1244.00000 -182362.50000 max_coltivazione[Begonia]
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+     8 y[Carota]    BS     100.00000    2000.00000        .             5.00000     412.40000  -65522.50000 max_coltivazione[Carota]
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+     9 y[Datteri]   BS       5.00000   18000.00000        .             5.00000          -Inf          -Inf
+                                            .               +Inf      100.00000  109600.00000  551237.50000 min_coltivazione[Datteri]
+
+    10 y[Erba_cipollina]
+                    BS       5.00000     100.00000        .             5.00000          -Inf          -Inf
+                                            .               +Inf      100.00000     976.50000   97620.00000 min_coltivazione[Erba_cipollina]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   5
+
+Problem:    Botanica
+Objective:  z = 93237.5 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 y[Fragolina_di_bosco]
+                    BS       5.00000     500.00000        .             5.00000          -Inf          -Inf
+                                            .               +Inf      100.00000    1631.00000   98892.50000 min_coltivazione[Fragolina_di_bosco]
+
+    12 y[Giaggiolo] BS     100.00000    7000.00000        .             5.00000    5662.00000  -40562.50000 max_coltivazione[Giaggiolo]
+                                            .               +Inf      100.00000          +Inf          +Inf
+
+End of report
