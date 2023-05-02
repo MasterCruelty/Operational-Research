@@ -1,0 +1,53 @@
+Problem:    Zoo
+Rows:       9
+Columns:    4
+Non-zeros:  22
+Status:     OPTIMAL
+Objective:  z = 844.8266667 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 satisfy[Carne]
+                    B        150.647          13.1               
+     2 satisfy[Latte]
+                    B         134.04           5.4               
+     3 satisfy[Frutta]
+                    B        98.9533          22.8               
+     4 satisfy[Verdure]
+                    B        123.099          58.4               
+     5 satisfy[Zuccheri]
+                    NL           3.4           3.4                         8.4 
+     6 satisfy[Grassi]
+                    NL           6.7           6.7                     2.66667 
+     7 satisfy[Farine]
+                    NL             8             8                         5.6 
+     8 satisfy[Acqua]
+                    NL          94.2          94.2                           8 
+     9 z            B        844.827                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1]         B            6.8             0               
+     2 x[2]         B         268.08             0               
+     3 x[3]         B             32             0               
+     4 x[4]         B        44.6667             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+000 on column 0
+        max.rel.err = 0.00e+000 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
