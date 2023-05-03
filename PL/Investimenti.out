@@ -1,0 +1,62 @@
+Problem:    Investimenti
+Rows:       14
+Columns:    12
+Non-zeros:  72
+Status:     OPTIMAL
+Objective:  z = 56.5 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 max_usa[MMA] B              0                         100 
+     2 max_usa[DDS] B              0                         100 
+     3 max_usa[RP]  B              0                          79 
+     4 max_usa[MLF] B              0                          98 
+     5 max_ue[CA]   B         70.625                         150 
+     6 max_ue[E]    B         70.625                         120 
+     7 max_ue[NP]   B         70.625                          80 
+     8 max_ue[BFC]  B         70.625                          90 
+     9 max_gp[KA]   B              0                         110 
+    10 max_gp[SF]   B              0                          90 
+    11 max_gp[MW]   B              0                         200 
+    12 max_gp[NSC]  B              0                         130 
+    13 capacity     NU          1130                        1130          0.05 
+    14 z            B           56.5                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[Stars]     NL             0             0                       -0.45 
+     2 x[Stripes]   NL             0             0                        -0.7 
+     3 x[Yankee]    NL             0             0                        -0.2 
+     4 x[HotDog]    NL             0             0                        -0.4 
+     5 y[Colosseo]  NL             0             0                        -0.7 
+     6 y[Tour_Eiffel]
+                    NL             0             0                        -0.5 
+     7 y[Plaza_de_Toros]
+                    B         70.625             0               
+     8 y[Westminster]
+                    NL             0             0                        -0.5 
+     9 w[Sol_Levante]
+                    NL             0             0                        -0.4 
+    10 w[Banzai]    NL             0             0                        -0.5 
+    11 w[Kimono]    NL             0             0                        -0.6 
+    12 w[Kung_Fu]   NL             0             0                        -0.7 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 1.11e-016 on column 2
+        max.rel.err = 4.27e-017 on column 2
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
