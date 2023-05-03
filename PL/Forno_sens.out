@@ -1,0 +1,51 @@
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    Forno
+Objective:  z = 71.16666667 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 min_prod[Pane]
+                    NL       5.00000        .            5.00000         .               -Inf      92.00000 x[Pane]
+                                          -4.16667          +Inf       10.05000       4.16667      50.12500 min_prod[Biscotti]
+
+     2 min_prod[Biscotti]
+                    BS      10.41667      -8.41667       2.00000         .           -2.50000      45.12500 min_prod[Pane]
+                                            .               +Inf       10.41667          +Inf          +Inf
+
+     3 min_prod[Focacce]
+                    NL       3.00000        .            3.00000         .               -Inf     110.16667 x[Focacce]
+                                         -13.00000          +Inf        5.24444      13.00000      41.98889 min_prod[Biscotti]
+
+     4 min_prod[Paste]
+                    NL       2.00000        .            2.00000         .               -Inf     100.16667 x[Paste]
+                                         -14.50000          +Inf        3.68333      14.50000      46.75833 min_prod[Biscotti]
+
+     5 capacity     NU      24.00000        .               -Inf       18.95000      -6.66667      37.50000 min_prod[Biscotti]
+                                           6.66667      24.00000           +Inf          +Inf          +Inf
+
+     6 z            BS      71.16667     -71.16667          -Inf       50.12500      -1.00000        .      min_prod[Pane]
+                                            .               +Inf       71.16667          +Inf          +Inf
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    Forno
+Objective:  z = 71.16666667 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x[Pane]      BS       5.00000       2.50000        .             5.00000          -Inf          -Inf
+                                            .               +Inf       10.05000       6.66667      92.00000 min_prod[Pane]
+
+     2 x[Biscotti]  BS      10.41667       4.00000        .             2.00000       1.50000      45.12500 min_prod[Pane]
+                                            .               +Inf       10.41667          +Inf          +Inf
+
+     3 x[Focacce]   BS       3.00000       2.00000        .             3.00000          -Inf          -Inf
+                                            .               +Inf        5.24444      15.00000     110.16667 min_prod[Focacce]
+
+     4 x[Paste]     BS       2.00000       5.50000        .             2.00000          -Inf          -Inf
+                                            .               +Inf        3.68333      20.00000     100.16667 min_prod[Paste]
+
+End of report
