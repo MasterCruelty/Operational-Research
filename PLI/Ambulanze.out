@@ -1,0 +1,729 @@
+Problem:    Ambulanze
+Rows:       326
+Columns:    54 (54 integer, 54 binary)
+Non-zeros:  698
+Status:     INTEGER OPTIMAL
+Objective:  z = 3040 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 copertura[1,1]
+                                   0                           8 
+     2 copertura[1,2]
+                                   0                           8 
+     3 copertura[1,3]
+                                   0                           8 
+     4 copertura[1,4]
+                                   0                           8 
+     5 copertura[1,5]
+                                   0                           8 
+     6 copertura[1,6]
+                                   0                           8 
+     7 copertura[2,1]
+                                   0                           8 
+     8 copertura[2,2]
+                                   0                           8 
+     9 copertura[2,3]
+                                   0                           8 
+    10 copertura[2,4]
+                                   0                           8 
+    11 copertura[2,5]
+                                   0                           8 
+    12 copertura[2,6]
+                                   0                           8 
+    13 copertura[3,1]
+                                   5                           8 
+    14 copertura[3,2]
+                                   0                           8 
+    15 copertura[3,3]
+                                   0                           8 
+    16 copertura[3,4]
+                                   0                           8 
+    17 copertura[3,5]
+                                   0                           8 
+    18 copertura[3,6]
+                                   0                           8 
+    19 copertura[4,1]
+                                   0                           8 
+    20 copertura[4,2]
+                                   0                           8 
+    21 copertura[4,3]
+                                   0                           8 
+    22 copertura[4,4]
+                                   0                           8 
+    23 copertura[4,5]
+                                   0                           8 
+    24 copertura[4,6]
+                                   0                           8 
+    25 copertura[5,1]
+                                   5                           8 
+    26 copertura[5,2]
+                                   0                           8 
+    27 copertura[5,3]
+                                   0                           8 
+    28 copertura[5,4]
+                                   0                           8 
+    29 copertura[5,5]
+                                   0                           8 
+    30 copertura[5,6]
+                                   0                           8 
+    31 copertura[6,1]
+                                   0                           8 
+    32 copertura[6,2]
+                                   8                           8 
+    33 copertura[6,3]
+                                   0                           8 
+    34 copertura[6,4]
+                                   0                           8 
+    35 copertura[6,5]
+                                   0                           8 
+    36 copertura[6,6]
+                                   0                           8 
+    37 copertura[7,1]
+                                   0                           8 
+    38 copertura[7,2]
+                                   0                           8 
+    39 copertura[7,3]
+                                   0                           8 
+    40 copertura[7,4]
+                                   0                           8 
+    41 copertura[7,5]
+                                   0                           8 
+    42 copertura[7,6]
+                                   0                           8 
+    43 copertura[8,1]
+                                   0                           8 
+    44 copertura[8,2]
+                                   0                           8 
+    45 copertura[8,3]
+                                   0                           8 
+    46 copertura[8,4]
+                                   0                           8 
+    47 copertura[8,5]
+                                   0                           8 
+    48 copertura[8,6]
+                                   0                           8 
+    49 copertura[9,1]
+                                   0                           8 
+    50 copertura[9,2]
+                                   0                           8 
+    51 copertura[9,3]
+                                   0                           8 
+    52 copertura[9,4]
+                                   0                           8 
+    53 copertura[9,5]
+                                   0                           8 
+    54 copertura[9,6]
+                                   0                           8 
+    55 max_ambulanze
+                                   3                           3 
+    56 integrity[1,2,1]
+                                   0                           1 
+    57 integrity[1,2,2]
+                                   0                           1 
+    58 integrity[1,2,3]
+                                   1                           1 
+    59 integrity[1,2,4]
+                                   0                           1 
+    60 integrity[1,2,5]
+                                   1                           1 
+    61 integrity[1,2,6]
+                                   1                           1 
+    62 integrity[1,2,7]
+                                   0                           1 
+    63 integrity[1,2,8]
+                                   0                           1 
+    64 integrity[1,2,9]
+                                   0                           1 
+    65 integrity[1,3,1]
+                                   0                           1 
+    66 integrity[1,3,2]
+                                   0                           1 
+    67 integrity[1,3,3]
+                                   1                           1 
+    68 integrity[1,3,4]
+                                   0                           1 
+    69 integrity[1,3,5]
+                                   1                           1 
+    70 integrity[1,3,6]
+                                   0                           1 
+    71 integrity[1,3,7]
+                                   0                           1 
+    72 integrity[1,3,8]
+                                   0                           1 
+    73 integrity[1,3,9]
+                                   0                           1 
+    74 integrity[1,4,1]
+                                   0                           1 
+    75 integrity[1,4,2]
+                                   0                           1 
+    76 integrity[1,4,3]
+                                   1                           1 
+    77 integrity[1,4,4]
+                                   0                           1 
+    78 integrity[1,4,5]
+                                   1                           1 
+    79 integrity[1,4,6]
+                                   0                           1 
+    80 integrity[1,4,7]
+                                   0                           1 
+    81 integrity[1,4,8]
+                                   0                           1 
+    82 integrity[1,4,9]
+                                   0                           1 
+    83 integrity[1,5,1]
+                                   0                           1 
+    84 integrity[1,5,2]
+                                   0                           1 
+    85 integrity[1,5,3]
+                                   1                           1 
+    86 integrity[1,5,4]
+                                   0                           1 
+    87 integrity[1,5,5]
+                                   1                           1 
+    88 integrity[1,5,6]
+                                   0                           1 
+    89 integrity[1,5,7]
+                                   0                           1 
+    90 integrity[1,5,8]
+                                   0                           1 
+    91 integrity[1,5,9]
+                                   0                           1 
+    92 integrity[1,6,1]
+                                   0                           1 
+    93 integrity[1,6,2]
+                                   0                           1 
+    94 integrity[1,6,3]
+                                   1                           1 
+    95 integrity[1,6,4]
+                                   0                           1 
+    96 integrity[1,6,5]
+                                   1                           1 
+    97 integrity[1,6,6]
+                                   0                           1 
+    98 integrity[1,6,7]
+                                   0                           1 
+    99 integrity[1,6,8]
+                                   0                           1 
+   100 integrity[1,6,9]
+                                   0                           1 
+   101 integrity[2,1,1]
+                                   0                           1 
+   102 integrity[2,1,2]
+                                   0                           1 
+   103 integrity[2,1,3]
+                                   1                           1 
+   104 integrity[2,1,4]
+                                   0                           1 
+   105 integrity[2,1,5]
+                                   1                           1 
+   106 integrity[2,1,6]
+                                   1                           1 
+   107 integrity[2,1,7]
+                                   0                           1 
+   108 integrity[2,1,8]
+                                   0                           1 
+   109 integrity[2,1,9]
+                                   0                           1 
+   110 integrity[2,3,1]
+                                   0                           1 
+   111 integrity[2,3,2]
+                                   0                           1 
+   112 integrity[2,3,3]
+                                   0                           1 
+   113 integrity[2,3,4]
+                                   0                           1 
+   114 integrity[2,3,5]
+                                   0                           1 
+   115 integrity[2,3,6]
+                                   1                           1 
+   116 integrity[2,3,7]
+                                   0                           1 
+   117 integrity[2,3,8]
+                                   0                           1 
+   118 integrity[2,3,9]
+                                   0                           1 
+   119 integrity[2,4,1]
+                                   0                           1 
+   120 integrity[2,4,2]
+                                   0                           1 
+   121 integrity[2,4,3]
+                                   0                           1 
+   122 integrity[2,4,4]
+                                   0                           1 
+   123 integrity[2,4,5]
+                                   0                           1 
+   124 integrity[2,4,6]
+                                   1                           1 
+   125 integrity[2,4,7]
+                                   0                           1 
+   126 integrity[2,4,8]
+                                   0                           1 
+   127 integrity[2,4,9]
+                                   0                           1 
+   128 integrity[2,5,1]
+                                   0                           1 
+   129 integrity[2,5,2]
+                                   0                           1 
+   130 integrity[2,5,3]
+                                   0                           1 
+   131 integrity[2,5,4]
+                                   0                           1 
+   132 integrity[2,5,5]
+                                   0                           1 
+   133 integrity[2,5,6]
+                                   1                           1 
+   134 integrity[2,5,7]
+                                   0                           1 
+   135 integrity[2,5,8]
+                                   0                           1 
+   136 integrity[2,5,9]
+                                   0                           1 
+   137 integrity[2,6,1]
+                                   0                           1 
+   138 integrity[2,6,2]
+                                   0                           1 
+   139 integrity[2,6,3]
+                                   0                           1 
+   140 integrity[2,6,4]
+                                   0                           1 
+   141 integrity[2,6,5]
+                                   0                           1 
+   142 integrity[2,6,6]
+                                   1                           1 
+   143 integrity[2,6,7]
+                                   0                           1 
+   144 integrity[2,6,8]
+                                   0                           1 
+   145 integrity[2,6,9]
+                                   0                           1 
+   146 integrity[3,1,1]
+                                   0                           1 
+   147 integrity[3,1,2]
+                                   0                           1 
+   148 integrity[3,1,3]
+                                   1                           1 
+   149 integrity[3,1,4]
+                                   0                           1 
+   150 integrity[3,1,5]
+                                   1                           1 
+   151 integrity[3,1,6]
+                                   0                           1 
+   152 integrity[3,1,7]
+                                   0                           1 
+   153 integrity[3,1,8]
+                                   0                           1 
+   154 integrity[3,1,9]
+                                   0                           1 
+   155 integrity[3,2,1]
+                                   0                           1 
+   156 integrity[3,2,2]
+                                   0                           1 
+   157 integrity[3,2,3]
+                                   0                           1 
+   158 integrity[3,2,4]
+                                   0                           1 
+   159 integrity[3,2,5]
+                                   0                           1 
+   160 integrity[3,2,6]
+                                   1                           1 
+   161 integrity[3,2,7]
+                                   0                           1 
+   162 integrity[3,2,8]
+                                   0                           1 
+   163 integrity[3,2,9]
+                                   0                           1 
+   164 integrity[3,4,1]
+                                   0                           1 
+   165 integrity[3,4,2]
+                                   0                           1 
+   166 integrity[3,4,3]
+                                   0                           1 
+   167 integrity[3,4,4]
+                                   0                           1 
+   168 integrity[3,4,5]
+                                   0                           1 
+   169 integrity[3,4,6]
+                                   0                           1 
+   170 integrity[3,4,7]
+                                   0                           1 
+   171 integrity[3,4,8]
+                                   0                           1 
+   172 integrity[3,4,9]
+                                   0                           1 
+   173 integrity[3,5,1]
+                                   0                           1 
+   174 integrity[3,5,2]
+                                   0                           1 
+   175 integrity[3,5,3]
+                                   0                           1 
+   176 integrity[3,5,4]
+                                   0                           1 
+   177 integrity[3,5,5]
+                                   0                           1 
+   178 integrity[3,5,6]
+                                   0                           1 
+   179 integrity[3,5,7]
+                                   0                           1 
+   180 integrity[3,5,8]
+                                   0                           1 
+   181 integrity[3,5,9]
+                                   0                           1 
+   182 integrity[3,6,1]
+                                   0                           1 
+   183 integrity[3,6,2]
+                                   0                           1 
+   184 integrity[3,6,3]
+                                   0                           1 
+   185 integrity[3,6,4]
+                                   0                           1 
+   186 integrity[3,6,5]
+                                   0                           1 
+   187 integrity[3,6,6]
+                                   0                           1 
+   188 integrity[3,6,7]
+                                   0                           1 
+   189 integrity[3,6,8]
+                                   0                           1 
+   190 integrity[3,6,9]
+                                   0                           1 
+   191 integrity[4,1,1]
+                                   0                           1 
+   192 integrity[4,1,2]
+                                   0                           1 
+   193 integrity[4,1,3]
+                                   1                           1 
+   194 integrity[4,1,4]
+                                   0                           1 
+   195 integrity[4,1,5]
+                                   1                           1 
+   196 integrity[4,1,6]
+                                   0                           1 
+   197 integrity[4,1,7]
+                                   0                           1 
+   198 integrity[4,1,8]
+                                   0                           1 
+   199 integrity[4,1,9]
+                                   0                           1 
+   200 integrity[4,2,1]
+                                   0                           1 
+   201 integrity[4,2,2]
+                                   0                           1 
+   202 integrity[4,2,3]
+                                   0                           1 
+   203 integrity[4,2,4]
+                                   0                           1 
+   204 integrity[4,2,5]
+                                   0                           1 
+   205 integrity[4,2,6]
+                                   1                           1 
+   206 integrity[4,2,7]
+                                   0                           1 
+   207 integrity[4,2,8]
+                                   0                           1 
+   208 integrity[4,2,9]
+                                   0                           1 
+   209 integrity[4,3,1]
+                                   0                           1 
+   210 integrity[4,3,2]
+                                   0                           1 
+   211 integrity[4,3,3]
+                                   0                           1 
+   212 integrity[4,3,4]
+                                   0                           1 
+   213 integrity[4,3,5]
+                                   0                           1 
+   214 integrity[4,3,6]
+                                   0                           1 
+   215 integrity[4,3,7]
+                                   0                           1 
+   216 integrity[4,3,8]
+                                   0                           1 
+   217 integrity[4,3,9]
+                                   0                           1 
+   218 integrity[4,5,1]
+                                   0                           1 
+   219 integrity[4,5,2]
+                                   0                           1 
+   220 integrity[4,5,3]
+                                   0                           1 
+   221 integrity[4,5,4]
+                                   0                           1 
+   222 integrity[4,5,5]
+                                   0                           1 
+   223 integrity[4,5,6]
+                                   0                           1 
+   224 integrity[4,5,7]
+                                   0                           1 
+   225 integrity[4,5,8]
+                                   0                           1 
+   226 integrity[4,5,9]
+                                   0                           1 
+   227 integrity[4,6,1]
+                                   0                           1 
+   228 integrity[4,6,2]
+                                   0                           1 
+   229 integrity[4,6,3]
+                                   0                           1 
+   230 integrity[4,6,4]
+                                   0                           1 
+   231 integrity[4,6,5]
+                                   0                           1 
+   232 integrity[4,6,6]
+                                   0                           1 
+   233 integrity[4,6,7]
+                                   0                           1 
+   234 integrity[4,6,8]
+                                   0                           1 
+   235 integrity[4,6,9]
+                                   0                           1 
+   236 integrity[5,1,1]
+                                   0                           1 
+   237 integrity[5,1,2]
+                                   0                           1 
+   238 integrity[5,1,3]
+                                   1                           1 
+   239 integrity[5,1,4]
+                                   0                           1 
+   240 integrity[5,1,5]
+                                   1                           1 
+   241 integrity[5,1,6]
+                                   0                           1 
+   242 integrity[5,1,7]
+                                   0                           1 
+   243 integrity[5,1,8]
+                                   0                           1 
+   244 integrity[5,1,9]
+                                   0                           1 
+   245 integrity[5,2,1]
+                                   0                           1 
+   246 integrity[5,2,2]
+                                   0                           1 
+   247 integrity[5,2,3]
+                                   0                           1 
+   248 integrity[5,2,4]
+                                   0                           1 
+   249 integrity[5,2,5]
+                                   0                           1 
+   250 integrity[5,2,6]
+                                   1                           1 
+   251 integrity[5,2,7]
+                                   0                           1 
+   252 integrity[5,2,8]
+                                   0                           1 
+   253 integrity[5,2,9]
+                                   0                           1 
+   254 integrity[5,3,1]
+                                   0                           1 
+   255 integrity[5,3,2]
+                                   0                           1 
+   256 integrity[5,3,3]
+                                   0                           1 
+   257 integrity[5,3,4]
+                                   0                           1 
+   258 integrity[5,3,5]
+                                   0                           1 
+   259 integrity[5,3,6]
+                                   0                           1 
+   260 integrity[5,3,7]
+                                   0                           1 
+   261 integrity[5,3,8]
+                                   0                           1 
+   262 integrity[5,3,9]
+                                   0                           1 
+   263 integrity[5,4,1]
+                                   0                           1 
+   264 integrity[5,4,2]
+                                   0                           1 
+   265 integrity[5,4,3]
+                                   0                           1 
+   266 integrity[5,4,4]
+                                   0                           1 
+   267 integrity[5,4,5]
+                                   0                           1 
+   268 integrity[5,4,6]
+                                   0                           1 
+   269 integrity[5,4,7]
+                                   0                           1 
+   270 integrity[5,4,8]
+                                   0                           1 
+   271 integrity[5,4,9]
+                                   0                           1 
+   272 integrity[5,6,1]
+                                   0                           1 
+   273 integrity[5,6,2]
+                                   0                           1 
+   274 integrity[5,6,3]
+                                   0                           1 
+   275 integrity[5,6,4]
+                                   0                           1 
+   276 integrity[5,6,5]
+                                   0                           1 
+   277 integrity[5,6,6]
+                                   0                           1 
+   278 integrity[5,6,7]
+                                   0                           1 
+   279 integrity[5,6,8]
+                                   0                           1 
+   280 integrity[5,6,9]
+                                   0                           1 
+   281 integrity[6,1,1]
+                                   0                           1 
+   282 integrity[6,1,2]
+                                   0                           1 
+   283 integrity[6,1,3]
+                                   1                           1 
+   284 integrity[6,1,4]
+                                   0                           1 
+   285 integrity[6,1,5]
+                                   1                           1 
+   286 integrity[6,1,6]
+                                   0                           1 
+   287 integrity[6,1,7]
+                                   0                           1 
+   288 integrity[6,1,8]
+                                   0                           1 
+   289 integrity[6,1,9]
+                                   0                           1 
+   290 integrity[6,2,1]
+                                   0                           1 
+   291 integrity[6,2,2]
+                                   0                           1 
+   292 integrity[6,2,3]
+                                   0                           1 
+   293 integrity[6,2,4]
+                                   0                           1 
+   294 integrity[6,2,5]
+                                   0                           1 
+   295 integrity[6,2,6]
+                                   1                           1 
+   296 integrity[6,2,7]
+                                   0                           1 
+   297 integrity[6,2,8]
+                                   0                           1 
+   298 integrity[6,2,9]
+                                   0                           1 
+   299 integrity[6,3,1]
+                                   0                           1 
+   300 integrity[6,3,2]
+                                   0                           1 
+   301 integrity[6,3,3]
+                                   0                           1 
+   302 integrity[6,3,4]
+                                   0                           1 
+   303 integrity[6,3,5]
+                                   0                           1 
+   304 integrity[6,3,6]
+                                   0                           1 
+   305 integrity[6,3,7]
+                                   0                           1 
+   306 integrity[6,3,8]
+                                   0                           1 
+   307 integrity[6,3,9]
+                                   0                           1 
+   308 integrity[6,4,1]
+                                   0                           1 
+   309 integrity[6,4,2]
+                                   0                           1 
+   310 integrity[6,4,3]
+                                   0                           1 
+   311 integrity[6,4,4]
+                                   0                           1 
+   312 integrity[6,4,5]
+                                   0                           1 
+   313 integrity[6,4,6]
+                                   0                           1 
+   314 integrity[6,4,7]
+                                   0                           1 
+   315 integrity[6,4,8]
+                                   0                           1 
+   316 integrity[6,4,9]
+                                   0                           1 
+   317 integrity[6,5,1]
+                                   0                           1 
+   318 integrity[6,5,2]
+                                   0                           1 
+   319 integrity[6,5,3]
+                                   0                           1 
+   320 integrity[6,5,4]
+                                   0                           1 
+   321 integrity[6,5,5]
+                                   0                           1 
+   322 integrity[6,5,6]
+                                   0                           1 
+   323 integrity[6,5,7]
+                                   0                           1 
+   324 integrity[6,5,8]
+                                   0                           1 
+   325 integrity[6,5,9]
+                                   0                           1 
+   326 z                        3040                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[1,1]       *              0             0             1 
+     2 x[2,1]       *              0             0             1 
+     3 x[3,1]       *              0             0             1 
+     4 x[4,1]       *              0             0             1 
+     5 x[5,1]       *              0             0             1 
+     6 x[6,1]       *              0             0             1 
+     7 x[1,2]       *              0             0             1 
+     8 x[2,2]       *              0             0             1 
+     9 x[3,2]       *              0             0             1 
+    10 x[4,2]       *              0             0             1 
+    11 x[5,2]       *              0             0             1 
+    12 x[6,2]       *              0             0             1 
+    13 x[1,3]       *              1             0             1 
+    14 x[2,3]       *              0             0             1 
+    15 x[3,3]       *              0             0             1 
+    16 x[4,3]       *              0             0             1 
+    17 x[5,3]       *              0             0             1 
+    18 x[6,3]       *              0             0             1 
+    19 x[1,4]       *              0             0             1 
+    20 x[2,4]       *              0             0             1 
+    21 x[3,4]       *              0             0             1 
+    22 x[4,4]       *              0             0             1 
+    23 x[5,4]       *              0             0             1 
+    24 x[6,4]       *              0             0             1 
+    25 x[1,5]       *              1             0             1 
+    26 x[2,5]       *              0             0             1 
+    27 x[3,5]       *              0             0             1 
+    28 x[4,5]       *              0             0             1 
+    29 x[5,5]       *              0             0             1 
+    30 x[6,5]       *              0             0             1 
+    31 x[1,6]       *              0             0             1 
+    32 x[2,6]       *              1             0             1 
+    33 x[3,6]       *              0             0             1 
+    34 x[4,6]       *              0             0             1 
+    35 x[5,6]       *              0             0             1 
+    36 x[6,6]       *              0             0             1 
+    37 x[1,7]       *              0             0             1 
+    38 x[2,7]       *              0             0             1 
+    39 x[3,7]       *              0             0             1 
+    40 x[4,7]       *              0             0             1 
+    41 x[5,7]       *              0             0             1 
+    42 x[6,7]       *              0             0             1 
+    43 x[1,8]       *              0             0             1 
+    44 x[2,8]       *              0             0             1 
+    45 x[3,8]       *              0             0             1 
+    46 x[4,8]       *              0             0             1 
+    47 x[5,8]       *              0             0             1 
+    48 x[6,8]       *              0             0             1 
+    49 x[1,9]       *              0             0             1 
+    50 x[2,9]       *              0             0             1 
+    51 x[3,9]       *              0             0             1 
+    52 x[4,9]       *              0             0             1 
+    53 x[5,9]       *              0             0             1 
+    54 x[6,9]       *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
