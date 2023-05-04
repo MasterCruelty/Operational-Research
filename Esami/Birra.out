@@ -1,0 +1,149 @@
+Problem:    Birra
+Rows:       21
+Columns:    96
+Non-zeros:  288
+Status:     OPTIMAL
+Objective:  z = 14063 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 capacity[A]  B             80                         300 
+     2 capacity[B]  B             70                         200 
+     3 capacity[C]  B             60                         200 
+     4 capacity[D]  B            150                         300 
+     5 capacity[F]  B             40                         200 
+     6 capacity[G]  B             60                         200 
+     7 capacity[J]  B            260                         300 
+     8 capacity[M]  B             80                         300 
+     9 domanda[A]   NL            80            80                          10 
+    10 domanda[B]   NL            70            70                          15 
+    11 domanda[C]   NL            60            60                          18 
+    12 domanda[D]   NL            70            70                          20 
+    13 domanda[E]   NL            80            80                        25.7 
+    14 domanda[F]   NL            40            40                          12 
+    15 domanda[G]   NL            60            60                          16 
+    16 domanda[H]   NL            70            70                       21.85 
+    17 domanda[J]   NL           150           150                          16 
+    18 domanda[K]   NL            40            40                          27 
+    19 domanda[L]   NL            30            30                       24.25 
+    20 domanda[M]   NL            50            50                          10 
+    21 z            B          14063                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[A,A]       B             80             0               
+     2 x[A,B]       NL             0             0                       23.25 
+     3 x[A,C]       NL             0             0                       12.05 
+     4 x[A,D]       NL             0             0                       16.45 
+     5 x[A,E]       NL             0             0                        9.55 
+     6 x[A,F]       NL             0             0                       12.75 
+     7 x[A,G]       NL             0             0                          30 
+     8 x[A,H]       NL             0             0                       15.65 
+     9 x[A,J]       NL             0             0                       34.85 
+    10 x[A,K]       NL             0             0                       27.55 
+    11 x[A,L]       NL             0             0                        12.7 
+    12 x[A,M]       NL             0             0                       42.75 
+    13 x[B,A]       NL             0             0                       33.25 
+    14 x[B,B]       B             70             0               
+    15 x[B,C]       NL             0             0                         7.5 
+    16 x[B,D]       NL             0             0                        18.7 
+    17 x[B,E]       NL             0             0                        4.75 
+    18 x[B,F]       NL             0             0                       42.95 
+    19 x[B,G]       NL             0             0                       32.25 
+    20 x[B,H]       NL             0             0                       31.15 
+    21 x[B,J]       NL             0             0                        45.8 
+    22 x[B,K]       NL             0             0                        38.4 
+    23 x[B,L]       NL             0             0                        39.7 
+    24 x[B,M]       NL             0             0                          76 
+    25 x[C,A]       NL             0             0                       28.05 
+    26 x[C,B]       NL             0             0                        13.5 
+    27 x[C,C]       B             60             0               
+    28 x[C,D]       NL             0             0                       13.45 
+    29 x[C,E]       NL             0             0                        6.75 
+    30 x[C,F]       NL             0             0                       37.75 
+    31 x[C,G]       NL             0             0                          27 
+    32 x[C,H]       NL             0             0                       29.85 
+    33 x[C,J]       NL             0             0                       40.55 
+    34 x[C,K]       NL             0             0                       38.45 
+    35 x[C,L]       NL             0             0                       35.65 
+    36 x[C,M]       NL             0             0                       70.75 
+    37 x[D,A]       NL             0             0                       36.45 
+    38 x[D,B]       NL             0             0                        28.7 
+    39 x[D,C]       NL             0             0                       17.45 
+    40 x[D,D]       B             70             0               
+    41 x[D,E]       B             80             0               
+    42 x[D,F]       NL             0             0                       26.75 
+    43 x[D,G]       NL             0             0                        13.7 
+    44 x[D,H]       NL             0             0                          17 
+    45 x[D,J]       NL             0             0                       27.25 
+    46 x[D,K]       NL             0             0                       25.15 
+    47 x[D,L]       NL             0             0                        24.7 
+    48 x[D,M]       NL             0             0                        60.6 
+    49 x[F,A]       NL             0             0                       16.75 
+    50 x[F,B]       NL             0             0                       36.95 
+    51 x[F,C]       NL             0             0                       25.75 
+    52 x[F,D]       NL             0             0                       10.75 
+    53 x[F,E]       NL             0             0                        7.85 
+    54 x[F,F]       B             40             0               
+    55 x[F,G]       NL             0             0                       16.55 
+    56 x[F,H]       NL             0             0                         3.1 
+    57 x[F,J]       NL             0             0                        15.7 
+    58 x[F,K]       NL             0             0                       14.95 
+    59 x[F,L]       NL             0             0                         2.4 
+    60 x[F,M]       NL             0             0                        33.7 
+    61 x[G,A]       NL             0             0                          42 
+    62 x[G,B]       NL             0             0                       34.25 
+    63 x[G,C]       NL             0             0                          23 
+    64 x[G,D]       NL             0             0                         5.7 
+    65 x[G,E]       NL             0             0                        3.85 
+    66 x[G,F]       NL             0             0                       24.55 
+    67 x[G,G]       B             60             0               
+    68 x[G,H]       NL             0             0                         8.2 
+    69 x[G,J]       NL             0             0                       43.05 
+    70 x[G,K]       NL             0             0                        11.5 
+    71 x[G,L]       NL             0             0                       20.25 
+    72 x[G,M]       NL             0             0                       40.05 
+    73 x[J,A]       NL             0             0                       46.85 
+    74 x[J,B]       NL             0             0                        47.8 
+    75 x[J,C]       NL             0             0                       36.55 
+    76 x[J,D]       NL             0             0                       19.25 
+    77 x[J,E]       NL             0             0                       17.95 
+    78 x[J,F]       NL             0             0                        23.7 
+    79 x[J,G]       NL             0             0                       43.05 
+    80 x[J,H]       B             70             0               
+    81 x[J,J]       B            150             0               
+    82 x[J,K]       B             40             0               
+    83 x[J,L]       NL             0             0                       10.65 
+    84 x[J,M]       NL             0             0                       35.65 
+    85 x[M,A]       NL             0             0                       42.75 
+    86 x[M,B]       NL             0             0                          66 
+    87 x[M,C]       NL             0             0                       54.75 
+    88 x[M,D]       NL             0             0                        40.6 
+    89 x[M,E]       NL             0             0                        32.1 
+    90 x[M,F]       NL             0             0                        29.7 
+    91 x[M,G]       NL             0             0                       28.05 
+    92 x[M,H]       NL             0             0                        14.5 
+    93 x[M,J]       NL             0             0                       23.65 
+    94 x[M,K]       NL             0             0                       18.25 
+    95 x[M,L]       B             30             0               
+    96 x[M,M]       B             50             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 3.55e-015 on column 22
+        max.rel.err = 7.18e-017 on column 23
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,456 @@
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 capacity[A]  BS      80.00000     220.00000          -Inf      160.00000      -9.55000   13299.00000 x[A,E]
+                                            .          300.00000         .           16.75000   15403.00000 x[F,A]
+
+     2 capacity[B]  BS      70.00000     130.00000          -Inf      150.00000      -4.75000   13730.50000 x[B,E]
+                                            .          200.00000         .           13.50000   15008.00000 x[C,B]
+
+     3 capacity[C]  BS      60.00000     140.00000          -Inf      140.00000      -6.75000   13658.00000 x[C,E]
+                                            .          200.00000         .            7.50000   14513.00000 x[B,C]
+
+     4 capacity[D]  BS     150.00000     150.00000          -Inf      210.00000     -13.70000   12008.00000 x[D,G]
+                                            .          300.00000       70.00000       3.85000   14640.50000 x[G,E]
+
+     5 capacity[F]  BS      40.00000     160.00000          -Inf       70.00000      -2.40000   13967.00000 x[F,L]
+                                            .          200.00000         .           12.75000   14573.00000 x[A,F]
+
+     6 capacity[G]  BS      60.00000     140.00000          -Inf      140.00000      -3.85000   13832.00000 x[G,E]
+                                            .          200.00000         .           13.70000   14885.00000 x[D,G]
+
+     7 capacity[J]  BS     260.00000      40.00000          -Inf      290.00000     -10.65000   11294.00000 x[J,L]
+                                            .          300.00000      190.00000       3.10000   14869.00000 x[F,H]
+
+     8 capacity[M]  BS      80.00000     220.00000          -Inf           +Inf     -10.00000   13263.00000 domanda[M]
+                                            .          300.00000       50.00000       2.40000   14255.00000 x[F,L]
+
+     9 domanda[A]   NL      80.00000        .           80.00000         .          -10.00000   13263.00000 x[A,A]
+                                          10.00000          +Inf      300.00000          +Inf   16263.00000 capacity[A]
+
+    10 domanda[B]   NL      70.00000        .           70.00000         .          -15.00000   13013.00000 x[B,B]
+                                          15.00000          +Inf      200.00000          +Inf   16013.00000 capacity[B]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 domanda[C]   NL      60.00000        .           60.00000         .          -18.00000   12983.00000 x[C,C]
+                                          18.00000          +Inf      200.00000          +Inf   16583.00000 capacity[C]
+
+    12 domanda[D]   NL      70.00000        .           70.00000         .          -20.00000   12663.00000 x[D,D]
+                                          20.00000          +Inf      220.00000          +Inf   17063.00000 capacity[D]
+
+    13 domanda[E]   NL      80.00000        .           80.00000         .          -25.70000   12007.00000 x[D,E]
+                                          25.70000          +Inf      230.00000          +Inf   17918.00000 capacity[D]
+
+    14 domanda[F]   NL      40.00000        .           40.00000         .          -12.00000   13583.00000 x[F,F]
+                                          12.00000          +Inf      200.00000          +Inf   15983.00000 capacity[F]
+
+    15 domanda[G]   NL      60.00000        .           60.00000         .          -16.00000   13103.00000 x[G,G]
+                                          16.00000          +Inf      200.00000          +Inf   16303.00000 capacity[G]
+
+    16 domanda[H]   NL      70.00000        .           70.00000         .          -21.85000   12533.50000 x[J,H]
+                                          21.85000          +Inf      110.00000          +Inf   14937.00000 capacity[J]
+
+    17 domanda[J]   NL     150.00000        .          150.00000         .          -16.00000   11663.00000 x[J,J]
+                                          16.00000          +Inf      190.00000          +Inf   14703.00000 capacity[J]
+
+    18 domanda[K]   NL      40.00000        .           40.00000         .          -27.00000   12983.00000 x[J,K]
+                                          27.00000          +Inf       80.00000          +Inf   15143.00000 capacity[J]
+
+    19 domanda[L]   NL      30.00000        .           30.00000         .          -24.25000   13335.50000 x[M,L]
+                                          24.25000          +Inf      250.00000          +Inf   19398.00000 capacity[M]
+
+    20 domanda[M]   NL      50.00000        .           50.00000         .          -10.00000   13563.00000 x[M,M]
+                                          10.00000          +Inf      270.00000          +Inf   16263.00000 capacity[M]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   3
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 z            BS   14063.00000  -14063.00000          -Inf    14135.00000      -1.00000        .      x[F,L]
+                                            .               +Inf    14063.00000          +Inf          +Inf
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   4
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x[A,A]       BS      80.00000      10.00000        .           300.00000        .        13263.00000 domanda[A]
+                                            .               +Inf      -80.00000      26.75000   15403.00000 x[F,A]
+
+     2 x[A,B]       NL        .           38.25000        .          -130.00000      15.00000   11040.50000 capacity[B]
+                                          23.25000          +Inf       70.00000          +Inf   15690.50000 x[B,B]
+
+     3 x[A,C]       NL        .           30.05000        .          -140.00000      18.00000   12376.00000 capacity[C]
+                                          12.05000          +Inf       60.00000          +Inf   14786.00000 x[C,C]
+
+     4 x[A,D]       NL        .           36.45000        .          -150.00000      20.00000   11595.50000 capacity[D]
+                                          16.45000          +Inf       70.00000          +Inf   15214.50000 x[D,D]
+
+     5 x[A,E]       NL        .           35.25000        .          -150.00000      25.70000   12630.50000 capacity[D]
+                                           9.55000          +Inf       80.00000          +Inf   14827.00000 x[D,E]
+
+     6 x[A,F]       NL        .           24.75000        .          -160.00000      12.00000   12023.00000 capacity[F]
+                                          12.75000          +Inf       40.00000          +Inf   14573.00000 x[F,F]
+
+     7 x[A,G]       NL        .           46.00000        .          -140.00000      16.00000    9863.00000 capacity[G]
+                                          30.00000          +Inf       60.00000          +Inf   15863.00000 x[G,G]
+
+     8 x[A,H]       NL        .           37.50000        .           -40.00000      21.85000   13437.00000 capacity[J]
+                                          15.65000          +Inf       70.00000          +Inf   15158.50000 x[J,H]
+
+     9 x[A,J]       NL        .           50.85000        .           -40.00000      16.00000   12669.00000 capacity[J]
+                                          34.85000          +Inf      150.00000          +Inf   19290.50000 x[J,J]
+
+    10 x[A,K]       NL        .           54.55000        .           -40.00000      27.00000   12961.00000 capacity[J]
+                                          27.55000          +Inf       40.00000          +Inf   15165.00000 x[J,K]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   5
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    11 x[A,L]       NL        .           36.95000        .          -220.00000      24.25000   11269.00000 capacity[M]
+                                          12.70000          +Inf       30.00000          +Inf   14444.00000 x[M,L]
+
+    12 x[A,M]       NL        .           52.75000        .          -220.00000      10.00000    4658.00000 capacity[M]
+                                          42.75000          +Inf       50.00000          +Inf   16200.50000 x[M,M]
+
+    13 x[B,A]       NL        .           43.25000        .          -220.00000      10.00000    6748.00000 capacity[A]
+                                          33.25000          +Inf       80.00000          +Inf   16723.00000 x[A,A]
+
+    14 x[B,B]       BS      70.00000      15.00000        .           200.00000        .        13013.00000 domanda[B]
+                                            .               +Inf      -70.00000      28.50000   15008.00000 x[C,B]
+
+    15 x[B,C]       NL        .           25.50000        .          -140.00000      18.00000   13013.00000 capacity[C]
+                                           7.50000          +Inf       60.00000          +Inf   14513.00000 x[C,C]
+
+    16 x[B,D]       NL        .           38.70000        .          -150.00000      20.00000   11258.00000 capacity[D]
+                                          18.70000          +Inf       70.00000          +Inf   15372.00000 x[D,D]
+
+    17 x[B,E]       NL        .           30.45000        .          -150.00000      25.70000   13350.50000 capacity[D]
+                                           4.75000          +Inf       80.00000          +Inf   14443.00000 x[D,E]
+
+    18 x[B,F]       NL        .           54.95000        .          -160.00000      12.00000    7191.00000 capacity[F]
+                                          42.95000          +Inf       40.00000          +Inf   15781.00000 x[F,F]
+
+    19 x[B,G]       NL        .           48.25000        .          -140.00000      16.00000    9548.00000 capacity[G]
+                                          32.25000          +Inf       60.00000          +Inf   15998.00000 x[G,G]
+
+    20 x[B,H]       NL        .           53.00000        .           -40.00000      21.85000   12817.00000 capacity[J]
+                                          31.15000          +Inf       70.00000          +Inf   16243.50000 x[J,H]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   6
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    21 x[B,J]       NL        .           61.80000        .           -40.00000      16.00000   12231.00000 capacity[J]
+                                          45.80000          +Inf      130.00000          +Inf   20017.00000 capacity[B]
+
+    22 x[B,K]       NL        .           65.40000        .           -40.00000      27.00000   12527.00000 capacity[J]
+                                          38.40000          +Inf       40.00000          +Inf   15599.00000 x[J,K]
+
+    23 x[B,L]       NL        .           63.95000        .          -220.00000      24.25000    5329.00000 capacity[M]
+                                          39.70000          +Inf       30.00000          +Inf   15254.00000 x[M,L]
+
+    24 x[B,M]       NL        .           86.00000        .          -220.00000      10.00000   -2657.00000 capacity[M]
+                                          76.00000          +Inf       50.00000          +Inf   17863.00000 x[M,M]
+
+    25 x[C,A]       NL        .           38.05000        .          -220.00000      10.00000    7892.00000 capacity[A]
+                                          28.05000          +Inf       80.00000          +Inf   16307.00000 x[A,A]
+
+    26 x[C,B]       NL        .           28.50000        .          -130.00000      15.00000   12308.00000 capacity[B]
+                                          13.50000          +Inf       70.00000          +Inf   15008.00000 x[B,B]
+
+    27 x[C,C]       BS      60.00000      18.00000        .           200.00000        .        12983.00000 domanda[C]
+                                            .               +Inf      -70.00000      25.50000   14513.00000 x[B,C]
+
+    28 x[C,D]       NL        .           33.45000        .          -150.00000      20.00000   12045.50000 capacity[D]
+                                          13.45000          +Inf       70.00000          +Inf   15004.50000 x[D,D]
+
+    29 x[C,E]       NL        .           32.45000        .          -150.00000      25.70000   13050.50000 capacity[D]
+                                           6.75000          +Inf       80.00000          +Inf   14603.00000 x[D,E]
+
+    30 x[C,F]       NL        .           49.75000        .          -160.00000      12.00000    8023.00000 capacity[F]
+                                          37.75000          +Inf       40.00000          +Inf   15573.00000 x[F,F]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   7
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    31 x[C,G]       NL        .           43.00000        .          -140.00000      16.00000   10283.00000 capacity[G]
+                                          27.00000          +Inf       60.00000          +Inf   15683.00000 x[G,G]
+
+    32 x[C,H]       NL        .           51.70000        .           -40.00000      21.85000   12869.00000 capacity[J]
+                                          29.85000          +Inf       70.00000          +Inf   16152.50000 x[J,H]
+
+    33 x[C,J]       NL        .           56.55000        .           -40.00000      16.00000   12441.00000 capacity[J]
+                                          40.55000          +Inf      140.00000          +Inf   19740.00000 capacity[C]
+
+    34 x[C,K]       NL        .           65.45000        .           -40.00000      27.00000   12525.00000 capacity[J]
+                                          38.45000          +Inf       40.00000          +Inf   15601.00000 x[J,K]
+
+    35 x[C,L]       NL        .           59.90000        .          -220.00000      24.25000    6220.00000 capacity[M]
+                                          35.65000          +Inf       30.00000          +Inf   15132.50000 x[M,L]
+
+    36 x[C,M]       NL        .           80.75000        .          -220.00000      10.00000   -1502.00000 capacity[M]
+                                          70.75000          +Inf       50.00000          +Inf   17600.50000 x[M,M]
+
+    37 x[D,A]       NL        .           46.45000        .          -220.00000      10.00000    6044.00000 capacity[A]
+                                          36.45000          +Inf       80.00000          +Inf   16979.00000 x[A,A]
+
+    38 x[D,B]       NL        .           43.70000        .          -130.00000      15.00000   10332.00000 capacity[B]
+                                          28.70000          +Inf       70.00000          +Inf   16072.00000 x[B,B]
+
+    39 x[D,C]       NL        .           35.45000        .          -140.00000      18.00000   11620.00000 capacity[C]
+                                          17.45000          +Inf       60.00000          +Inf   15110.00000 x[C,C]
+
+    40 x[D,D]       BS      70.00000      20.00000        .           220.00000        .        12663.00000 domanda[D]
+                                            .               +Inf      -70.00000      25.70000   14462.00000 x[G,D]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   8
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    41 x[D,E]       BS      80.00000      25.70000        .           230.00000        .        12007.00000 domanda[E]
+                                            .               +Inf      -60.00000      29.55000   14371.00000 x[G,E]
+
+    42 x[D,F]       NL        .           38.75000        .          -160.00000      12.00000    9783.00000 capacity[F]
+                                          26.75000          +Inf       40.00000          +Inf   15133.00000 x[F,F]
+
+    43 x[D,G]       NL        .           29.70000        .          -140.00000      16.00000   12145.00000 capacity[G]
+                                          13.70000          +Inf       60.00000          +Inf   14885.00000 x[G,G]
+
+    44 x[D,H]       NL        .           38.85000        .           -40.00000      21.85000   13383.00000 capacity[J]
+                                          17.00000          +Inf       70.00000          +Inf   15253.00000 x[J,H]
+
+    45 x[D,J]       NL        .           43.25000        .           -40.00000      16.00000   12973.00000 capacity[J]
+                                          27.25000          +Inf      150.00000          +Inf   18150.50000 capacity[D]
+
+    46 x[D,K]       NL        .           52.15000        .           -40.00000      27.00000   13057.00000 capacity[J]
+                                          25.15000          +Inf       40.00000          +Inf   15069.00000 x[J,K]
+
+    47 x[D,L]       NL        .           48.95000        .          -220.00000      24.25000    8629.00000 capacity[M]
+                                          24.70000          +Inf       30.00000          +Inf   14804.00000 x[M,L]
+
+    48 x[D,M]       NL        .           70.60000        .          -220.00000      10.00000     731.00000 capacity[M]
+                                          60.60000          +Inf       50.00000          +Inf   17093.00000 x[M,M]
+
+    49 x[F,A]       NL        .           26.75000        .          -220.00000      10.00000   10378.00000 capacity[A]
+                                          16.75000          +Inf       80.00000          +Inf   15403.00000 x[A,A]
+
+    50 x[F,B]       NL        .           51.95000        .          -130.00000      15.00000    9259.50000 capacity[B]
+                                          36.95000          +Inf       70.00000          +Inf   16649.50000 x[B,B]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   9
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    51 x[F,C]       NL        .           43.75000        .          -140.00000      18.00000   10458.00000 capacity[C]
+                                          25.75000          +Inf       60.00000          +Inf   15608.00000 x[C,C]
+
+    52 x[F,D]       NL        .           30.75000        .          -150.00000      20.00000   12450.50000 capacity[D]
+                                          10.75000          +Inf       70.00000          +Inf   14815.50000 x[D,D]
+
+    53 x[F,E]       NL        .           33.55000        .          -150.00000      25.70000   12885.50000 capacity[D]
+                                           7.85000          +Inf       80.00000          +Inf   14691.00000 x[D,E]
+
+    54 x[F,F]       BS      40.00000      12.00000        .           200.00000        .        13583.00000 domanda[F]
+                                            .               +Inf     -180.00000      24.75000   14573.00000 x[A,F]
+
+    55 x[F,G]       NL        .           32.55000        .          -140.00000      16.00000   11746.00000 capacity[G]
+                                          16.55000          +Inf       60.00000          +Inf   15056.00000 x[G,G]
+
+    56 x[F,H]       NL        .           24.95000        .           -40.00000      21.85000   13939.00000 capacity[J]
+                                           3.10000          +Inf       70.00000          +Inf   14280.00000 x[J,H]
+
+    57 x[F,J]       NL        .           31.70000        .           -40.00000      16.00000   13435.00000 capacity[J]
+                                          15.70000          +Inf      150.00000          +Inf   16418.00000 x[J,J]
+
+    58 x[F,K]       NL        .           41.95000        .           -40.00000      27.00000   13465.00000 capacity[J]
+                                          14.95000          +Inf       40.00000          +Inf   14661.00000 x[J,K]
+
+    59 x[F,L]       NL        .           26.65000        .          -220.00000      24.25000   13535.00000 capacity[M]
+                                           2.40000          +Inf       30.00000          +Inf   14135.00000 x[M,L]
+
+    60 x[F,M]       NL        .           43.70000        .          -220.00000      10.00000    6649.00000 capacity[M]
+                                          33.70000          +Inf       50.00000          +Inf   15748.00000 x[M,M]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page  10
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    61 x[G,A]       NL        .           52.00000        .          -220.00000      10.00000    4823.00000 capacity[A]
+                                          42.00000          +Inf       80.00000          +Inf   17423.00000 x[A,A]
+
+    62 x[G,B]       NL        .           49.25000        .          -130.00000      15.00000    9610.50000 capacity[B]
+                                          34.25000          +Inf       70.00000          +Inf   16460.50000 x[B,B]
+
+    63 x[G,C]       NL        .           41.00000        .          -140.00000      18.00000   10843.00000 capacity[C]
+                                          23.00000          +Inf       60.00000          +Inf   15443.00000 x[C,C]
+
+    64 x[G,D]       NL        .           25.70000        .          -150.00000      20.00000   13208.00000 capacity[D]
+                                           5.70000          +Inf       70.00000          +Inf   14462.00000 x[D,D]
+
+    65 x[G,E]       NL        .           29.55000        .          -150.00000      25.70000   13485.50000 capacity[D]
+                                           3.85000          +Inf       80.00000          +Inf   14371.00000 x[D,E]
+
+    66 x[G,F]       NL        .           36.55000        .          -160.00000      12.00000   10135.00000 capacity[F]
+                                          24.55000          +Inf       40.00000          +Inf   15045.00000 x[F,F]
+
+    67 x[G,G]       BS      60.00000      16.00000        .           200.00000        .        13103.00000 domanda[G]
+                                            .               +Inf      -90.00000      29.70000   14885.00000 x[D,G]
+
+    68 x[G,H]       NL        .           30.05000        .           -40.00000      21.85000   13735.00000 capacity[J]
+                                           8.20000          +Inf       70.00000          +Inf   14637.00000 x[J,H]
+
+    69 x[G,J]       NL        .           59.05000        .           -40.00000      16.00000   12341.00000 capacity[J]
+                                          43.05000          +Inf      140.00000          +Inf   20090.00000 capacity[G]
+
+    70 x[G,K]       NL        .           38.50000        .           -40.00000      27.00000   13603.00000 capacity[J]
+                                          11.50000          +Inf       40.00000          +Inf   14523.00000 x[J,K]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page  11
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    71 x[G,L]       NL        .           44.50000        .          -220.00000      24.25000    9608.00000 capacity[M]
+                                          20.25000          +Inf       30.00000          +Inf   14670.50000 x[M,L]
+
+    72 x[G,M]       NL        .           50.05000        .          -220.00000      10.00000    5252.00000 capacity[M]
+                                          40.05000          +Inf       50.00000          +Inf   16065.50000 x[M,M]
+
+    73 x[J,A]       NL        .           56.85000        .          -220.00000      10.00000    3756.00000 capacity[A]
+                                          46.85000          +Inf       40.00000          +Inf   15937.00000 capacity[J]
+
+    74 x[J,B]       NL        .           62.80000        .          -130.00000      15.00000    7849.00000 capacity[B]
+                                          47.80000          +Inf       40.00000          +Inf   15975.00000 capacity[J]
+
+    75 x[J,C]       NL        .           54.55000        .          -140.00000      18.00000    8946.00000 capacity[C]
+                                          36.55000          +Inf       40.00000          +Inf   15525.00000 capacity[J]
+
+    76 x[J,D]       NL        .           39.25000        .          -150.00000      20.00000   11175.50000 capacity[D]
+                                          19.25000          +Inf       40.00000          +Inf   14833.00000 capacity[J]
+
+    77 x[J,E]       NL        .           43.65000        .          -150.00000      25.70000   11370.50000 capacity[D]
+                                          17.95000          +Inf       40.00000          +Inf   14781.00000 capacity[J]
+
+    78 x[J,F]       NL        .           35.70000        .          -160.00000      12.00000   10271.00000 capacity[F]
+                                          23.70000          +Inf       40.00000          +Inf   15011.00000 capacity[J]
+
+    79 x[J,G]       NL        .           59.05000        .          -140.00000      16.00000    8036.00000 capacity[G]
+                                          43.05000          +Inf       40.00000          +Inf   15785.00000 capacity[J]
+
+    80 x[J,H]       BS      70.00000      21.85000        .           110.00000        .        12533.50000 domanda[H]
+                                            .               +Inf      -90.00000      24.95000   14280.00000 x[F,H]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page  12
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    81 x[J,J]       BS     150.00000      16.00000        .           190.00000        .        11663.00000 domanda[J]
+                                            .               +Inf      -10.00000      31.70000   16418.00000 x[F,J]
+
+    82 x[J,K]       BS      40.00000      27.00000        .            80.00000        .        12983.00000 domanda[K]
+                                            .               +Inf     -100.00000      38.50000   14523.00000 x[G,K]
+
+    83 x[J,L]       NL        .           34.90000        .          -220.00000      24.25000   11720.00000 capacity[M]
+                                          10.65000          +Inf       30.00000          +Inf   14382.50000 x[M,L]
+
+    84 x[J,M]       NL        .           45.65000        .          -220.00000      10.00000    6220.00000 capacity[M]
+                                          35.65000          +Inf       40.00000          +Inf   15489.00000 capacity[J]
+
+    85 x[M,A]       NL        .           52.75000        .          -220.00000      10.00000    4658.00000 capacity[A]
+                                          42.75000          +Inf       80.00000          +Inf   17483.00000 x[A,A]
+
+    86 x[M,B]       NL        .           81.00000        .          -130.00000      15.00000    5483.00000 capacity[B]
+                                          66.00000          +Inf       70.00000          +Inf   18683.00000 x[B,B]
+
+    87 x[M,C]       NL        .           72.75000        .          -140.00000      18.00000    6398.00000 capacity[C]
+                                          54.75000          +Inf       60.00000          +Inf   17348.00000 x[C,C]
+
+    88 x[M,D]       NL        .           60.60000        .          -150.00000      20.00000    7973.00000 capacity[D]
+                                          40.60000          +Inf       70.00000          +Inf   16905.00000 x[D,D]
+
+    89 x[M,E]       NL        .           57.80000        .          -150.00000      25.70000    9248.00000 capacity[D]
+                                          32.10000          +Inf       80.00000          +Inf   16631.00000 x[D,E]
+
+    90 x[M,F]       NL        .           41.70000        .          -160.00000      12.00000    9311.00000 capacity[F]
+                                          29.70000          +Inf       40.00000          +Inf   15251.00000 x[F,F]
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page  13
+
+Problem:    Birra
+Objective:  z = 14063 (MINimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+    91 x[M,G]       NL        .           44.05000        .          -140.00000      16.00000   10136.00000 capacity[G]
+                                          28.05000          +Inf       60.00000          +Inf   15746.00000 x[G,G]
+
+    92 x[M,H]       NL        .           36.35000        .           -40.00000      21.85000   13483.00000 capacity[J]
+                                          14.50000          +Inf       70.00000          +Inf   15078.00000 x[J,H]
+
+    93 x[M,J]       NL        .           39.65000        .           -40.00000      16.00000   13117.00000 capacity[J]
+                                          23.65000          +Inf      150.00000          +Inf   17610.50000 x[J,J]
+
+    94 x[M,K]       NL        .           45.25000        .           -40.00000      27.00000   13333.00000 capacity[J]
+                                          18.25000          +Inf       40.00000          +Inf   14793.00000 x[J,K]
+
+    95 x[M,L]       BS      30.00000      24.25000        .           250.00000        .        13335.50000 domanda[L]
+                                            .               +Inf     -130.00000      26.65000   14135.00000 x[F,L]
+
+    96 x[M,M]       BS      50.00000      10.00000        .           270.00000        .        13563.00000 domanda[M]
+                                            .               +Inf     -110.00000      43.70000   15748.00000 x[F,M]
+
+End of report
