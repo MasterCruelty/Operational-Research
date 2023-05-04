@@ -7,12 +7,10 @@
   *I costi di trasporto sono proporzionali alle quantità trasportate e alle distanze con un coeff. dato.
   *Si vogliono minimizzare i costi di produzione e di trasporto
   *****************************************************
-  *Commento sul testo: si tratta di un problema di PL che porta a un modello di trasporto con minimize dei costi
+  *Commento sul testo v2: si tratta di un problema di PLI avendo introdotto variabili intere. Minimize dei costi come in v1
   *****************************************************
-  *Analisi post-ottimale:
-  *Potendo investire del capitale nell'ampliamento della capacità dei siti produttivi, su quale dei siti conviene farlo?
-  *Essendo tutti i siti produttivi non utilizzati al massimo, non conviene nessun investimento.
-*/
+  *
+  */
 
 #DATI
 set SP;         #insieme dei siti produttivi
@@ -27,7 +25,7 @@ param ctV{T};   #costo di trasporto per ogni tipo di veicolo[€/km]
 
 #VARIABILI
 var x{SP,PV} >= 0;              #quantità di prodotto trasportato dai siti di produzione ai punti vendita[unità/gg]
-var y{SP,PV,T} >= 0;    #numero di viaggi con veicoli di un certo tipo dai siti produttivi ai punti vendita
+var y{SP,PV,T} >= 0 integer;    #numero di viaggi con veicoli di un certo tipo dai siti produttivi ai punti vendita
 
 #VINCOLI
 #vincolo su capacità produttiva
