@@ -1,0 +1,533 @@
+Problem:    Birrav2
+Rows:       117
+Columns:    288
+Non-zeros:  752
+Status:     OPTIMAL
+Objective:  z = 13485.33333 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 capacity[A]  B             80                         300 
+     2 capacity[B]  B             70                         200 
+     3 capacity[C]  B             60                         200 
+     4 capacity[D]  B            150                         300 
+     5 capacity[F]  B             40                         200 
+     6 capacity[G]  B             60                         200 
+     7 capacity[J]  B            260                         300 
+     8 capacity[M]  B             80                         300 
+     9 domanda[A]   NL            80            80                          10 
+    10 domanda[B]   NL            70            70                          15 
+    11 domanda[C]   NL            60            60                          18 
+    12 domanda[D]   NL            70            70                          20 
+    13 domanda[E]   NL            80            80                        23.8 
+    14 domanda[F]   NL            40            40                          12 
+    15 domanda[G]   NL            60            60                          16 
+    16 domanda[H]   NL            70            70                        19.9 
+    17 domanda[J]   NL           150           150                          16 
+    18 domanda[K]   NL            40            40                     23.3333 
+    19 domanda[L]   NL            30            30                        19.5 
+    20 domanda[M]   NL            50            50                          10 
+    21 capacityV[A,A]
+                    NU             0                          -0         < eps
+    22 capacityV[A,B]
+                    NU             0                          -0      -18.8333 
+    23 capacityV[A,C]
+                    NU             0                          -0      -13.3667 
+    24 capacityV[A,D]
+                    NU             0                          -0      -17.6333 
+    25 capacityV[A,E]
+                    NU             0                          -0      -16.8333 
+    26 capacityV[A,F]
+                    NU             0                          -0      -9.83333 
+    27 capacityV[A,G]
+                    NU             0                          -0           -24 
+    28 capacityV[A,H]
+                    NU             0                          -0      -18.3333 
+    29 capacityV[A,J]
+                    NU             0                          -0      -27.2333 
+    30 capacityV[A,K]
+                    NU             0                          -0         -29.7 
+    31 capacityV[A,L]
+                    NU             0                          -0      -17.9667 
+    32 capacityV[A,M]
+                    NU             0                          -0         -28.5 
+    33 capacityV[B,A]
+                    NU             0                          -0      -18.8333 
+    34 capacityV[B,B]
+                    NU             0                          -0         < eps
+    35 capacityV[B,C]
+                    NU             0                          -0            -7 
+    36 capacityV[B,D]
+                    NU             0                          -0         -15.8 
+    37 capacityV[B,E]
+                    NU             0                          -0          -8.8 
+    38 capacityV[B,F]
+                    NU             0                          -0      -26.6333 
+    39 capacityV[B,G]
+                    NU             0                          -0      -22.1667 
+    40 capacityV[B,H]
+                    NU             0                          -0      -25.3333 
+    41 capacityV[B,J]
+                    NU             0                          -0         -31.2 
+    42 capacityV[B,K]
+                    NU             0                          -0         -33.6 
+    43 capacityV[B,L]
+                    NU             0                          -0      -32.6333 
+    44 capacityV[B,M]
+                    NU             0                          -0      -47.3333 
+    45 capacityV[C,A]
+                    NU             0                          -0      -13.3667 
+    46 capacityV[C,B]
+                    NU             0                          -0            -7 
+    47 capacityV[C,C]
+                    NU             0                          -0         < eps
+    48 capacityV[C,D]
+                    NU             0                          -0         -10.3 
+    49 capacityV[C,E]
+                    NU             0                          -0      -9.63333 
+    50 capacityV[C,F]
+                    NU             0                          -0      -21.1667 
+    51 capacityV[C,G]
+                    NU             0                          -0      -16.6667 
+    52 capacityV[C,H]
+                    NU             0                          -0      -22.4667 
+    53 capacityV[C,J]
+                    NU             0                          -0         -25.7 
+    54 capacityV[C,K]
+                    NU             0                          -0      -31.6333 
+    55 capacityV[C,L]
+                    NU             0                          -0      -27.9333 
+    56 capacityV[C,M]
+                    NU             0                          -0      -41.8333 
+    57 capacityV[D,A]
+                    NU             0                          -0      -17.6333 
+    58 capacityV[D,B]
+                    NU             0                          -0         -15.8 
+    59 capacityV[D,C]
+                    NU             0                          -0         -10.3 
+    60 capacityV[D,D]
+                    NU             0                          -0         < eps
+    61 capacityV[D,E]
+                    NU             0                          -0          -3.8 
+    62 capacityV[D,F]
+                    NU             0                          -0         -12.5 
+    63 capacityV[D,G]
+                    NU             0                          -0      -6.46667 
+    64 capacityV[D,H]
+                    NU             0                          -0      -12.5667 
+    65 capacityV[D,J]
+                    NU             0                          -0         -15.5 
+    66 capacityV[D,K]
+                    NU             0                          -0      -21.4333 
+    67 capacityV[D,L]
+                    NU             0                          -0         -19.3 
+    68 capacityV[D,M]
+                    NU             0                          -0      -33.7333 
+    69 capacityV[F,A]
+                    NU             0                          -0      -9.83333 
+    70 capacityV[F,B]
+                    NU             0                          -0      -26.6333 
+    71 capacityV[F,C]
+                    NU             0                          -0      -21.1667 
+    72 capacityV[F,D]
+                    NU             0                          -0         -12.5 
+    73 capacityV[F,E]
+                    NU             0                          -0      -14.3667 
+    74 capacityV[F,F]
+                    NU             0                          -0         < eps
+    75 capacityV[F,G]
+                    NU             0                          -0         -13.7 
+    76 capacityV[F,H]
+                    NU             0                          -0      -8.63333 
+    77 capacityV[F,J]
+                    NU             0                          -0      -13.1333 
+    78 capacityV[F,K]
+                    NU             0                          -0      -19.9667 
+    79 capacityV[F,L]
+                    NU             0                          -0      -9.76667 
+    80 capacityV[F,M]
+                    NU             0                          -0      -21.1333 
+    81 capacityV[G,A]
+                    NU             0                          -0           -24 
+    82 capacityV[G,B]
+                    NU             0                          -0      -22.1667 
+    83 capacityV[G,C]
+                    NU             0                          -0      -16.6667 
+    84 capacityV[G,D]
+                    NU             0                          -0      -6.46667 
+    85 capacityV[G,E]
+                    NU             0                          -0      -9.03333 
+    86 capacityV[G,F]
+                    NU             0                          -0         -13.7 
+    87 capacityV[G,G]
+                    NU             0                          -0         < eps
+    88 capacityV[G,H]
+                    NU             0                          -0      -9.36667 
+    89 capacityV[G,J]
+                    NU             0                          -0         -28.7 
+    90 capacityV[G,K]
+                    NU             0                          -0           -15 
+    91 capacityV[G,L]
+                    NU             0                          -0           -19 
+    92 capacityV[G,M]
+                    NU             0                          -0         -22.7 
+    93 capacityV[J,A]
+                    NU             0                          -0      -27.2333 
+    94 capacityV[J,B]
+                    NU             0                          -0         -31.2 
+    95 capacityV[J,C]
+                    NU             0                          -0         -25.7 
+    96 capacityV[J,D]
+                    NU             0                          -0         -15.5 
+    97 capacityV[J,E]
+                    NU             0                          -0      -18.4333 
+    98 capacityV[J,F]
+                    NU             0                          -0      -13.1333 
+    99 capacityV[J,G]
+                    NU             0                          -0         -28.7 
+   100 capacityV[J,H]
+                    NU             0                          -0          -3.9 
+   101 capacityV[J,J]
+                    NU             0                          -0         < eps
+   102 capacityV[J,K]
+                    NU             0                          -0      -7.33333 
+   103 capacityV[J,L]
+                    NU             0                          -0         -12.6 
+   104 capacityV[J,M]
+                    NU             0                          -0      -19.7667 
+   105 capacityV[M,A]
+                    NU             0                          -0         -28.5 
+   106 capacityV[M,B]
+                    NU             0                          -0      -47.3333 
+   107 capacityV[M,C]
+                    NU             0                          -0      -41.8333 
+   108 capacityV[M,D]
+                    NU             0                          -0      -33.7333 
+   109 capacityV[M,E]
+                    NU             0                          -0      -31.8667 
+   110 capacityV[M,F]
+                    NU             0                          -0      -21.1333 
+   111 capacityV[M,G]
+                    NU             0                          -0         -22.7 
+   112 capacityV[M,H]
+                    NU             0                          -0      -17.5667 
+   113 capacityV[M,J]
+                    NU             0                          -0      -19.7667 
+   114 capacityV[M,K]
+                    NU             0                          -0         -23.5 
+   115 capacityV[M,L]
+                    NU             0                          -0          -9.5 
+   116 capacityV[M,M]
+                    NU             0                          -0         < eps
+   117 z            B        13485.3                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[A,A]       B             80             0               
+     2 x[A,B]       NL             0             0                     13.8333 
+     3 x[A,C]       NL             0             0                     5.36667 
+     4 x[A,D]       NL             0             0                     7.63333 
+     5 x[A,E]       NL             0             0                     3.03333 
+     6 x[A,F]       NL             0             0                     7.83333 
+     7 x[A,G]       NL             0             0                          18 
+     8 x[A,H]       NL             0             0                     8.43333 
+     9 x[A,J]       NL             0             0                     21.2333 
+    10 x[A,K]       NL             0             0                     16.3667 
+    11 x[A,L]       NL             0             0                     8.46667 
+    12 x[A,M]       NL             0             0                        28.5 
+    13 x[B,A]       NL             0             0                     23.8333 
+    14 x[B,B]       B             70             0               
+    15 x[B,C]       NL             0             0                           4 
+    16 x[B,D]       NL             0             0                        10.8 
+    17 x[B,E]       B              0             0               
+    18 x[B,F]       NL             0             0                     29.6333 
+    19 x[B,G]       NL             0             0                     21.1667 
+    20 x[B,H]       NL             0             0                     20.4333 
+    21 x[B,J]       NL             0             0                        30.2 
+    22 x[B,K]       NL             0             0                     25.2667 
+    23 x[B,L]       NL             0             0                     28.1333 
+    24 x[B,M]       NL             0             0                     52.3333 
+    25 x[C,A]       NL             0             0                     21.3667 
+    26 x[C,B]       NL             0             0                          10 
+    27 x[C,C]       B             60             0               
+    28 x[C,D]       NL             0             0                         8.3 
+    29 x[C,E]       NL             0             0                     3.83333 
+    30 x[C,F]       NL             0             0                     27.1667 
+    31 x[C,G]       NL             0             0                     18.6667 
+    32 x[C,H]       NL             0             0                     20.5667 
+    33 x[C,J]       NL             0             0                        27.7 
+    34 x[C,K]       NL             0             0                        26.3 
+    35 x[C,L]       NL             0             0                     26.4333 
+    36 x[C,M]       NL             0             0                     49.8333 
+    37 x[D,A]       NL             0             0                     27.6333 
+    38 x[D,B]       NL             0             0                        20.8 
+    39 x[D,C]       NL             0             0                        12.3 
+    40 x[D,D]       B             70             0               
+    41 x[D,E]       B             80             0               
+    42 x[D,F]       NL             0             0                        20.5 
+    43 x[D,G]       NL             0             0                     10.4667 
+    44 x[D,H]       NL             0             0                     12.6667 
+    45 x[D,J]       NL             0             0                        19.5 
+    46 x[D,K]       NL             0             0                        18.1 
+    47 x[D,L]       NL             0             0                        19.8 
+    48 x[D,M]       NL             0             0                     43.7333 
+    49 x[F,A]       NL             0             0                     11.8333 
+    50 x[F,B]       NL             0             0                     23.6333 
+    51 x[F,C]       NL             0             0                     15.1667 
+    52 x[F,D]       NL             0             0                         4.5 
+    53 x[F,E]       NL             0             0                     2.56667 
+    54 x[F,F]       B             40             0               
+    55 x[F,G]       NL             0             0                         9.7 
+    56 x[F,H]       NL             0             0                    0.733333 
+    57 x[F,J]       NL             0             0                     9.13333 
+    58 x[F,K]       NL             0             0                     8.63333 
+    59 x[F,L]       NL             0             0                     2.26667 
+    60 x[F,M]       NL             0             0                     23.1333 
+    61 x[G,A]       NL             0             0                          30 
+    62 x[G,B]       NL             0             0                     23.1667 
+    63 x[G,C]       NL             0             0                     14.6667 
+    64 x[G,D]       NL             0             0                     2.46667 
+    65 x[G,E]       NL             0             0                     1.23333 
+    66 x[G,F]       NL             0             0                        17.7 
+    67 x[G,G]       B             60             0               
+    68 x[G,H]       NL             0             0                     5.46667 
+    69 x[G,J]       NL             0             0                        28.7 
+    70 x[G,K]       NL             0             0                     7.66667 
+    71 x[G,L]       NL             0             0                        15.5 
+    72 x[G,M]       NL             0             0                        28.7 
+    73 x[J,A]       NL             0             0                     33.2333 
+    74 x[J,B]       NL             0             0                        32.2 
+    75 x[J,C]       NL             0             0                        23.7 
+    76 x[J,D]       NL             0             0                        11.5 
+    77 x[J,E]       NL             0             0                     10.6333 
+    78 x[J,F]       NL             0             0                     17.1333 
+    79 x[J,G]       NL             0             0                        28.7 
+    80 x[J,H]       B             70             0               
+    81 x[J,J]       B            150             0               
+    82 x[J,K]       B             40             0               
+    83 x[J,L]       NL             0             0                         9.1 
+    84 x[J,M]       NL             0             0                     25.7667 
+    85 x[M,A]       NL             0             0                        28.5 
+    86 x[M,B]       NL             0             0                     42.3333 
+    87 x[M,C]       NL             0             0                     33.8333 
+    88 x[M,D]       NL             0             0                     23.7333 
+    89 x[M,E]       NL             0             0                     18.0667 
+    90 x[M,F]       NL             0             0                     19.1333 
+    91 x[M,G]       NL             0             0                        16.7 
+    92 x[M,H]       NL             0             0                     7.66667 
+    93 x[M,J]       NL             0             0                     13.7667 
+    94 x[M,K]       NL             0             0                     10.1667 
+    95 x[M,L]       B             30             0               
+    96 x[M,M]       B             50             0               
+    97 y[A,A,Small] NL             0             0                       < eps
+    98 y[A,A,Big]   B        2.66667             0               
+    99 y[A,B,Small] NL             0             0                     75.3333 
+   100 y[A,B,Big]   B              0             0               
+   101 y[A,C,Small] NL             0             0                     53.4667 
+   102 y[A,C,Big]   B              0             0               
+   103 y[A,D,Small] NL             0             0                     70.5333 
+   104 y[A,D,Big]   B              0             0               
+   105 y[A,E,Small] NL             0             0                     67.3333 
+   106 y[A,E,Big]   B              0             0               
+   107 y[A,F,Small] NL             0             0                     39.3333 
+   108 y[A,F,Big]   B              0             0               
+   109 y[A,G,Small] NL             0             0                          96 
+   110 y[A,G,Big]   B              0             0               
+   111 y[A,H,Small] NL             0             0                     73.3333 
+   112 y[A,H,Big]   B              0             0               
+   113 y[A,J,Small] NL             0             0                     108.933 
+   114 y[A,J,Big]   B              0             0               
+   115 y[A,K,Small] NL             0             0                       118.8 
+   116 y[A,K,Big]   B              0             0               
+   117 y[A,L,Small] NL             0             0                     71.8667 
+   118 y[A,L,Big]   B              0             0               
+   119 y[A,M,Small] NL             0             0                         114 
+   120 y[A,M,Big]   B              0             0               
+   121 y[B,A,Small] NL             0             0                     75.3333 
+   122 y[B,A,Big]   B              0             0               
+   123 y[B,B,Small] NL             0             0                       < eps
+   124 y[B,B,Big]   B        2.33333             0               
+   125 y[B,C,Small] NL             0             0                          28 
+   126 y[B,C,Big]   B              0             0               
+   127 y[B,D,Small] NL             0             0                        63.2 
+   128 y[B,D,Big]   B              0             0               
+   129 y[B,E,Small] NL             0             0                        71.2 
+   130 y[B,E,Big]   NL             0             0                          45 
+   131 y[B,F,Small] NL             0             0                     106.533 
+   132 y[B,F,Big]   B              0             0               
+   133 y[B,G,Small] NL             0             0                     88.6667 
+   134 y[B,G,Big]   B              0             0               
+   135 y[B,H,Small] NL             0             0                     101.333 
+   136 y[B,H,Big]   B              0             0               
+   137 y[B,J,Small] NL             0             0                       124.8 
+   138 y[B,J,Big]   B              0             0               
+   139 y[B,K,Small] NL             0             0                       134.4 
+   140 y[B,K,Big]   B              0             0               
+   141 y[B,L,Small] NL             0             0                     130.533 
+   142 y[B,L,Big]   B              0             0               
+   143 y[B,M,Small] NL             0             0                     189.333 
+   144 y[B,M,Big]   B              0             0               
+   145 y[C,A,Small] NL             0             0                     53.4667 
+   146 y[C,A,Big]   B              0             0               
+   147 y[C,B,Small] NL             0             0                          28 
+   148 y[C,B,Big]   B              0             0               
+   149 y[C,C,Small] NL             0             0                       < eps
+   150 y[C,C,Big]   B              2             0               
+   151 y[C,D,Small] NL             0             0                        41.2 
+   152 y[C,D,Big]   B              0             0               
+   153 y[C,E,Small] NL             0             0                     38.5333 
+   154 y[C,E,Big]   B              0             0               
+   155 y[C,F,Small] NL             0             0                     84.6667 
+   156 y[C,F,Big]   B              0             0               
+   157 y[C,G,Small] NL             0             0                     66.6667 
+   158 y[C,G,Big]   B              0             0               
+   159 y[C,H,Small] NL             0             0                     89.8667 
+   160 y[C,H,Big]   B              0             0               
+   161 y[C,J,Small] NL             0             0                       102.8 
+   162 y[C,J,Big]   B              0             0               
+   163 y[C,K,Small] NL             0             0                     126.533 
+   164 y[C,K,Big]   B              0             0               
+   165 y[C,L,Small] NL             0             0                     111.733 
+   166 y[C,L,Big]   B              0             0               
+   167 y[C,M,Small] NL             0             0                     167.333 
+   168 y[C,M,Big]   B              0             0               
+   169 y[D,A,Small] NL             0             0                     70.5333 
+   170 y[D,A,Big]   B              0             0               
+   171 y[D,B,Small] NL             0             0                        63.2 
+   172 y[D,B,Big]   B              0             0               
+   173 y[D,C,Small] NL             0             0                        41.2 
+   174 y[D,C,Big]   B              0             0               
+   175 y[D,D,Small] NL             0             0                       < eps
+   176 y[D,D,Big]   B        2.33333             0               
+   177 y[D,E,Small] NL             0             0                        15.2 
+   178 y[D,E,Big]   B        2.66667             0               
+   179 y[D,F,Small] NL             0             0                          50 
+   180 y[D,F,Big]   B              0             0               
+   181 y[D,G,Small] NL             0             0                     25.8667 
+   182 y[D,G,Big]   B              0             0               
+   183 y[D,H,Small] NL             0             0                     50.2667 
+   184 y[D,H,Big]   B              0             0               
+   185 y[D,J,Small] NL             0             0                          62 
+   186 y[D,J,Big]   B              0             0               
+   187 y[D,K,Small] NL             0             0                     85.7333 
+   188 y[D,K,Big]   B              0             0               
+   189 y[D,L,Small] NL             0             0                        77.2 
+   190 y[D,L,Big]   B              0             0               
+   191 y[D,M,Small] NL             0             0                     134.933 
+   192 y[D,M,Big]   B              0             0               
+   193 y[F,A,Small] NL             0             0                     39.3333 
+   194 y[F,A,Big]   B              0             0               
+   195 y[F,B,Small] NL             0             0                     106.533 
+   196 y[F,B,Big]   B              0             0               
+   197 y[F,C,Small] NL             0             0                     84.6667 
+   198 y[F,C,Big]   B              0             0               
+   199 y[F,D,Small] NL             0             0                          50 
+   200 y[F,D,Big]   B              0             0               
+   201 y[F,E,Small] NL             0             0                     57.4667 
+   202 y[F,E,Big]   B              0             0               
+   203 y[F,F,Small] NL             0             0                       < eps
+   204 y[F,F,Big]   B        1.33333             0               
+   205 y[F,G,Small] NL             0             0                        54.8 
+   206 y[F,G,Big]   B              0             0               
+   207 y[F,H,Small] NL             0             0                     34.5333 
+   208 y[F,H,Big]   B              0             0               
+   209 y[F,J,Small] NL             0             0                     52.5333 
+   210 y[F,J,Big]   B              0             0               
+   211 y[F,K,Small] NL             0             0                     79.8667 
+   212 y[F,K,Big]   B              0             0               
+   213 y[F,L,Small] NL             0             0                     39.0667 
+   214 y[F,L,Big]   B              0             0               
+   215 y[F,M,Small] NL             0             0                     84.5333 
+   216 y[F,M,Big]   B              0             0               
+   217 y[G,A,Small] NL             0             0                          96 
+   218 y[G,A,Big]   B              0             0               
+   219 y[G,B,Small] NL             0             0                     88.6667 
+   220 y[G,B,Big]   B              0             0               
+   221 y[G,C,Small] NL             0             0                     66.6667 
+   222 y[G,C,Big]   B              0             0               
+   223 y[G,D,Small] NL             0             0                     25.8667 
+   224 y[G,D,Big]   B              0             0               
+   225 y[G,E,Small] NL             0             0                     36.1333 
+   226 y[G,E,Big]   B              0             0               
+   227 y[G,F,Small] NL             0             0                        54.8 
+   228 y[G,F,Big]   B              0             0               
+   229 y[G,G,Small] NL             0             0                       < eps
+   230 y[G,G,Big]   B              2             0               
+   231 y[G,H,Small] NL             0             0                     37.4667 
+   232 y[G,H,Big]   B              0             0               
+   233 y[G,J,Small] NL             0             0                       114.8 
+   234 y[G,J,Big]   B              0             0               
+   235 y[G,K,Small] NL             0             0                          60 
+   236 y[G,K,Big]   B              0             0               
+   237 y[G,L,Small] NL             0             0                          76 
+   238 y[G,L,Big]   B              0             0               
+   239 y[G,M,Small] NL             0             0                        90.8 
+   240 y[G,M,Big]   B              0             0               
+   241 y[J,A,Small] NL             0             0                     108.933 
+   242 y[J,A,Big]   B              0             0               
+   243 y[J,B,Small] NL             0             0                       124.8 
+   244 y[J,B,Big]   B              0             0               
+   245 y[J,C,Small] NL             0             0                       102.8 
+   246 y[J,C,Big]   B              0             0               
+   247 y[J,D,Small] NL             0             0                          62 
+   248 y[J,D,Big]   B              0             0               
+   249 y[J,E,Small] NL             0             0                     73.7333 
+   250 y[J,E,Big]   B              0             0               
+   251 y[J,F,Small] NL             0             0                     52.5333 
+   252 y[J,F,Big]   B              0             0               
+   253 y[J,G,Small] NL             0             0                       114.8 
+   254 y[J,G,Big]   B              0             0               
+   255 y[J,H,Small] NL             0             0                        15.6 
+   256 y[J,H,Big]   B        2.33333             0               
+   257 y[J,J,Small] NL             0             0                       < eps
+   258 y[J,J,Big]   B              5             0               
+   259 y[J,K,Small] NL             0             0                     29.3333 
+   260 y[J,K,Big]   B        1.33333             0               
+   261 y[J,L,Small] NL             0             0                        50.4 
+   262 y[J,L,Big]   B              0             0               
+   263 y[J,M,Small] NL             0             0                     79.0667 
+   264 y[J,M,Big]   B              0             0               
+   265 y[M,A,Small] NL             0             0                         114 
+   266 y[M,A,Big]   B              0             0               
+   267 y[M,B,Small] NL             0             0                     189.333 
+   268 y[M,B,Big]   B              0             0               
+   269 y[M,C,Small] NL             0             0                     167.333 
+   270 y[M,C,Big]   B              0             0               
+   271 y[M,D,Small] NL             0             0                     134.933 
+   272 y[M,D,Big]   B              0             0               
+   273 y[M,E,Small] NL             0             0                     127.467 
+   274 y[M,E,Big]   B              0             0               
+   275 y[M,F,Small] NL             0             0                     84.5333 
+   276 y[M,F,Big]   B              0             0               
+   277 y[M,G,Small] NL             0             0                        90.8 
+   278 y[M,G,Big]   B              0             0               
+   279 y[M,H,Small] NL             0             0                     70.2667 
+   280 y[M,H,Big]   B              0             0               
+   281 y[M,J,Small] NL             0             0                     79.0667 
+   282 y[M,J,Big]   B              0             0               
+   283 y[M,K,Small] NL             0             0                          94 
+   284 y[M,K,Big]   B              0             0               
+   285 y[M,L,Small] NL             0             0                          38 
+   286 y[M,L,Big]   B              1             0               
+   287 y[M,M,Small] NL             0             0                       < eps
+   288 y[M,M,Big]   B        1.66667             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 1.14e-013 on column 116
+        max.rel.err = 8.71e-017 on column 80
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
