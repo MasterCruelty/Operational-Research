@@ -1,0 +1,1103 @@
+Problem:    AutoNoleggio
+Rows:       693
+Columns:    31 (31 integer, 31 binary)
+Non-zeros:  20553
+Status:     INTEGER OPTIMAL
+Objective:  z = 5811 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 cars[1]                     0                           5 
+     2 cars[2]                     0                           5 
+     3 cars[3]                     0                           5 
+     4 cars[4]                     0                           5 
+     5 cars[5]                     0                           5 
+     6 cars[6]                     0                           5 
+     7 cars[7]                     0                           5 
+     8 cars[8]                     0                           5 
+     9 cars[9]                     0                           5 
+    10 cars[10]                    0                           5 
+    11 cars[11]                    0                           5 
+    12 cars[12]                    0                           5 
+    13 cars[13]                    0                           5 
+    14 cars[14]                    0                           5 
+    15 cars[15]                    0                           5 
+    16 cars[16]                    0                           5 
+    17 cars[17]                    0                           5 
+    18 cars[18]                    1                           5 
+    19 cars[19]                    0                           5 
+    20 cars[20]                    0                           5 
+    21 cars[21]                    0                           5 
+    22 cars[22]                    0                           5 
+    23 cars[23]                    0                           5 
+    24 cars[24]                    0                           5 
+    25 cars[25]                    0                           5 
+    26 cars[26]                    1                           5 
+    27 cars[27]                    1                           5 
+    28 cars[28]                    0                           5 
+    29 cars[29]                    0                           5 
+    30 cars[30]                    1                           5 
+    31 cars[31]                    1                           5 
+    32 incomp[1,2]                 5                           5 
+    33 incomp[1,3]                 5                           5 
+    34 incomp[1,4]                 5                           5 
+    35 incomp[1,5]                 5                           5 
+    36 incomp[1,6]                 5                           5 
+    37 incomp[1,7]                 5                           5 
+    38 incomp[1,8]                 5                           5 
+    39 incomp[2,1]                 5                           5 
+    40 incomp[2,3]                 5                           5 
+    41 incomp[2,4]                 5                           5 
+    42 incomp[2,5]                 5                           5 
+    43 incomp[2,6]                 5                           5 
+    44 incomp[2,7]                 5                           5 
+    45 incomp[2,8]                 5                           5 
+    46 incomp[2,9]                 5                           5 
+    47 incomp[2,10]                5                           5 
+    48 incomp[2,11]                5                           5 
+    49 incomp[2,12]                5                           5 
+    50 incomp[3,1]                 5                           5 
+    51 incomp[3,2]                 5                           5 
+    52 incomp[3,4]                 5                           5 
+    53 incomp[3,5]                 5                           5 
+    54 incomp[3,6]                 5                           5 
+    55 incomp[3,7]                 5                           5 
+    56 incomp[3,8]                 5                           5 
+    57 incomp[3,9]                 5                           5 
+    58 incomp[3,10]                5                           5 
+    59 incomp[3,11]                5                           5 
+    60 incomp[3,12]                5                           5 
+    61 incomp[3,13]                5                           5 
+    62 incomp[4,1]                 5                           5 
+    63 incomp[4,2]                 5                           5 
+    64 incomp[4,3]                 5                           5 
+    65 incomp[4,5]                 5                           5 
+    66 incomp[4,6]                 5                           5 
+    67 incomp[4,7]                 5                           5 
+    68 incomp[4,8]                 5                           5 
+    69 incomp[4,9]                 5                           5 
+    70 incomp[4,10]                5                           5 
+    71 incomp[4,11]                5                           5 
+    72 incomp[4,12]                5                           5 
+    73 incomp[4,13]                5                           5 
+    74 incomp[5,1]                 5                           5 
+    75 incomp[5,2]                 5                           5 
+    76 incomp[5,3]                 5                           5 
+    77 incomp[5,4]                 5                           5 
+    78 incomp[5,6]                 5                           5 
+    79 incomp[5,7]                 5                           5 
+    80 incomp[5,8]                 5                           5 
+    81 incomp[5,9]                 5                           5 
+    82 incomp[5,10]                5                           5 
+    83 incomp[5,11]                5                           5 
+    84 incomp[6,1]                 5                           5 
+    85 incomp[6,2]                 5                           5 
+    86 incomp[6,3]                 5                           5 
+    87 incomp[6,4]                 5                           5 
+    88 incomp[6,5]                 5                           5 
+    89 incomp[6,7]                 5                           5 
+    90 incomp[6,8]                 5                           5 
+    91 incomp[6,9]                 5                           5 
+    92 incomp[6,10]                5                           5 
+    93 incomp[6,11]                5                           5 
+    94 incomp[6,12]                5                           5 
+    95 incomp[6,13]                5                           5 
+    96 incomp[6,14]                5                           5 
+    97 incomp[6,15]                5                           5 
+    98 incomp[6,16]                5                           5 
+    99 incomp[6,17]                5                           5 
+   100 incomp[6,18]                5                           5 
+   101 incomp[6,19]                5                           5 
+   102 incomp[6,20]                5                           5 
+   103 incomp[6,21]                5                           5 
+   104 incomp[7,1]                 5                           5 
+   105 incomp[7,2]                 5                           5 
+   106 incomp[7,3]                 5                           5 
+   107 incomp[7,4]                 5                           5 
+   108 incomp[7,5]                 5                           5 
+   109 incomp[7,6]                 5                           5 
+   110 incomp[7,8]                 5                           5 
+   111 incomp[7,9]                 5                           5 
+   112 incomp[7,10]                5                           5 
+   113 incomp[7,11]                5                           5 
+   114 incomp[8,1]                 5                           5 
+   115 incomp[8,2]                 5                           5 
+   116 incomp[8,3]                 5                           5 
+   117 incomp[8,4]                 5                           5 
+   118 incomp[8,5]                 5                           5 
+   119 incomp[8,6]                 5                           5 
+   120 incomp[8,7]                 5                           5 
+   121 incomp[8,9]                 5                           5 
+   122 incomp[8,10]                5                           5 
+   123 incomp[8,11]                5                           5 
+   124 incomp[8,12]                5                           5 
+   125 incomp[8,13]                5                           5 
+   126 incomp[8,14]                5                           5 
+   127 incomp[8,15]                5                           5 
+   128 incomp[9,1]                 5                           5 
+   129 incomp[9,2]                 5                           5 
+   130 incomp[9,3]                 5                           5 
+   131 incomp[9,4]                 5                           5 
+   132 incomp[9,5]                 5                           5 
+   133 incomp[9,6]                 5                           5 
+   134 incomp[9,7]                 5                           5 
+   135 incomp[9,8]                 5                           5 
+   136 incomp[9,10]                5                           5 
+   137 incomp[9,11]                5                           5 
+   138 incomp[9,12]                5                           5 
+   139 incomp[9,13]                5                           5 
+   140 incomp[10,1]                5                           5 
+   141 incomp[10,2]                5                           5 
+   142 incomp[10,3]                5                           5 
+   143 incomp[10,4]                5                           5 
+   144 incomp[10,5]                5                           5 
+   145 incomp[10,6]                5                           5 
+   146 incomp[10,7]                5                           5 
+   147 incomp[10,8]                5                           5 
+   148 incomp[10,9]                5                           5 
+   149 incomp[10,11]
+                                   5                           5 
+   150 incomp[10,12]
+                                   5                           5 
+   151 incomp[10,13]
+                                   5                           5 
+   152 incomp[10,14]
+                                   5                           5 
+   153 incomp[10,15]
+                                   5                           5 
+   154 incomp[11,1]                5                           5 
+   155 incomp[11,2]                5                           5 
+   156 incomp[11,3]                5                           5 
+   157 incomp[11,4]                5                           5 
+   158 incomp[11,5]                5                           5 
+   159 incomp[11,6]                5                           5 
+   160 incomp[11,7]                5                           5 
+   161 incomp[11,8]                5                           5 
+   162 incomp[11,9]                5                           5 
+   163 incomp[11,10]
+                                   5                           5 
+   164 incomp[11,12]
+                                   5                           5 
+   165 incomp[11,13]
+                                   5                           5 
+   166 incomp[11,14]
+                                   5                           5 
+   167 incomp[11,15]
+                                   5                           5 
+   168 incomp[11,16]
+                                   5                           5 
+   169 incomp[11,17]
+                                   5                           5 
+   170 incomp[11,18]
+                                   5                           5 
+   171 incomp[11,19]
+                                   5                           5 
+   172 incomp[11,20]
+                                   5                           5 
+   173 incomp[11,21]
+                                   5                           5 
+   174 incomp[11,22]
+                                   5                           5 
+   175 incomp[11,23]
+                                   5                           5 
+   176 incomp[11,24]
+                                   5                           5 
+   177 incomp[11,25]
+                                   5                           5 
+   178 incomp[12,1]                5                           5 
+   179 incomp[12,2]                5                           5 
+   180 incomp[12,3]                5                           5 
+   181 incomp[12,4]                5                           5 
+   182 incomp[12,5]                5                           5 
+   183 incomp[12,6]                5                           5 
+   184 incomp[12,7]                5                           5 
+   185 incomp[12,8]                5                           5 
+   186 incomp[12,9]                5                           5 
+   187 incomp[12,10]
+                                   5                           5 
+   188 incomp[12,11]
+                                   5                           5 
+   189 incomp[12,13]
+                                   5                           5 
+   190 incomp[12,14]
+                                   5                           5 
+   191 incomp[12,15]
+                                   5                           5 
+   192 incomp[13,1]                5                           5 
+   193 incomp[13,2]                5                           5 
+   194 incomp[13,3]                5                           5 
+   195 incomp[13,4]                5                           5 
+   196 incomp[13,5]                5                           5 
+   197 incomp[13,6]                5                           5 
+   198 incomp[13,7]                5                           5 
+   199 incomp[13,8]                5                           5 
+   200 incomp[13,9]                5                           5 
+   201 incomp[13,10]
+                                   5                           5 
+   202 incomp[13,11]
+                                   5                           5 
+   203 incomp[13,12]
+                                   5                           5 
+   204 incomp[13,14]
+                                   5                           5 
+   205 incomp[13,15]
+                                   5                           5 
+   206 incomp[13,16]
+                                   5                           5 
+   207 incomp[13,17]
+                                   5                           5 
+   208 incomp[13,18]
+                                   5                           5 
+   209 incomp[13,19]
+                                   5                           5 
+   210 incomp[14,1]                5                           5 
+   211 incomp[14,2]                5                           5 
+   212 incomp[14,3]                5                           5 
+   213 incomp[14,4]                5                           5 
+   214 incomp[14,5]                5                           5 
+   215 incomp[14,6]                5                           5 
+   216 incomp[14,7]                5                           5 
+   217 incomp[14,8]                5                           5 
+   218 incomp[14,9]                5                           5 
+   219 incomp[14,10]
+                                   5                           5 
+   220 incomp[14,11]
+                                   5                           5 
+   221 incomp[14,12]
+                                   5                           5 
+   222 incomp[14,13]
+                                   5                           5 
+   223 incomp[14,15]
+                                   5                           5 
+   224 incomp[14,16]
+                                   5                           5 
+   225 incomp[14,17]
+                                   5                           5 
+   226 incomp[14,18]
+                                   5                           5 
+   227 incomp[14,19]
+                                   5                           5 
+   228 incomp[14,20]
+                                   5                           5 
+   229 incomp[14,21]
+                                   5                           5 
+   230 incomp[14,22]
+                                   5                           5 
+   231 incomp[14,23]
+                                   5                           5 
+   232 incomp[14,24]
+                                   5                           5 
+   233 incomp[15,1]                5                           5 
+   234 incomp[15,2]                5                           5 
+   235 incomp[15,3]                5                           5 
+   236 incomp[15,4]                5                           5 
+   237 incomp[15,5]                5                           5 
+   238 incomp[15,6]                5                           5 
+   239 incomp[15,7]                5                           5 
+   240 incomp[15,8]                5                           5 
+   241 incomp[15,9]                5                           5 
+   242 incomp[15,10]
+                                   5                           5 
+   243 incomp[15,11]
+                                   5                           5 
+   244 incomp[15,12]
+                                   5                           5 
+   245 incomp[15,13]
+                                   5                           5 
+   246 incomp[15,14]
+                                   5                           5 
+   247 incomp[15,16]
+                                   5                           5 
+   248 incomp[15,17]
+                                   5                           5 
+   249 incomp[15,18]
+                                   5                           5 
+   250 incomp[15,19]
+                                   5                           5 
+   251 incomp[15,20]
+                                   5                           5 
+   252 incomp[15,21]
+                                   5                           5 
+   253 incomp[15,22]
+                                   5                           5 
+   254 incomp[15,23]
+                                   5                           5 
+   255 incomp[15,24]
+                                   5                           5 
+   256 incomp[15,25]
+                                   5                           5 
+   257 incomp[15,26]
+                                   5                           5 
+   258 incomp[15,27]
+                                   5                           5 
+   259 incomp[15,28]
+                                   5                           5 
+   260 incomp[15,29]
+                                   5                           5 
+   261 incomp[15,30]
+                                   5                           5 
+   262 incomp[15,31]
+                                   5                           5 
+   263 incomp[16,1]                5                           5 
+   264 incomp[16,2]                5                           5 
+   265 incomp[16,3]                5                           5 
+   266 incomp[16,4]                5                           5 
+   267 incomp[16,5]                5                           5 
+   268 incomp[16,6]                5                           5 
+   269 incomp[16,7]                5                           5 
+   270 incomp[16,8]                5                           5 
+   271 incomp[16,9]                5                           5 
+   272 incomp[16,10]
+                                   5                           5 
+   273 incomp[16,11]
+                                   5                           5 
+   274 incomp[16,12]
+                                   5                           5 
+   275 incomp[16,13]
+                                   5                           5 
+   276 incomp[16,14]
+                                   5                           5 
+   277 incomp[16,15]
+                                   5                           5 
+   278 incomp[16,17]
+                                   5                           5 
+   279 incomp[16,18]
+                                   5                           5 
+   280 incomp[16,19]
+                                   5                           5 
+   281 incomp[17,1]                5                           5 
+   282 incomp[17,2]                5                           5 
+   283 incomp[17,3]                5                           5 
+   284 incomp[17,4]                5                           5 
+   285 incomp[17,5]                5                           5 
+   286 incomp[17,6]                5                           5 
+   287 incomp[17,7]                5                           5 
+   288 incomp[17,8]                5                           5 
+   289 incomp[17,9]                5                           5 
+   290 incomp[17,10]
+                                   5                           5 
+   291 incomp[17,11]
+                                   5                           5 
+   292 incomp[17,12]
+                                   5                           5 
+   293 incomp[17,13]
+                                   5                           5 
+   294 incomp[17,14]
+                                   5                           5 
+   295 incomp[17,15]
+                                   5                           5 
+   296 incomp[17,16]
+                                   5                           5 
+   297 incomp[17,18]
+                                   5                           5 
+   298 incomp[17,19]
+                                   5                           5 
+   299 incomp[17,20]
+                                   5                           5 
+   300 incomp[17,21]
+                                   5                           5 
+   301 incomp[17,22]
+                                   5                           5 
+   302 incomp[17,23]
+                                   5                           5 
+   303 incomp[17,24]
+                                   5                           5 
+   304 incomp[18,1]                5                           5 
+   305 incomp[18,2]                5                           5 
+   306 incomp[18,3]                5                           5 
+   307 incomp[18,4]                5                           5 
+   308 incomp[18,5]                5                           5 
+   309 incomp[18,6]                5                           5 
+   310 incomp[18,7]                5                           5 
+   311 incomp[18,8]                5                           5 
+   312 incomp[18,9]                5                           5 
+   313 incomp[18,10]
+                                   5                           5 
+   314 incomp[18,11]
+                                   5                           5 
+   315 incomp[18,12]
+                                   5                           5 
+   316 incomp[18,13]
+                                   5                           5 
+   317 incomp[18,14]
+                                   5                           5 
+   318 incomp[18,15]
+                                   5                           5 
+   319 incomp[18,16]
+                                   5                           5 
+   320 incomp[18,17]
+                                   5                           5 
+   321 incomp[18,19]
+                                   5                           5 
+   322 incomp[18,20]
+                                   5                           5 
+   323 incomp[18,21]
+                                   5                           5 
+   324 incomp[18,22]
+                                   5                           5 
+   325 incomp[18,23]
+                                   5                           5 
+   326 incomp[18,24]
+                                   5                           5 
+   327 incomp[18,25]
+                                   5                           5 
+   328 incomp[18,26]
+                                   5                           5 
+   329 incomp[18,27]
+                                   5                           5 
+   330 incomp[18,28]
+                                   5                           5 
+   331 incomp[18,29]
+                                   5                           5 
+   332 incomp[18,30]
+                                   5                           5 
+   333 incomp[18,31]
+                                   5                           5 
+   334 incomp[19,1]                5                           5 
+   335 incomp[19,2]                5                           5 
+   336 incomp[19,3]                5                           5 
+   337 incomp[19,4]                5                           5 
+   338 incomp[19,5]                5                           5 
+   339 incomp[19,6]                5                           5 
+   340 incomp[19,7]                5                           5 
+   341 incomp[19,8]                5                           5 
+   342 incomp[19,9]                5                           5 
+   343 incomp[19,10]
+                                   5                           5 
+   344 incomp[19,11]
+                                   5                           5 
+   345 incomp[19,12]
+                                   5                           5 
+   346 incomp[19,13]
+                                   5                           5 
+   347 incomp[19,14]
+                                   5                           5 
+   348 incomp[19,15]
+                                   5                           5 
+   349 incomp[19,16]
+                                   5                           5 
+   350 incomp[19,17]
+                                   5                           5 
+   351 incomp[19,18]
+                                   5                           5 
+   352 incomp[19,20]
+                                   5                           5 
+   353 incomp[19,21]
+                                   5                           5 
+   354 incomp[19,22]
+                                   5                           5 
+   355 incomp[19,23]
+                                   5                           5 
+   356 incomp[19,24]
+                                   5                           5 
+   357 incomp[19,25]
+                                   5                           5 
+   358 incomp[19,26]
+                                   5                           5 
+   359 incomp[19,27]
+                                   5                           5 
+   360 incomp[19,28]
+                                   5                           5 
+   361 incomp[19,29]
+                                   5                           5 
+   362 incomp[19,30]
+                                   5                           5 
+   363 incomp[19,31]
+                                   5                           5 
+   364 incomp[20,1]                5                           5 
+   365 incomp[20,2]                5                           5 
+   366 incomp[20,3]                5                           5 
+   367 incomp[20,4]                5                           5 
+   368 incomp[20,5]                5                           5 
+   369 incomp[20,6]                5                           5 
+   370 incomp[20,7]                5                           5 
+   371 incomp[20,8]                5                           5 
+   372 incomp[20,9]                5                           5 
+   373 incomp[20,10]
+                                   5                           5 
+   374 incomp[20,11]
+                                   5                           5 
+   375 incomp[20,12]
+                                   5                           5 
+   376 incomp[20,13]
+                                   5                           5 
+   377 incomp[20,14]
+                                   5                           5 
+   378 incomp[20,15]
+                                   5                           5 
+   379 incomp[20,16]
+                                   5                           5 
+   380 incomp[20,17]
+                                   5                           5 
+   381 incomp[20,18]
+                                   5                           5 
+   382 incomp[20,19]
+                                   5                           5 
+   383 incomp[20,21]
+                                   5                           5 
+   384 incomp[21,1]                5                           5 
+   385 incomp[21,2]                5                           5 
+   386 incomp[21,3]                5                           5 
+   387 incomp[21,4]                5                           5 
+   388 incomp[21,5]                5                           5 
+   389 incomp[21,6]                5                           5 
+   390 incomp[21,7]                5                           5 
+   391 incomp[21,8]                5                           5 
+   392 incomp[21,9]                5                           5 
+   393 incomp[21,10]
+                                   5                           5 
+   394 incomp[21,11]
+                                   5                           5 
+   395 incomp[21,12]
+                                   5                           5 
+   396 incomp[21,13]
+                                   5                           5 
+   397 incomp[21,14]
+                                   5                           5 
+   398 incomp[21,15]
+                                   5                           5 
+   399 incomp[21,16]
+                                   5                           5 
+   400 incomp[21,17]
+                                   5                           5 
+   401 incomp[21,18]
+                                   5                           5 
+   402 incomp[21,19]
+                                   5                           5 
+   403 incomp[21,20]
+                                   5                           5 
+   404 incomp[21,22]
+                                   5                           5 
+   405 incomp[21,23]
+                                   5                           5 
+   406 incomp[21,24]
+                                   5                           5 
+   407 incomp[22,1]                5                           5 
+   408 incomp[22,2]                5                           5 
+   409 incomp[22,3]                5                           5 
+   410 incomp[22,4]                5                           5 
+   411 incomp[22,5]                5                           5 
+   412 incomp[22,6]                5                           5 
+   413 incomp[22,7]                5                           5 
+   414 incomp[22,8]                5                           5 
+   415 incomp[22,9]                5                           5 
+   416 incomp[22,10]
+                                   5                           5 
+   417 incomp[22,11]
+                                   5                           5 
+   418 incomp[22,12]
+                                   5                           5 
+   419 incomp[22,13]
+                                   5                           5 
+   420 incomp[22,14]
+                                   5                           5 
+   421 incomp[22,15]
+                                   5                           5 
+   422 incomp[22,16]
+                                   5                           5 
+   423 incomp[22,17]
+                                   5                           5 
+   424 incomp[22,18]
+                                   5                           5 
+   425 incomp[22,19]
+                                   5                           5 
+   426 incomp[22,20]
+                                   5                           5 
+   427 incomp[22,21]
+                                   5                           5 
+   428 incomp[22,23]
+                                   5                           5 
+   429 incomp[22,24]
+                                   5                           5 
+   430 incomp[23,1]                5                           5 
+   431 incomp[23,2]                5                           5 
+   432 incomp[23,3]                5                           5 
+   433 incomp[23,4]                5                           5 
+   434 incomp[23,5]                5                           5 
+   435 incomp[23,6]                5                           5 
+   436 incomp[23,7]                5                           5 
+   437 incomp[23,8]                5                           5 
+   438 incomp[23,9]                5                           5 
+   439 incomp[23,10]
+                                   5                           5 
+   440 incomp[23,11]
+                                   5                           5 
+   441 incomp[23,12]
+                                   5                           5 
+   442 incomp[23,13]
+                                   5                           5 
+   443 incomp[23,14]
+                                   5                           5 
+   444 incomp[23,15]
+                                   5                           5 
+   445 incomp[23,16]
+                                   5                           5 
+   446 incomp[23,17]
+                                   5                           5 
+   447 incomp[23,18]
+                                   5                           5 
+   448 incomp[23,19]
+                                   5                           5 
+   449 incomp[23,20]
+                                   5                           5 
+   450 incomp[23,21]
+                                   5                           5 
+   451 incomp[23,22]
+                                   5                           5 
+   452 incomp[23,24]
+                                   5                           5 
+   453 incomp[24,1]                5                           5 
+   454 incomp[24,2]                5                           5 
+   455 incomp[24,3]                5                           5 
+   456 incomp[24,4]                5                           5 
+   457 incomp[24,5]                5                           5 
+   458 incomp[24,6]                5                           5 
+   459 incomp[24,7]                5                           5 
+   460 incomp[24,8]                5                           5 
+   461 incomp[24,9]                5                           5 
+   462 incomp[24,10]
+                                   5                           5 
+   463 incomp[24,11]
+                                   5                           5 
+   464 incomp[24,12]
+                                   5                           5 
+   465 incomp[24,13]
+                                   5                           5 
+   466 incomp[24,14]
+                                   5                           5 
+   467 incomp[24,15]
+                                   5                           5 
+   468 incomp[24,16]
+                                   5                           5 
+   469 incomp[24,17]
+                                   5                           5 
+   470 incomp[24,18]
+                                   5                           5 
+   471 incomp[24,19]
+                                   5                           5 
+   472 incomp[24,20]
+                                   5                           5 
+   473 incomp[24,21]
+                                   5                           5 
+   474 incomp[24,22]
+                                   5                           5 
+   475 incomp[24,23]
+                                   5                           5 
+   476 incomp[24,25]
+                                   5                           5 
+   477 incomp[24,26]
+                                   5                           5 
+   478 incomp[24,27]
+                                   5                           5 
+   479 incomp[24,28]
+                                   5                           5 
+   480 incomp[24,29]
+                                   5                           5 
+   481 incomp[24,30]
+                                   5                           5 
+   482 incomp[24,31]
+                                   5                           5 
+   483 incomp[25,1]                5                           5 
+   484 incomp[25,2]                5                           5 
+   485 incomp[25,3]                5                           5 
+   486 incomp[25,4]                5                           5 
+   487 incomp[25,5]                5                           5 
+   488 incomp[25,6]                5                           5 
+   489 incomp[25,7]                5                           5 
+   490 incomp[25,8]                5                           5 
+   491 incomp[25,9]                5                           5 
+   492 incomp[25,10]
+                                   5                           5 
+   493 incomp[25,11]
+                                   5                           5 
+   494 incomp[25,12]
+                                   5                           5 
+   495 incomp[25,13]
+                                   5                           5 
+   496 incomp[25,14]
+                                   5                           5 
+   497 incomp[25,15]
+                                   5                           5 
+   498 incomp[25,16]
+                                   5                           5 
+   499 incomp[25,17]
+                                   5                           5 
+   500 incomp[25,18]
+                                   5                           5 
+   501 incomp[25,19]
+                                   5                           5 
+   502 incomp[25,20]
+                                   5                           5 
+   503 incomp[25,21]
+                                   5                           5 
+   504 incomp[25,22]
+                                   5                           5 
+   505 incomp[25,23]
+                                   5                           5 
+   506 incomp[25,24]
+                                   5                           5 
+   507 incomp[25,26]
+                                   5                           5 
+   508 incomp[25,27]
+                                   5                           5 
+   509 incomp[25,28]
+                                   5                           5 
+   510 incomp[25,29]
+                                   5                           5 
+   511 incomp[25,30]
+                                   5                           5 
+   512 incomp[25,31]
+                                   5                           5 
+   513 incomp[26,1]                5                           5 
+   514 incomp[26,2]                5                           5 
+   515 incomp[26,3]                5                           5 
+   516 incomp[26,4]                5                           5 
+   517 incomp[26,5]                5                           5 
+   518 incomp[26,6]                5                           5 
+   519 incomp[26,7]                5                           5 
+   520 incomp[26,8]                5                           5 
+   521 incomp[26,9]                5                           5 
+   522 incomp[26,10]
+                                   5                           5 
+   523 incomp[26,11]
+                                   5                           5 
+   524 incomp[26,12]
+                                   5                           5 
+   525 incomp[26,13]
+                                   5                           5 
+   526 incomp[26,14]
+                                   5                           5 
+   527 incomp[26,15]
+                                   5                           5 
+   528 incomp[26,16]
+                                   5                           5 
+   529 incomp[26,17]
+                                   5                           5 
+   530 incomp[26,18]
+                                   5                           5 
+   531 incomp[26,19]
+                                   5                           5 
+   532 incomp[26,20]
+                                   5                           5 
+   533 incomp[26,21]
+                                   5                           5 
+   534 incomp[26,22]
+                                   5                           5 
+   535 incomp[26,23]
+                                   5                           5 
+   536 incomp[26,24]
+                                   5                           5 
+   537 incomp[26,25]
+                                   5                           5 
+   538 incomp[26,27]
+                                   5                           5 
+   539 incomp[26,28]
+                                   5                           5 
+   540 incomp[26,29]
+                                   5                           5 
+   541 incomp[26,30]
+                                   5                           5 
+   542 incomp[26,31]
+                                   5                           5 
+   543 incomp[27,1]                5                           5 
+   544 incomp[27,2]                5                           5 
+   545 incomp[27,3]                5                           5 
+   546 incomp[27,4]                5                           5 
+   547 incomp[27,5]                5                           5 
+   548 incomp[27,6]                5                           5 
+   549 incomp[27,7]                5                           5 
+   550 incomp[27,8]                5                           5 
+   551 incomp[27,9]                5                           5 
+   552 incomp[27,10]
+                                   5                           5 
+   553 incomp[27,11]
+                                   5                           5 
+   554 incomp[27,12]
+                                   5                           5 
+   555 incomp[27,13]
+                                   5                           5 
+   556 incomp[27,14]
+                                   5                           5 
+   557 incomp[27,15]
+                                   5                           5 
+   558 incomp[27,16]
+                                   5                           5 
+   559 incomp[27,17]
+                                   5                           5 
+   560 incomp[27,18]
+                                   5                           5 
+   561 incomp[27,19]
+                                   5                           5 
+   562 incomp[27,20]
+                                   5                           5 
+   563 incomp[27,21]
+                                   5                           5 
+   564 incomp[27,22]
+                                   5                           5 
+   565 incomp[27,23]
+                                   5                           5 
+   566 incomp[27,24]
+                                   5                           5 
+   567 incomp[27,25]
+                                   5                           5 
+   568 incomp[27,26]
+                                   5                           5 
+   569 incomp[27,28]
+                                   5                           5 
+   570 incomp[27,29]
+                                   5                           5 
+   571 incomp[27,30]
+                                   5                           5 
+   572 incomp[27,31]
+                                   5                           5 
+   573 incomp[28,1]                5                           5 
+   574 incomp[28,2]                5                           5 
+   575 incomp[28,3]                5                           5 
+   576 incomp[28,4]                5                           5 
+   577 incomp[28,5]                5                           5 
+   578 incomp[28,6]                5                           5 
+   579 incomp[28,7]                5                           5 
+   580 incomp[28,8]                5                           5 
+   581 incomp[28,9]                5                           5 
+   582 incomp[28,10]
+                                   5                           5 
+   583 incomp[28,11]
+                                   5                           5 
+   584 incomp[28,12]
+                                   5                           5 
+   585 incomp[28,13]
+                                   5                           5 
+   586 incomp[28,14]
+                                   5                           5 
+   587 incomp[28,15]
+                                   5                           5 
+   588 incomp[28,16]
+                                   5                           5 
+   589 incomp[28,17]
+                                   5                           5 
+   590 incomp[28,18]
+                                   5                           5 
+   591 incomp[28,19]
+                                   5                           5 
+   592 incomp[28,20]
+                                   5                           5 
+   593 incomp[28,21]
+                                   5                           5 
+   594 incomp[28,22]
+                                   5                           5 
+   595 incomp[28,23]
+                                   5                           5 
+   596 incomp[28,24]
+                                   5                           5 
+   597 incomp[28,25]
+                                   5                           5 
+   598 incomp[28,26]
+                                   5                           5 
+   599 incomp[28,27]
+                                   5                           5 
+   600 incomp[28,29]
+                                   5                           5 
+   601 incomp[28,30]
+                                   5                           5 
+   602 incomp[28,31]
+                                   5                           5 
+   603 incomp[29,1]                5                           5 
+   604 incomp[29,2]                5                           5 
+   605 incomp[29,3]                5                           5 
+   606 incomp[29,4]                5                           5 
+   607 incomp[29,5]                5                           5 
+   608 incomp[29,6]                5                           5 
+   609 incomp[29,7]                5                           5 
+   610 incomp[29,8]                5                           5 
+   611 incomp[29,9]                5                           5 
+   612 incomp[29,10]
+                                   5                           5 
+   613 incomp[29,11]
+                                   5                           5 
+   614 incomp[29,12]
+                                   5                           5 
+   615 incomp[29,13]
+                                   5                           5 
+   616 incomp[29,14]
+                                   5                           5 
+   617 incomp[29,15]
+                                   5                           5 
+   618 incomp[29,16]
+                                   5                           5 
+   619 incomp[29,17]
+                                   5                           5 
+   620 incomp[29,18]
+                                   5                           5 
+   621 incomp[29,19]
+                                   5                           5 
+   622 incomp[29,20]
+                                   5                           5 
+   623 incomp[29,21]
+                                   5                           5 
+   624 incomp[29,22]
+                                   5                           5 
+   625 incomp[29,23]
+                                   5                           5 
+   626 incomp[29,24]
+                                   5                           5 
+   627 incomp[29,25]
+                                   5                           5 
+   628 incomp[29,26]
+                                   5                           5 
+   629 incomp[29,27]
+                                   5                           5 
+   630 incomp[29,28]
+                                   5                           5 
+   631 incomp[29,30]
+                                   5                           5 
+   632 incomp[29,31]
+                                   5                           5 
+   633 incomp[30,1]                5                           5 
+   634 incomp[30,2]                5                           5 
+   635 incomp[30,3]                5                           5 
+   636 incomp[30,4]                5                           5 
+   637 incomp[30,5]                5                           5 
+   638 incomp[30,6]                5                           5 
+   639 incomp[30,7]                5                           5 
+   640 incomp[30,8]                5                           5 
+   641 incomp[30,9]                5                           5 
+   642 incomp[30,10]
+                                   5                           5 
+   643 incomp[30,11]
+                                   5                           5 
+   644 incomp[30,12]
+                                   5                           5 
+   645 incomp[30,13]
+                                   5                           5 
+   646 incomp[30,14]
+                                   5                           5 
+   647 incomp[30,15]
+                                   5                           5 
+   648 incomp[30,16]
+                                   5                           5 
+   649 incomp[30,17]
+                                   5                           5 
+   650 incomp[30,18]
+                                   5                           5 
+   651 incomp[30,19]
+                                   5                           5 
+   652 incomp[30,20]
+                                   5                           5 
+   653 incomp[30,21]
+                                   5                           5 
+   654 incomp[30,22]
+                                   5                           5 
+   655 incomp[30,23]
+                                   5                           5 
+   656 incomp[30,24]
+                                   5                           5 
+   657 incomp[30,25]
+                                   5                           5 
+   658 incomp[30,26]
+                                   5                           5 
+   659 incomp[30,27]
+                                   5                           5 
+   660 incomp[30,28]
+                                   5                           5 
+   661 incomp[30,29]
+                                   5                           5 
+   662 incomp[30,31]
+                                   5                           5 
+   663 incomp[31,1]                5                           5 
+   664 incomp[31,2]                5                           5 
+   665 incomp[31,3]                5                           5 
+   666 incomp[31,4]                5                           5 
+   667 incomp[31,5]                5                           5 
+   668 incomp[31,6]                5                           5 
+   669 incomp[31,7]                5                           5 
+   670 incomp[31,8]                5                           5 
+   671 incomp[31,9]                5                           5 
+   672 incomp[31,10]
+                                   5                           5 
+   673 incomp[31,11]
+                                   5                           5 
+   674 incomp[31,12]
+                                   5                           5 
+   675 incomp[31,13]
+                                   5                           5 
+   676 incomp[31,14]
+                                   5                           5 
+   677 incomp[31,15]
+                                   5                           5 
+   678 incomp[31,16]
+                                   5                           5 
+   679 incomp[31,17]
+                                   5                           5 
+   680 incomp[31,18]
+                                   5                           5 
+   681 incomp[31,19]
+                                   5                           5 
+   682 incomp[31,20]
+                                   5                           5 
+   683 incomp[31,21]
+                                   5                           5 
+   684 incomp[31,22]
+                                   5                           5 
+   685 incomp[31,23]
+                                   5                           5 
+   686 incomp[31,24]
+                                   5                           5 
+   687 incomp[31,25]
+                                   5                           5 
+   688 incomp[31,26]
+                                   5                           5 
+   689 incomp[31,27]
+                                   5                           5 
+   690 incomp[31,28]
+                                   5                           5 
+   691 incomp[31,29]
+                                   5                           5 
+   692 incomp[31,30]
+                                   5                           5 
+   693 z                        6811                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[1]         *              0             0             1 
+     2 x[2]         *              0             0             1 
+     3 x[3]         *              0             0             1 
+     4 x[4]         *              0             0             1 
+     5 x[5]         *              0             0             1 
+     6 x[6]         *              0             0             1 
+     7 x[7]         *              0             0             1 
+     8 x[8]         *              0             0             1 
+     9 x[9]         *              0             0             1 
+    10 x[10]        *              0             0             1 
+    11 x[11]        *              0             0             1 
+    12 x[12]        *              0             0             1 
+    13 x[13]        *              0             0             1 
+    14 x[14]        *              0             0             1 
+    15 x[15]        *              0             0             1 
+    16 x[16]        *              0             0             1 
+    17 x[17]        *              0             0             1 
+    18 x[18]        *              1             0             1 
+    19 x[19]        *              0             0             1 
+    20 x[20]        *              0             0             1 
+    21 x[21]        *              0             0             1 
+    22 x[22]        *              0             0             1 
+    23 x[23]        *              0             0             1 
+    24 x[24]        *              0             0             1 
+    25 x[25]        *              0             0             1 
+    26 x[26]        *              1             0             1 
+    27 x[27]        *              1             0             1 
+    28 x[28]        *              0             0             1 
+    29 x[29]        *              0             0             1 
+    30 x[30]        *              1             0             1 
+    31 x[31]        *              1             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
