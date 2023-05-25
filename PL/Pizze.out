@@ -1,0 +1,53 @@
+Problem:    Pizze
+Rows:       6
+Columns:    8
+Non-zeros:  16
+Status:     OPTIMAL
+Objective:  z = 1.4 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 eat_all[Formaggi]
+                    NS             1             1             =           0.7 
+     2 eat_all[Salumi]
+                    NS             1             1             =           0.5 
+     3 eat_all[Verdure]
+                    NS             1             1             =           0.2 
+     4 def_contentezza[1]
+                    NS             0            -0             =             1 
+     5 def_contentezza[2]
+                    NS             0            -0             =             1 
+     6 z            B            1.4                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1,Formaggi]
+                    NL             0             0                        -0.4 
+     2 x[2,Formaggi]
+                    B              1             0               
+     3 x[1,Salumi]  B              1             0               
+     4 x[2,Salumi]  NL             0             0                        -0.3 
+     5 x[1,Verdure] B              1             0               
+     6 x[2,Verdure] NL             0             0                        -0.1 
+     7 c[1]         B            0.7             0               
+     8 c[2]         B            0.7             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+000 on column 0
+        max.rel.err = 0.00e+000 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
