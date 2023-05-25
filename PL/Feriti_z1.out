@@ -1,0 +1,261 @@
+Problem:    Feriti
+Rows:       43
+Columns:    144
+Non-zeros:  432
+Status:     OPTIMAL
+Objective:  z1 = 215.5166667 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 domanda_feriti[1,1]
+                    NL             3             3                           1 
+     2 domanda_feriti[1,2]
+                    NL            11            11                         2.1 
+     3 domanda_feriti[1,3]
+                    NL            23            23                         2.1 
+     4 domanda_feriti[1,4]
+                    NL            12            12                           1 
+     5 domanda_feriti[1,5]
+                    NL            19            19                         1.1 
+     6 domanda_feriti[1,6]
+                    NL            22            22                         1.1 
+     7 domanda_feriti[2,1]
+                    B              0            -0               
+     8 domanda_feriti[2,2]
+                    NL             1             1                           4 
+     9 domanda_feriti[2,3]
+                    NL             9             9                           4 
+    10 domanda_feriti[2,4]
+                    NL             5             5                     2.13333 
+    11 domanda_feriti[2,5]
+                    NL             2             2                         1.2 
+    12 domanda_feriti[2,6]
+                    NL             3             3                           1 
+    13 domanda_feriti[3,1]
+                    NL             5             5                           1 
+    14 domanda_feriti[3,2]
+                    NL             6             6                        1.25 
+    15 domanda_feriti[3,3]
+                    B              0            -0               
+    16 domanda_feriti[3,4]
+                    NL            12            12                        1.25 
+    17 domanda_feriti[3,5]
+                    NL            19            19                        1.35 
+    18 domanda_feriti[3,6]
+                    NL            28            28                         1.4 
+    19 offerta_feriti[1,1]
+                    B              9                          12 
+    20 offerta_feriti[1,2]
+                    NU            10                          10          -0.5 
+    21 offerta_feriti[1,3]
+                    NU             8                           8          -1.1 
+    22 offerta_feriti[1,4]
+                    NU            10                          10          -1.1 
+    23 offerta_feriti[1,5]
+                    B              0                          15 
+    24 offerta_feriti[1,6]
+                    B             13                          20 
+    25 offerta_feriti[1,7]
+                    NU            20                          20          -0.1 
+    26 offerta_feriti[1,8]
+                    NU            20                          20          -0.1 
+    27 offerta_feriti[2,1]
+                    NU             5                           5          -1.9 
+    28 offerta_feriti[2,2]
+                    NU             0                          -0          -2.4 
+    29 offerta_feriti[2,3]
+                    NU             2                           2            -3 
+    30 offerta_feriti[2,4]
+                    NU             0                          -0            -3 
+    31 offerta_feriti[2,5]
+                    NU             8                           8          -0.8 
+    32 offerta_feriti[2,6]
+                    NU             0                          -0          -1.5 
+    33 offerta_feriti[2,7]
+                    NU             0                          -0          -1.5 
+    34 offerta_feriti[2,8]
+                    B              5                          10 
+    35 offerta_feriti[3,1]
+                    B              5                          15 
+    36 offerta_feriti[3,2]
+                    B              0                           8 
+    37 offerta_feriti[3,3]
+                    NU            11                          11         -0.25 
+    38 offerta_feriti[3,4]
+                    NU             5                           5         -0.25 
+    39 offerta_feriti[3,5]
+                    B             18                          20 
+    40 offerta_feriti[3,6]
+                    NU            18                          18         -0.25 
+    41 offerta_feriti[3,7]
+                    NU            13                          13          -0.4 
+    42 offerta_feriti[3,8]
+                    NU             0                          -0          -0.4 
+    43 z1           B        215.517                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1,1,1]     B              3             0               
+     2 x[1,1,2]     NL             0             0                         0.7 
+     3 x[1,1,3]     NL             0             0                         1.6 
+     4 x[1,1,4]     NL             0             0                         2.1 
+     5 x[1,1,5]     NL             0             0                         2.2 
+     6 x[1,1,6]     NL             0             0                         2.6 
+     7 x[1,1,7]     NL             0             0                         3.1 
+     8 x[1,1,8]     NL             0             0                         4.1 
+     9 x[1,2,1]     NL             0             0                         0.7 
+    10 x[1,2,2]     B             10             0               
+    11 x[1,2,3]     B              1             0               
+    12 x[1,2,4]     NL             0             0                           1 
+    13 x[1,2,5]     NL             0             0                         3.9 
+    14 x[1,2,6]     NL             0             0                         5.5 
+    15 x[1,2,7]     NL             0             0                           6 
+    16 x[1,2,8]     NL             0             0                         7.6 
+    17 x[1,3,1]     B              6             0               
+    18 x[1,3,2]     NL             0             0                         0.6 
+    19 x[1,3,3]     B              7             0               
+    20 x[1,3,4]     B             10             0               
+    21 x[1,3,5]     NL             0             0                         1.1 
+    22 x[1,3,6]     NL             0             0                         0.4 
+    23 x[1,3,7]     NL             0             0                         0.5 
+    24 x[1,3,8]     NL             0             0                           2 
+    25 x[1,4,1]     NL             0             0                         0.6 
+    26 x[1,4,2]     NL             0             0                    0.966667 
+    27 x[1,4,3]     NL             0             0                         1.1 
+    28 x[1,4,4]     NL             0             0                         1.1 
+    29 x[1,4,5]     NL             0             0                    0.333333 
+    30 x[1,4,6]     B             12             0               
+    31 x[1,4,7]     NL             0             0                    0.766667 
+    32 x[1,4,8]     NL             0             0                         2.1 
+    33 x[1,5,1]     NL             0             0                         0.4 
+    34 x[1,5,2]     NL             0             0                         0.9 
+    35 x[1,5,3]     NL             0             0                        1.25 
+    36 x[1,5,4]     NL             0             0                         1.4 
+    37 x[1,5,5]     NL             0             0                        0.25 
+    38 x[1,5,6]     B              1             0               
+    39 x[1,5,7]     B             18             0               
+    40 x[1,5,8]     NL             0             0                         0.5 
+    41 x[1,6,1]     NL             0             0                         0.5 
+    42 x[1,6,2]     NL             0             0                        1.15 
+    43 x[1,6,3]     NL             0             0                         1.5 
+    44 x[1,6,4]     NL             0             0                         1.5 
+    45 x[1,6,5]     NL             0             0                         0.3 
+    46 x[1,6,6]     NL             0             0                        0.15 
+    47 x[1,6,7]     B              2             0               
+    48 x[1,6,8]     B             20             0               
+    49 x[2,1,1]     NL             0             0                         2.9 
+    50 x[2,1,2]     NL             0             0                         3.6 
+    51 x[2,1,3]     NL             0             0                         4.5 
+    52 x[2,1,4]     NL             0             0                           5 
+    53 x[2,1,5]     NL             0             0                           4 
+    54 x[2,1,6]     NL             0             0                         5.1 
+    55 x[2,1,7]     NL             0             0                         5.5 
+    56 x[2,1,8]     NL             0             0                           5 
+    57 x[2,2,1]     NL             0             0                         0.7 
+    58 x[2,2,2]     B              0             0               
+    59 x[2,2,3]     B              1             0               
+    60 x[2,2,4]     NL             0             0                           1 
+    61 x[2,2,5]     NL             0             0                         2.8 
+    62 x[2,2,6]     NL             0             0                         5.1 
+    63 x[2,2,7]     NL             0             0                         5.5 
+    64 x[2,2,8]     NL             0             0                         5.6 
+    65 x[2,3,1]     B              5             0               
+    66 x[2,3,2]     NL             0             0                         0.6 
+    67 x[2,3,3]     B              1             0               
+    68 x[2,3,4]     B              0             0               
+    69 x[2,3,5]     B              3             0               
+    70 x[2,3,6]     B              0             0               
+    71 x[2,3,7]     B              0             0               
+    72 x[2,3,8]     B              0             0               
+    73 x[2,4,1]     NL             0             0                     1.36667 
+    74 x[2,4,2]     NL             0             0                     1.73333 
+    75 x[2,4,3]     NL             0             0                     1.86667 
+    76 x[2,4,4]     NL             0             0                     1.86667 
+    77 x[2,4,5]     B              5             0               
+    78 x[2,4,6]     NL             0             0                    0.366667 
+    79 x[2,4,7]     NL             0             0                     1.03333 
+    80 x[2,4,8]     NL             0             0                    0.866667 
+    81 x[2,5,1]     NL             0             0                         1.9 
+    82 x[2,5,2]     NL             0             0                         2.4 
+    83 x[2,5,3]     NL             0             0                         2.8 
+    84 x[2,5,4]     NL             0             0                        2.92 
+    85 x[2,5,5]     NL             0             0                        0.68 
+    86 x[2,5,6]     NL             0             0                        1.18 
+    87 x[2,5,7]     NL             0             0                         1.1 
+    88 x[2,5,8]     B              2             0               
+    89 x[2,6,1]     NL             0             0                         2.5 
+    90 x[2,6,2]     NL             0             0                        3.15 
+    91 x[2,6,3]     NL             0             0                         3.5 
+    92 x[2,6,4]     NL             0             0                         3.5 
+    93 x[2,6,5]     NL             0             0                         1.2 
+    94 x[2,6,6]     NL             0             0                        1.75 
+    95 x[2,6,7]     NL             0             0                         1.5 
+    96 x[2,6,8]     B              3             0               
+    97 x[3,1,1]     B              5             0               
+    98 x[3,1,2]     NL             0             0                         0.2 
+    99 x[3,1,3]     NL             0             0                        0.75 
+   100 x[3,1,4]     NL             0             0                        1.25 
+   101 x[3,1,5]     NL             0             0                         2.2 
+   102 x[3,1,6]     NL             0             0                        2.85 
+   103 x[3,1,7]     NL             0             0                         3.4 
+   104 x[3,1,8]     NL             0             0                         4.4 
+   105 x[3,2,1]     NL             0             0                        1.55 
+   106 x[3,2,2]     NL             0             0                        0.35 
+   107 x[3,2,3]     B              6             0               
+   108 x[3,2,4]     NL             0             0                           1 
+   109 x[3,2,5]     NL             0             0                        4.75 
+   110 x[3,2,6]     NL             0             0                         6.6 
+   111 x[3,2,7]     NL             0             0                        7.15 
+   112 x[3,2,8]     NL             0             0                        8.75 
+   113 x[3,3,1]     NL             0             0                         2.1 
+   114 x[3,3,2]     NL             0             0                         2.2 
+   115 x[3,3,3]     NL             0             0                        1.25 
+   116 x[3,3,4]     NL             0             0                        1.25 
+   117 x[3,3,5]     NL             0             0                         3.2 
+   118 x[3,3,6]     NL             0             0                        2.75 
+   119 x[3,3,7]     NL             0             0                         2.9 
+   120 x[3,3,8]     NL             0             0                         4.4 
+   121 x[3,4,1]     NL             0             0                        0.35 
+   122 x[3,4,2]     NL             0             0                    0.216667 
+   123 x[3,4,3]     B              5             0               
+   124 x[3,4,4]     B              5             0               
+   125 x[3,4,5]     NL             0             0                   0.0833333 
+   126 x[3,4,6]     B              2             0               
+   127 x[3,4,7]     NL             0             0                    0.816667 
+   128 x[3,4,8]     NL             0             0                        2.15 
+   129 x[3,5,1]     NL             0             0                        0.15 
+   130 x[3,5,2]     NL             0             0                        0.15 
+   131 x[3,5,3]     NL             0             0                        0.15 
+   132 x[3,5,4]     NL             0             0                         0.3 
+   133 x[3,5,5]     B              3             0               
+   134 x[3,5,6]     B             16             0               
+   135 x[3,5,7]     NL             0             0                        0.05 
+   136 x[3,5,8]     NL             0             0                        0.55 
+   137 x[3,6,1]     NL             0             0                         0.2 
+   138 x[3,6,2]     NL             0             0                        0.35 
+   139 x[3,6,3]     NL             0             0                        0.35 
+   140 x[3,6,4]     NL             0             0                        0.35 
+   141 x[3,6,5]     B             15             0               
+   142 x[3,6,6]     NL             0             0                         0.1 
+   143 x[3,6,7]     B             13             0               
+   144 x[3,6,8]     B              0             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 6.66e-016 on column 111
+        max.rel.err = 1.90e-016 on column 111
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
