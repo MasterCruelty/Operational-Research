@@ -1,0 +1,46 @@
+Problem:    Camerieri
+Rows:       8
+Columns:    7 (7 integer, 0 binary)
+Non-zeros:  35
+Status:     INTEGER OPTIMAL
+Objective:  z1 = 15 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 disponibili[0]
+                                   4             4               
+     2 disponibili[1]
+                                   5             5               
+     3 disponibili[2]
+                                  12             5               
+     4 disponibili[3]
+                                  12            10               
+     5 disponibili[4]
+                                  12            12               
+     6 disponibili[5]
+                                  12            12               
+     7 disponibili[6]
+                                   3             2               
+     8 z1                         15                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[6]         *              0             0               
+     2 x[5]         *              2             0               
+     3 x[4]         *              1             0               
+     4 x[0]         *              1             0               
+     5 x[1]         *              2             0               
+     6 x[2]         *              9             0               
+     7 x[3]         *              0             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
