@@ -1,0 +1,59 @@
+Problem:    ReteLogistica
+Rows:       7
+Columns:    8
+Non-zeros:  24
+Status:     OPTIMAL
+Objective:  z = 11490000 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 capacity[Bristol]
+                    NU        150000                      150000          -7.8 
+     2 capacity[Middlesborough]
+                    B         140000                      150000 
+     3 dom[Londra]  NL         90000         90000                        46.9 
+     4 dom[Birmingham]
+                    NL         80000         80000                        44.3 
+     5 dom[Leeds]   NL         50000         50000                          36 
+     6 dom[Edimburgo]
+                    NL         70000         70000                        42.3 
+     7 z            B    1.1356e+007                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[Bristol,Londra]
+                    B          90000             0               
+     2 x[Bristol,Birmingham]
+                    B          60000             0               
+     3 x[Bristol,Leeds]
+                    NL             0             0                        16.5 
+     4 x[Bristol,Edimburgo]
+                    NL             0             0                        23.5 
+     5 x[Middlesborough,Londra]
+                    NL             0             0                         3.6 
+     6 x[Middlesborough,Birmingham]
+                    B          20000             0               
+     7 x[Middlesborough,Leeds]
+                    B          50000             0               
+     8 x[Middlesborough,Edimburgo]
+                    B          70000             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 7.11e-015 on column 1
+        max.rel.err = 7.50e-017 on column 1
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
