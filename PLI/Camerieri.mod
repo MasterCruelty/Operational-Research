@@ -11,6 +11,11 @@
   * Domanda 2: considerare il caso in cui lavorano 5 giorni consecutivi anzichè 4.
   * Domanda 3: Se si pagano i camerieri 80€ al giorno per 4 giorni consecutivi oppure 75 per 5 giorni, quale
   *                     soluzione ha costo minimo?
+  *******************************************
+  * Risposte alle domande:
+  * 1. 15 camerieri è il numero minimo
+  * 2. 12 camerieri è il numero minimo
+  * 3. Meglio turno di 5 giorni e 75 euro al giorno, si risparmiano circa 300 euro.
 */
 
 #DATI
