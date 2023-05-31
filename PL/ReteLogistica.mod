@@ -17,28 +17,29 @@
 */
 
 #DATI
-set PV;             #insieme dei punti vendita
-set M;              #insieme dei magazzini
-param domanda{PV};  #domanda per ogni punto vendita[unità /anno]
-param cM{M};        #costo trasporto da stabilimento ai magazzini[€/unità]
-param cP{M,PV};     #costo trasporto dai magazzini ai punti vendita[€/unità]
-param cf;           #costi fissi[€]
-param cv;           #costi variabili[€/unità]
-param cap{M};       #capacità totale dei magazzini in un anno
+set PV;                 #insieme dei punti vendita
+set M;                  #insieme dei magazzini
+param domanda{PV};      #domanda per ogni punto vendita[unità /anno]
+param cM{M};            #costo trasporto da stabilimento ai magazzini[€/unità]
+param cP{M,PV};         #costo trasporto dai magazzini ai punti vendita[€/unità]
+param cf;               #costi fissi[€]
+param cv;               #costi variabili[€/unità]
+param cap{M};           #capacità totale dei magazzini in un anno
 #VARIABILI
-var x{M,PV} >= 0;   #flusso di merce dallo stabilimento ai punti vendita
-
+var x{M,PV} >= 0;       #flusso di merce dai magazzini  ai punti vendita
+var y{M} >= 0;          #flusso da stabilimento a magazzini
 #VINCOLI
 #vincolo su capacità magazzino
 subject to capacity{m in M}:
-  sum{pv in PV} x[m,pv] <= cap[m];
+  y[m] <= cap[m];
 #vincolo di flusso nei magazzini: n entrano e n escono
-#subject to Flow:
+subject to Flow{m in M}:
+  sum{pv in PV} (x[m,pv] - y[m])= 0;
 #vincolo soddisfacimento domanda
 subject to dom{pv in PV}:
-  sum{m in M} x[m,pv] >= domanda[pv];
+  sum{m in M} x[m,pv] = domanda[pv];
 #OBIETTIVO
-minimize z: sum{m in M,pv in PV} x[m,pv] * cM[m] + sum{m in M,pv in PV} x[m,pv] * cP[m,pv] + sum{m in M, pv in PV} x[m,pv] * cv + cf;
+minimize z: sum{m in M} y[m] * cM[m] + sum{m in M,pv in PV} x[m,pv] * cP[m,pv] + sum{m in M, pv in PV} x[m,pv] * cv + cf;
 #############
 data;
 
@@ -60,7 +61,7 @@ Bristol          9.60     7.00       15.20    28.50
 Middlesborough  19.50    13.30        5.00    11.30;
 
 param cap:=
-Bristol     150000
+Bristol        150000
 Middlesborough 150000;
 
 param cf :=134000;
