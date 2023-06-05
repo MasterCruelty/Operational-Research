@@ -1,0 +1,40 @@
+Problem:    Chiatte
+Rows:       4
+Columns:    4
+Non-zeros:  10
+Status:     OPTIMAL
+Objective:  z = 25200 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 flow         NS             0            -0             =           600 
+     2 tempo[1]     NU             1                           1         14400 
+     3 tempo[2]     NU             1                           1         10800 
+     4 z            B          25200                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1,1]       B            4.8             0               
+     2 x[2,1]       B             12             0               
+     3 x[1,2]       B           16.8             0               
+     4 x[2,2]       NL             0             0                    -136.364 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 2.27e-013 on column 1
+        max.rel.err = 7.58e-017 on column 1
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
