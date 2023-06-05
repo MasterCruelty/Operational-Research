@@ -1,0 +1,65 @@
+Problem:    Evacuazione
+Rows:       11
+Columns:    19
+Non-zeros:  56
+Status:     OPTIMAL
+Objective:  z2 = 997.5 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 capacityS[1] NU           500                         500         -0.15 
+     2 capacityS[2] B            600                         650 
+     3 capacityS[3] B            400                         550 
+     4 capacityS[4] NU           550                         550          -0.1 
+     5 capacityS[5] NU           550                         550          -0.1 
+     6 capacityS[6] NU           400                         400         -0.05 
+     7 salviamoli[1]
+                    NS           850           850             =          0.35 
+     8 salviamoli[2]
+                    NS          1250          1250             =           0.5 
+     9 salviamoli[3]
+                    NS           900           900             =           0.4 
+    10 z2           B          997.5                             
+    11 minmax       NL             0            -0                           1 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1,1]       NU           400             0           400         < eps
+     2 x[2,1]       B              0             0           400 
+     3 x[3,1]       B            100             0           400 
+     4 x[1,2]       B            150             0           400 
+     5 x[2,2]       B             50             0           400 
+     6 x[3,2]       NU           400             0           400         -0.05 
+     7 x[1,3]       NL             0             0           400          0.05 
+     8 x[2,3]       NU           400             0           400         -0.05 
+     9 x[3,3]       NL             0             0           400          0.05 
+    10 x[1,4]       B            150             0           400 
+    11 x[2,4]       NU           400             0           400         -0.05 
+    12 x[3,4]       NL             0             0           400           0.1 
+    13 x[1,5]       B            150             0           400 
+    14 x[2,5]       NL             0             0           400          0.05 
+    15 x[3,5]       NU           400             0           400         < eps
+    16 x[1,6]       B              0             0           400 
+    17 x[2,6]       NU           400             0           400         -0.05 
+    18 x[3,6]       NL             0             0           400          0.05 
+    19 maxtime      B          997.5                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+000 on column 0
+        max.rel.err = 0.00e+000 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output

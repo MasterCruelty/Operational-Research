@@ -1,0 +1,63 @@
+Problem:    Evacuazione
+Rows:       10
+Columns:    18
+Non-zeros:  54
+Status:     OPTIMAL
+Objective:  z1 = 1020000 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 capacityS[1] NU           500                         500          -100 
+     2 capacityS[2] B            600                         650 
+     3 capacityS[3] B            400                         550 
+     4 capacityS[4] NU           550                         550           -10 
+     5 capacityS[5] NU           550                         550           -40 
+     6 capacityS[6] NU           400                         400          -120 
+     7 salviamoli[1]
+                    NS           850           850             =           350 
+     8 salviamoli[2]
+                    NS          1250          1250             =           420 
+     9 salviamoli[3]
+                    NS           900           900             =           410 
+    10 z1           B      1.02e+006                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[1,1]       B            100             0           400 
+     2 x[2,1]       NU           400             0           400           -40 
+     3 x[3,1]       NL             0             0           400            50 
+     4 x[1,2]       B            200             0           400 
+     5 x[2,2]       B             50             0           400 
+     6 x[3,2]       B            350             0           400 
+     7 x[1,3]       NU           400             0           400           -50 
+     8 x[2,3]       NL             0             0           400            30 
+     9 x[3,3]       NL             0             0           400            10 
+    10 x[1,4]       NL             0             0           400            40 
+    11 x[2,4]       NU           400             0           400           -20 
+    12 x[3,4]       B            150             0           400 
+    13 x[1,5]       B            150             0           400 
+    14 x[2,5]       NU           400             0           400            -5 
+    15 x[3,5]       NL             0             0           400            10 
+    16 x[1,6]       NL             0             0           400           110 
+    17 x[2,6]       NL             0             0           400            50 
+    18 x[3,6]       B            400             0           400 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 0.00e+000 on column 0
+        max.rel.err = 0.00e+000 on column 0
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
