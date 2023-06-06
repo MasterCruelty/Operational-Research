@@ -8,6 +8,7 @@ while check == False:
      if "matricola" in resp.text or "Matricola" in resp.text:
              print("Esiti pubblicati")
              check = True
+             time.sleep(7200)
      else:
              print("Ancora niente esiti")
              time.sleep(60)
