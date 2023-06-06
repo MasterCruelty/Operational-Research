@@ -1,0 +1,38 @@
+Problem:    Cloud
+Rows:       6
+Columns:    8 (4 integer, 4 binary)
+Non-zeros:  19
+Status:     INTEGER OPTIMAL
+Objective:  z = 2112 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 integrity[1]                0                          -0 
+     2 integrity[2]                0                          -0 
+     3 integrity[3]                0                          -0 
+     4 integrity[4]                0                          -0 
+     5 domanda                  5000          5000             = 
+     6 z                        2112                             
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[1]                        0             0               
+     2 x[2]                        0             0               
+     3 x[3]                     5000             0               
+     4 x[4]                        0             0               
+     5 y[1]         *              0             0             1 
+     6 y[2]         *              0             0             1 
+     7 y[3]         *              1             0             1 
+     8 y[4]         *              0             0             1 
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
