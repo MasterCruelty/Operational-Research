@@ -45,7 +45,7 @@ subject to size_memory{b in B}:
 
 #vincolo controllo di flusso
 subject to Flow{b in B,i in I:i>1 and i<7} :
-	x[b,i] = x[b,i-1] + + prod_dati[b,i] - y[b,i-1];
+	x[b,i] = x[b,i-1] +  prod_dati[b,i] - y[b,i-1];
 subject to Flow_first{b in B,i in I}:
 	x[b,1] = occupato[b] + prod_dati[b,1];
 
