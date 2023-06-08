@@ -20,6 +20,8 @@ param qf;		#quota fissa noleggio
 param qv;		#quota variabile noleggio
 param nG;		#numero dei giorni
 set G := 1..nG;	#insieme dei giorni
+param nR;		#numero richieste
+set R:=1..nR;	#insieme richieste
 param start{G};	#giorno inizio noleggio
 param ends{G};	#giorno fine noleggio
 #VARIABILI
@@ -28,19 +30,23 @@ var x{G} binary;	#selezione della richiesta
 #vincolo automobili disponibili
 subject to cars{g in G}:
 	x[g] <= c;
-#vincolo di incompatibilità
-subject to incomp{g1 in G,g2 in G:g1<>g2 and  ends[g1] >= start[g2]}:
-	sum{g3 in G} x[g3] <= c;
+#vincolo sul numero di ordini attivi in ogni giorno
+subject to incompat{g in G}:
+	sum{r in R:start[r] <=g and ends[r] >= g} x[r] <= c;
+#vincolo integralità: non tutti gli ordini possono essere soddisfatti
+subject to integrity{r in R}:
+	x[r] <= 1;
 #OBIETTIVO
-#maximize z: sum{g in G} x[g] * ((qv*ends[g]-start[g]+1) + qf);
-maximize z: sum{g in G} x[g] * ((qv*ends[g]-start[g]+1) + qf) - 1000;
+#maximize z: sum{r in R} ((ends[r]-start[r]+1)*qv+qf) *x[r];
+maximize z: sum{r in R} ((ends[r]-start[r]+1)*qv+qf) *x[r] -1000;
 ##########
 data;
 
 param c:=5;
 param qf:=20;
 param qv:=40;
-param nG:=31;
+param nG:=35;
+param nR:=31;
 
 param: 		start	ends:=
 	1		2		5
