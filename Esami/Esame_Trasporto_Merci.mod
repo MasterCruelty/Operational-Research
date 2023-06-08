@@ -59,9 +59,7 @@ subject to MaxFlow:
 ############
 data;
 
-
 param nP := 2;
-
 set H := s1 s2 1 2 3 4 t;
 
 set A := 
@@ -96,7 +94,6 @@ s2, 2	5
 3, 4	5
 3, t	3
 4, t	2;
-
 
 param maxPeso :=
 s1, 1	11
