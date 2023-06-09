@@ -1,0 +1,71 @@
+Problem:    Esame_fornitura
+Rows:       18
+Columns:    21
+Non-zeros:  78
+Status:     OPTIMAL
+Objective:  z = 3044.176471 (MINimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 capacity     NU          7100                        7100     -0.247059 
+     2 forn_min     NL           300           300                     16.7176 
+     3 trasp_min[0] NL            65            65                         0.4 
+     4 trasp_min[1] B            135            70               
+     5 trasp_min[2] B            100            50               
+     6 trasp_max[0] B             65                         135 
+     7 trasp_max[1] NU           135                         135          -1.8 
+     8 trasp_max[2] B            100                         135 
+     9 flow[A,0]    NS             0            -0             =       17.1176 
+    10 flow[A,1]    NS             0            -0             =       14.9176 
+    11 flow[A,2]    NS             0            -0             =       16.7176 
+    12 flow[B,0]    NS             0            -0             =       17.1176 
+    13 flow[B,1]    NS             0            -0             =       16.3176 
+    14 flow[B,2]    NS             0            -0             =       16.7176 
+    15 consumo[X]   NS             0            -0             =       4.94118 
+    16 consumo[Y]   NS             0            -0             =       8.64706 
+    17 consumo[Z]   NS             0            -0             =       3.70588 
+    18 z            B        3044.18                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x[A,0]       NL             0             0                         1.8 
+     2 x[A,1]       B        147.059             0               
+     3 x[A,2]       NL             0             0                         0.2 
+     4 x[B,0]       NL             0             0                         2.7 
+     5 x[B,1]       B        152.941             0               
+     6 x[B,2]       NL             0             0                         0.1 
+     7 y[A,0]       B              0             0               
+     8 y[A,1]       B            135             0               
+     9 y[A,2]       B        12.0588             0               
+    10 y[B,0]       B             65             0               
+    11 y[B,1]       NL             0             0                         1.4 
+    12 y[B,2]       B        87.9412             0               
+    13 s[A,2]       NL             0             0                         1.4 
+    14 s[A,0]       NL             0             0                           4 
+    15 s[A,1]       B        12.0588             0               
+    16 s[B,2]       B             65             0               
+    17 s[B,0]       NL             0             0                         1.2 
+    18 s[B,1]       B        152.941             0               
+    19 b[X]         B        105.882             0               
+    20 b[Y]         B        103.529             0               
+    21 b[Z]         B        90.5882             0               
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 9.09e-013 on row 1
+        max.rel.err = 9.63e-017 on row 10
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 7.11e-015 on column 7
+        max.rel.err = 2.02e-016 on column 7
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+000 on row 0
+        max.rel.err = 0.00e+000 on row 0
+        High quality
+
+End of output
