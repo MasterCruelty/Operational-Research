@@ -5,7 +5,7 @@
   * Gli operai lavorano in 3 turni(6-14; 14-22; 22-6)
   * Il costo della produzione di ogni tipo di lavorato varia da turno a turno.
   * A fine di ogni turno, parte dei lavorati prodotti viene trasportata al centro commeciale.
-  * Parte può essere immagazzinata in una cella frigorifera e trasportata al centro comemrciale.
+  * Parte può essere immagazzinata in una cella frigorifera e trasportata al centro commerciale.
   * Anche la conservazione dei lavorati nella cella ha un costo.
   * La produzione di ciascun lavorato richiede l'utilizzo di alcune materie prime conservate in cella esterna limitata.
   * Il rifornimento di materie prime deve essere effettuato una volta al giorno, all'inizio del primo turno.
