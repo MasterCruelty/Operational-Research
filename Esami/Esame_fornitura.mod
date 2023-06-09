@@ -56,6 +56,8 @@ subject to trasp_min{t in T}:
 subject to trasp_max{t in T}:
      sum{l in L} y[l,t] <= qmax[t];
 #vincolo conservazione flusso per legare var s a var x
+# lo stock del turno prima + la produzione del turno attuale devono essere uguali a:
+# lo stock del turno attuale + la quantità trasportata nel turno attuale
 subject to flow{l in L, t in T}:
      s[l,(t-1) mod 3] + x[l,t] = s[l,t] + y[l,t];
 #vincolo sul consumo di ingredienti
