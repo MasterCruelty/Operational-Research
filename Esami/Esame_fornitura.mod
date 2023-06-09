@@ -20,7 +20,7 @@
  * Il prezzo-ombra del vincolo sulla fornitura minima `e pari a 16.7176.
  * Quindi per ogni Kg in meno di fornitura giornaliera richiesta, si avrebbe un risparmio giornaliero di 16,7176 euro.
  * Anche su trasp_min e trasp_max c'è 0.4 e -1.8. Nel primo caso risparmio diminuendo, nel secondo aumentando.
- * sul vincolo capacity avrei un risparmio di circa 25 centesimi al giorno per ogni decimetro cubo aggiuntivo.
+ * sul vincolo capacity avrei un risparmio di circa 25 centesimi al giorno per ogni decimetro cubo in meno.
  * I risparmi ovviamente si avrebbero solo all'interno del range definito dall'analisi di sensitivitò, non per ogni valore.
  * Ovvero finchè la base ottima non cambia.
 */
