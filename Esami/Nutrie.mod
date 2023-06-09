@@ -7,7 +7,7 @@
   * Ogni cacciatore può operare in massimo 3 paesi diversi, senza sconfinare negli altri.
   * In base ai cacciatori assegnati ai paesi si può calcolare il numero di nutrie che ci si aspetta da ogni cacciatore.
   * Si vuole minimizzare il massimo di tali valori target che ci si aspetta da ogni cacciatore.
-  * valore ottimo 85.
+  * valore ottimo 85. PROBLEMA PNL
 */
 
 #DATI
