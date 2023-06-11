@@ -50,8 +50,8 @@ subject to capacitys2P2:
 #maximize flusso:sum{hs in H:(hs,'t') in A}(x[1,hs,'t'] + x[2,hs, 't']);
 
 #minimizzare i costi complessivi mantenendo il valore di massimo flusso ottenuto dalla f.o. "flusso" (18)
-minimize costi: sum{hs in H,hd in H:(hs,hd) in A} x[1,hs,hd] * cu1[hs,hd] + 
-                sum{hs in H,hd in H:(hs,hd) in A} x[2,hs,hd] * cu2[hs,hd];
+minimize costi: sum{hs in H:(hs,'t') in A} x[1,hs,'t'] * cu1[hs,'t'] + 
+                sum{hs in H:(hs,'t') in A} x[2,hs,'t'] * cu2[hs,'t'];
 # impongo che il flusso rimanga uguale al valore ottimo della f.o "flusso"
 subject to MaxFlow:
 	sum{hs in H:(hs, 't') in A}(x[1,hs, 't'] + x[2, hs, 't']) = 18;
