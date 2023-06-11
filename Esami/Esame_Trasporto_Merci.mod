@@ -42,7 +42,7 @@ subject to capacitys2P1:
 	sum{hd in H: ('s2',hd) in A} x[1, 's2', hd] <= qs2[1];
 # vincolo sulla quantità di merce di tipo 2 disponibile in partenza dall'hub s2
 subject to capacitys2P2:
-	sum{hd in H: ('s2',hd) in A} x[1, 's2', hd] <= qs2[2];
+	sum{hd in H: ('s2',hd) in A} x[2, 's2', hd] <= qs2[2];
 
 
 #OBIETTIVI
